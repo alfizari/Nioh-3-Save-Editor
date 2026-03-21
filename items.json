@@ -1,0 +1,2574 @@
+{
+    "1BF1": {
+        "name": "Beardcutter",
+        "type": "Weapon"
+    },
+    "A093": {
+        "name": "Bizen Osafune",
+        "type": "Weapon"
+    },
+    "F74B": {
+        "name": "Bizen Tachi",
+        "type": "Weapon"
+    },
+    "D4C0": {
+        "name": "Infernal Katana",
+        "type": "Weapon"
+    },
+    "A305": {
+        "name": "Mantra Sword",
+        "type": "Weapon"
+    },
+    "7F54": {
+        "name": "Odenta Mitsuyo",
+        "type": "Weapon"
+    },
+    "1EE6": {
+        "name": "Onimaru Kunitsuna",
+        "type": "Weapon"
+    },
+    "0F1B": {
+        "name": "Ornamental Blade",
+        "type": "Weapon"
+    },
+    "ABE7": {
+        "name": "Osafune Kanemitsu",
+        "type": "Weapon"
+    },
+    "A801": {
+        "name": "Senjuin Tachi",
+        "type": "Weapon"
+    },
+    "C37F": {
+        "name": "Smirkwiper",
+        "type": "Weapon"
+    },
+    "6BA3": {
+        "name": "Sohaya Tsurugi",
+        "type": "Weapon"
+    },
+    "D911": {
+        "name": "Striking Retribution",
+        "type": "Weapon"
+    },
+    "B321": {
+        "name": "Taima Kuniyuki",
+        "type": "Weapon"
+    },
+    "23F5": {
+        "name": "Tokagemaru",
+        "type": "Weapon"
+    },
+    "BF27": {
+        "name": "Wooden Sword",
+        "type": "Weapon"
+    },
+    "80ED": {
+        "name": "Yamatai Sword",
+        "type": "Weapon"
+    },
+    "C8B9": {
+        "name": "Bizen Uchigatana",
+        "type": "Weapon"
+    },
+    "180D": {
+        "name": "Infernal Ninja Sword",
+        "type": "Weapon"
+    },
+    "4375": {
+        "name": "Jikkyu Mitsutada",
+        "type": "Weapon"
+    },
+    "FD1A": {
+        "name": "Juzumaru Tsunetsugu",
+        "type": "Weapon"
+    },
+    "8CD9": {
+        "name": "Kiku Ichimonji",
+        "type": "Weapon"
+    },
+    "3034": {
+        "name": "Kobizen Tomonari",
+        "type": "Weapon"
+    },
+    "941A": {
+        "name": "Kyo-Oh's Blade",
+        "type": "Weapon"
+    },
+    "C4D2": {
+        "name": "Mino Uchigatana",
+        "type": "Weapon"
+    },
+    "3EAD": {
+        "name": "Ornamental Blade",
+        "type": "Weapon"
+    },
+    "D275": {
+        "name": "Raikiri",
+        "type": "Weapon"
+    },
+    "E27F": {
+        "name": "Tokagemaru",
+        "type": "Weapon"
+    },
+    "CE3A": {
+        "name": "Crucible Saws",
+        "type": "Weapon"
+    },
+    "1D7B": {
+        "name": "Dual Bloodstained Cleavers",
+        "type": "Weapon"
+    },
+    "2F66": {
+        "name": "Dual Wooden Swords",
+        "type": "Weapon"
+    },
+    "E7CD": {
+        "name": "Goichimonshu Dual Swords",
+        "type": "Weapon"
+    },
+    "DAA7": {
+        "name": "Honjo Masamune & Saber",
+        "type": "Weapon"
+    },
+    "96E8": {
+        "name": "Ichigo Hitofuri & Oyako Toshiro",
+        "type": "Weapon"
+    },
+    "C127": {
+        "name": "Infernal Dual Katana",
+        "type": "Weapon"
+    },
+    "6741": {
+        "name": "Mino Dual Tachi",
+        "type": "Weapon"
+    },
+    "25C5": {
+        "name": "Rai Kunitsugu Dual Tachi",
+        "type": "Weapon"
+    },
+    "120A": {
+        "name": "Regal Lion & Bone Eater",
+        "type": "Weapon"
+    },
+    "C086": {
+        "name": "Seki Dual Tachi",
+        "type": "Weapon"
+    },
+    "226C": {
+        "name": "Seki Kanenori Dual Uchigatana",
+        "type": "Weapon"
+    },
+    "46B4": {
+        "name": "Soshu Dual Tachi",
+        "type": "Weapon"
+    },
+    "9624": {
+        "name": "Wisdom Sutra Sword & Plane Cutter",
+        "type": "Weapon"
+    },
+    "29E1": {
+        "name": "Yamanba's Knives",
+        "type": "Weapon"
+    },
+    "0CC2": {
+        "name": "Go-no-Yoshihiro Twin Swords",
+        "type": "Weapon"
+    },
+    "F7BE": {
+        "name": "Great Kanehira Sword & Nightingale",
+        "type": "Weapon"
+    },
+    "6C77": {
+        "name": "Infernal Dual Ninja Swords",
+        "type": "Weapon"
+    },
+    "1BE3": {
+        "name": "Mino Dual Uchigatana",
+        "type": "Weapon"
+    },
+    "2822": {
+        "name": "Nosada Dual Katana",
+        "type": "Weapon"
+    },
+    "BC44": {
+        "name": "Soshu Dual Uchigatana",
+        "type": "Weapon"
+    },
+    "A2D5": {
+        "name": "Soshu Masamune Dual Katana",
+        "type": "Weapon"
+    },
+    "589B": {
+        "name": "Bishamon Spear",
+        "type": "Weapon"
+    },
+    "BC6C": {
+        "name": "Bonepile Spear",
+        "type": "Weapon"
+    },
+    "E8F6": {
+        "name": "Birdflight Cross Spear",
+        "type": "Weapon"
+    },
+    "655B": {
+        "name": "Bullhead Cross Spear",
+        "type": "Weapon"
+    },
+    "9576": {
+        "name": "Captain's Spear",
+        "type": "Weapon"
+    },
+    "0739": {
+        "name": "Cross Spear",
+        "type": "Weapon"
+    },
+    "371A": {
+        "name": "Crucible Ice Spear",
+        "type": "Weapon"
+    },
+    "358A": {
+        "name": "Crucible Sasumata",
+        "type": "Weapon"
+    },
+    "B298": {
+        "name": "Hayakaze Spear",
+        "type": "Weapon"
+    },
+    "CE05": {
+        "name": "Hinomotogo",
+        "type": "Weapon"
+    },
+    "7B5B": {
+        "name": "Infernal Spear",
+        "type": "Weapon"
+    },
+    "0B5A": {
+        "name": "Koroka Spear",
+        "type": "Weapon"
+    },
+    "44E0": {
+        "name": "Legion Spear",
+        "type": "Weapon"
+    },
+    "5072": {
+        "name": "Ningen Mukotsu",
+        "type": "Weapon"
+    },
+    "94E5": {
+        "name": "Otegine",
+        "type": "Weapon"
+    },
+    "CE07": {
+        "name": "Officer's Spear",
+        "type": "Weapon"
+    },
+    "19FD": {
+        "name": "Potsticker Spear",
+        "type": "Weapon"
+    },
+    "DA04": {
+        "name": "Sickle Spear",
+        "type": "Weapon"
+    },
+    "93FB": {
+        "name": "Spear",
+        "type": "Weapon"
+    },
+    "E430": {
+        "name": "Squire's Cross Spear",
+        "type": "Weapon"
+    },
+    "4DF7": {
+        "name": "Stone-Splitter Cross Spear",
+        "type": "Weapon"
+    },
+    "8347": {
+        "name": "Swan Spear",
+        "type": "Weapon"
+    },
+    "7665": {
+        "name": "Torch Spear",
+        "type": "Weapon"
+    },
+    "AB8D": {
+        "name": "Vermilion Spear",
+        "type": "Weapon"
+    },
+    "7D80": {
+        "name": "Wooden Spear",
+        "type": "Weapon"
+    },
+    "E567": {
+        "name": "Warrior's Cross Spear",
+        "type": "Weapon"
+    },
+    "4A19": {
+        "name": "Yamatai Spear",
+        "type": "Weapon"
+    },
+    "E2EA": {
+        "name": "Black Bamboo Kusarigama",
+        "type": "Weapon"
+    },
+    "09E1": {
+        "name": "Chunin's Kusarigama",
+        "type": "Weapon"
+    },
+    "1CD1": {
+        "name": "Custom Kusarigama",
+        "type": "Weapon"
+    },
+    "0849": {
+        "name": "Crescent Moon Kusarigama",
+        "type": "Weapon"
+    },
+    "C901": {
+        "name": "Demon Horde Kusarigama",
+        "type": "Weapon"
+    },
+    "F0B1": {
+        "name": "Fuma Kusarigama",
+        "type": "Weapon"
+    },
+    "C897": {
+        "name": "Genin's Kusarigama",
+        "type": "Weapon"
+    },
+    "5D63": {
+        "name": "Hooked Kusarigama",
+        "type": "Weapon"
+    },
+    "3960": {
+        "name": "Infernal Kusarigama",
+        "type": "Weapon"
+    },
+    "F668": {
+        "name": "Jonin's Kusarigama",
+        "type": "Weapon"
+    },
+    "518B": {
+        "name": "Mitsuyo Kusarigama",
+        "type": "Weapon"
+    },
+    "3A55": {
+        "name": "Nightstorm Kusarigama",
+        "type": "Weapon"
+    },
+    "E81A": {
+        "name": "Rakshasa Kusarigama",
+        "type": "Weapon"
+    },
+    "108F": {
+        "name": "Rotten Rope Cutter",
+        "type": "Weapon"
+    },
+    "9550": {
+        "name": "Snowmelt Kusarigama",
+        "type": "Weapon"
+    },
+    "5FE7": {
+        "name": "Spy's Kusarigama",
+        "type": "Weapon"
+    },
+    "4EB4": {
+        "name": "Suwa Myojin Sickle",
+        "type": "Weapon"
+    },
+    "9186": {
+        "name": "Thunder God Kusarigama",
+        "type": "Weapon"
+    },
+    "4FA1": {
+        "name": "Togakushi Kusarigama",
+        "type": "Weapon"
+    },
+    "84A5": {
+        "name": "Will-o'-Wisp Blade",
+        "type": "Weapon"
+    },
+    "CEEF": {
+        "name": "Yasha's Kusarigama",
+        "type": "Weapon"
+    },
+    "6748": {
+        "name": "Ame-no-Mahitotsu's Axe",
+        "type": "Weapon"
+    },
+    "BBED": {
+        "name": "Armorcrusher Axe",
+        "type": "Weapon"
+    },
+    "8A8E": {
+        "name": "Bandit Axe",
+        "type": "Weapon"
+    },
+    "0740": {
+        "name": "Black Steel Axe",
+        "type": "Weapon"
+    },
+    "E626": {
+        "name": "Brute's Axe",
+        "type": "Weapon"
+    },
+    "5ECD": {
+        "name": "Bronze Hammer",
+        "type": "Weapon"
+    },
+    "C68D": {
+        "name": "Blessed Vajra Hammer",
+        "type": "Weapon"
+    },
+    "81B8": {
+        "name": "Crucible Cudgel",
+        "type": "Weapon"
+    },
+    "9A85": {
+        "name": "Demon God Hammer",
+        "type": "Weapon"
+    },
+    "8F47": {
+        "name": "Demon Horde Axe",
+        "type": "Weapon"
+    },
+    "01EE": {
+        "name": "Evil-Crusher Hammer",
+        "type": "Weapon"
+    },
+    "6FEB": {
+        "name": "Genno's Hammer",
+        "type": "Weapon"
+    },
+    "9EEA": {
+        "name": "Helmsplitter Axe",
+        "type": "Weapon"
+    },
+    "A1BB": {
+        "name": "Heavyweight Axe",
+        "type": "Weapon"
+    },
+    "CB72": {
+        "name": "Infernal Axe",
+        "type": "Weapon"
+    },
+    "BA36": {
+        "name": "Ippon-Datara's Hammer",
+        "type": "Weapon"
+    },
+    "8A3C": {
+        "name": "Kintaro's Axe",
+        "type": "Weapon"
+    },
+    "27FC": {
+        "name": "Mirage Axe",
+        "type": "Weapon"
+    },
+    "D380": {
+        "name": "Mononobe Axe",
+        "type": "Weapon"
+    },
+    "8016": {
+        "name": "Oak Hammer",
+        "type": "Weapon"
+    },
+    "061C": {
+        "name": "Palisade Breaker",
+        "type": "Weapon"
+    },
+    "BEEC": {
+        "name": "Pickaxe",
+        "type": "Weapon"
+    },
+    "0EFE": {
+        "name": "Pulverizing Hammer",
+        "type": "Weapon"
+    },
+    "7748": {
+        "name": "Rusty Hoe",
+        "type": "Weapon"
+    },
+    "3180": {
+        "name": "Slayer's Axe",
+        "type": "Weapon"
+    },
+    "96C2": {
+        "name": "Spearbreaker Hammer",
+        "type": "Weapon"
+    },
+    "432F": {
+        "name": "Warrior Monk's Hammer",
+        "type": "Weapon"
+    },
+    "E426": {
+        "name": "Wooden Hammer",
+        "type": "Weapon"
+    },
+    "57E6": {
+        "name": "Ebony Tonfa",
+        "type": "Weapon"
+    },
+    "376A": {
+        "name": "Infernal Tonfa",
+        "type": "Weapon"
+    },
+    "4227": {
+        "name": "Iron Tonfa",
+        "type": "Weapon"
+    },
+    "222E": {
+        "name": "Lord's Tonfa",
+        "type": "Weapon"
+    },
+    "2F23": {
+        "name": "Lost Kingdom Tonfa",
+        "type": "Weapon"
+    },
+    "534E": {
+        "name": "Martial Artist's Tonfa",
+        "type": "Weapon"
+    },
+    "2DAC": {
+        "name": "Ninja's Tonfa",
+        "type": "Weapon"
+    },
+    "A489": {
+        "name": "Pagoda Tonfa",
+        "type": "Weapon"
+    },
+    "006D": {
+        "name": "Quaking Tonfa",
+        "type": "Weapon"
+    },
+    "D4D9": {
+        "name": "Retainer's Tonfa",
+        "type": "Weapon"
+    },
+    "5D27": {
+        "name": "Rosewood Tonfa",
+        "type": "Weapon"
+    },
+    "C17D": {
+        "name": "Royal Tonfa",
+        "type": "Weapon"
+    },
+    "FC42": {
+        "name": "Sarutobi's Gunsticks",
+        "type": "Weapon"
+    },
+    "4081": {
+        "name": "Searing Bolt Tonfa",
+        "type": "Weapon"
+    },
+    "6A16": {
+        "name": "Seventh Sword Tonfa",
+        "type": "Weapon"
+    },
+    "7DE4": {
+        "name": "Twin Dragon Tonfa",
+        "type": "Weapon"
+    },
+    "B068": {
+        "name": "Vajra Tonfa",
+        "type": "Weapon"
+    },
+    "E5D8": {
+        "name": "White Bone Spirit Tonfa",
+        "type": "Weapon"
+    },
+    "D08A": {
+        "name": "Yin-Yang Tonfa",
+        "type": "Weapon"
+    },
+    "AA83": {
+        "name": "Bizen Odachi",
+        "type": "Weapon"
+    },
+    "0676": {
+        "name": "Bloodspider Blade",
+        "type": "Weapon"
+    },
+    "A267": {
+        "name": "Bloodstained Blade",
+        "type": "Weapon"
+    },
+    "B12B": {
+        "name": "Crimson General's Nagamaki",
+        "type": "Weapon"
+    },
+    "07D9": {
+        "name": "Firefly Blade",
+        "type": "Weapon"
+    },
+    "D39C": {
+        "name": "Infernal Odachi",
+        "type": "Weapon"
+    },
+    "1E4D": {
+        "name": "Ippon-Datara's Odachi",
+        "type": "Weapon"
+    },
+    "E440": {
+        "name": "Jakirimaru",
+        "type": "Weapon"
+    },
+    "16DF": {
+        "name": "Jiro Tachi",
+        "type": "Weapon"
+    },
+    "E57E": {
+        "name": "Kamui",
+        "type": "Weapon"
+    },
+    "67B3": {
+        "name": "Kijinmaru Kunishige",
+        "type": "Weapon"
+    },
+    "0C1C": {
+        "name": "Kimibanzai Tomonari",
+        "type": "Weapon"
+    },
+    "67EF": {
+        "name": "Kobizen Odachi",
+        "type": "Weapon"
+    },
+    "D9EB": {
+        "name": "Kyo-Oh's Corrupted Blade",
+        "type": "Weapon"
+    },
+    "74D2": {
+        "name": "Mirrorblade",
+        "type": "Weapon"
+    },
+    "76DE": {
+        "name": "Nene Slayer",
+        "type": "Weapon"
+    },
+    "7231": {
+        "name": "Rai Odachi",
+        "type": "Weapon"
+    },
+    "8837": {
+        "name": "Rai Kuniyuki Odachi",
+        "type": "Weapon"
+    },
+    "35A7": {
+        "name": "Sekishu Kazusada",
+        "type": "Weapon"
+    },
+    "2FDD": {
+        "name": "Sukesada Odachi",
+        "type": "Weapon"
+    },
+    "B7BD": {
+        "name": "Sunderer",
+        "type": "Weapon"
+    },
+    "9A75": {
+        "name": "Takahira Odachi",
+        "type": "Weapon"
+    },
+    "0FBB": {
+        "name": "Taro Tachi",
+        "type": "Weapon"
+    },
+    "41D6": {
+        "name": "Wooden Odachi",
+        "type": "Weapon"
+    },
+    "BBCC": {
+        "name": "Yamato Odachi",
+        "type": "Weapon"
+    },
+    "9235": {
+        "name": "Yamashiro Odachi",
+        "type": "Weapon"
+    },
+    "3FB1": {
+        "name": "Barbarian's Hatchets",
+        "type": "Weapon"
+    },
+    "5543": {
+        "name": "Brigand's Hatchets",
+        "type": "Weapon"
+    },
+    "CE48": {
+        "name": "Black Rain & Thunder",
+        "type": "Weapon"
+    },
+    "8023": {
+        "name": "Echoing Thunder",
+        "type": "Weapon"
+    },
+    "C66C": {
+        "name": "Gyosha Hatchets",
+        "type": "Weapon"
+    },
+    "08A5": {
+        "name": "Grimy Hatchet & Rusty Hoe",
+        "type": "Weapon"
+    },
+    "5488": {
+        "name": "Hero's Hatchets",
+        "type": "Weapon"
+    },
+    "46E0": {
+        "name": "Haguro Ninja Hatchets",
+        "type": "Weapon"
+    },
+    "33F3": {
+        "name": "Iceberg",
+        "type": "Weapon"
+    },
+    "323C": {
+        "name": "Infernal Hatchets",
+        "type": "Weapon"
+    },
+    "672B": {
+        "name": "Martial Artist's Hatchets",
+        "type": "Weapon"
+    },
+    "BA18": {
+        "name": "Mountain Bandit Hatchets",
+        "type": "Weapon"
+    },
+    "32E9": {
+        "name": "Ninja's Hatchets",
+        "type": "Weapon"
+    },
+    "0DF9": {
+        "name": "Radiant Flame",
+        "type": "Weapon"
+    },
+    "387C": {
+        "name": "Shugendo Hermit Hatchets",
+        "type": "Weapon"
+    },
+    "38C8": {
+        "name": "Sun and Moon Hatchets",
+        "type": "Weapon"
+    },
+    "2770": {
+        "name": "Togakushi Ninja Hatchets",
+        "type": "Weapon"
+    },
+    "2E82": {
+        "name": "Wave Cutter Hatchets",
+        "type": "Weapon"
+    },
+    "A495": {
+        "name": "Wind Demon Hatchets",
+        "type": "Weapon"
+    },
+    "6A6C": {
+        "name": "Zenki and Goki",
+        "type": "Weapon"
+    },
+    "3122": {
+        "name": "Aberrant Switchglaive",
+        "type": "Weapon"
+    },
+    "BC34": {
+        "name": "Black Lotus",
+        "type": "Weapon"
+    },
+    "6085": {
+        "name": "Deviant's Switchglaive",
+        "type": "Weapon"
+    },
+    "D5E9": {
+        "name": "Extinction Switchglaive",
+        "type": "Weapon"
+    },
+    "9B06": {
+        "name": "Evil-Crusher Switchglaive",
+        "type": "Weapon"
+    },
+    "9379": {
+        "name": "Hunter's Switchglaive",
+        "type": "Weapon"
+    },
+    "9066": {
+        "name": "Infernal Switchglaive",
+        "type": "Weapon"
+    },
+    "928A": {
+        "name": "Iron Switchglaive",
+        "type": "Weapon"
+    },
+    "C9C1": {
+        "name": "Kanemitsu Switchglaive",
+        "type": "Weapon"
+    },
+    "548B": {
+        "name": "Martial Artist's Switchglaive",
+        "type": "Weapon"
+    },
+    "B5FE": {
+        "name": "Night Heron's Switchglaive",
+        "type": "Weapon"
+    },
+    "E132": {
+        "name": "Phoenix Wing",
+        "type": "Weapon"
+    },
+    "0F6F": {
+        "name": "Raijin's Claw",
+        "type": "Weapon"
+    },
+    "92A1": {
+        "name": "Sasayuki",
+        "type": "Weapon"
+    },
+    "E714": {
+        "name": "Seething Dragon",
+        "type": "Weapon"
+    },
+    "5FB1": {
+        "name": "Suzaku's Beak",
+        "type": "Weapon"
+    },
+    "AB00": {
+        "name": "Seven Scalp Switchglaive",
+        "type": "Weapon"
+    },
+    "22F3": {
+        "name": "Terminus Switchglaive",
+        "type": "Weapon"
+    },
+    "E740": {
+        "name": "Vermilion Switchglaive",
+        "type": "Weapon"
+    },
+    "A29B": {
+        "name": "Watatsumi's Watch",
+        "type": "Weapon"
+    },
+    "5AF9": {
+        "name": "Chunin's Splitstaff",
+        "type": "Weapon"
+    },
+    "4C5D": {
+        "name": "Dragon King Splitstaff",
+        "type": "Weapon"
+    },
+    "E4FA": {
+        "name": "Evil-Crusher Splitstaff",
+        "type": "Weapon"
+    },
+    "FDD2": {
+        "name": "Genin's Splitstaff",
+        "type": "Weapon"
+    },
+    "767D": {
+        "name": "Hunter's Splitstaff",
+        "type": "Weapon"
+    },
+    "122E": {
+        "name": "Infernal Splitstaff",
+        "type": "Weapon"
+    },
+    "2ADB": {
+        "name": "Itinerant Monk's Splitstaff",
+        "type": "Weapon"
+    },
+    "2C43": {
+        "name": "Mikoshi's Khakkhara",
+        "type": "Weapon"
+    },
+    "5B82": {
+        "name": "Seven Scalp Splitstaff",
+        "type": "Weapon"
+    },
+    "1B85": {
+        "name": "Vajra Splitstaff",
+        "type": "Weapon"
+    },
+    "DF21": {
+        "name": "Zen Splitstaff",
+        "type": "Weapon"
+    },
+    "96A6": {
+        "name": "Captain's Cestuses",
+        "type": "Weapon"
+    },
+    "76D1": {
+        "name": "Cestuses of Malevolence",
+        "type": "Weapon"
+    },
+    "AE9C": {
+        "name": "Fuma Cestuses",
+        "type": "Weapon"
+    },
+    "F101": {
+        "name": "Frost Blossom Cestuses",
+        "type": "Weapon"
+    },
+    "2759": {
+        "name": "Infernal Cestuses",
+        "type": "Weapon"
+    },
+    "63D0": {
+        "name": "Samurai General's Cestuses",
+        "type": "Weapon"
+    },
+    "85D3": {
+        "name": "Thunderous Cestuses",
+        "type": "Weapon"
+    },
+    "5512": {
+        "name": "White Lotus Cestuses",
+        "type": "Weapon"
+    },
+    "002F": {
+        "name": "Genin's Talons",
+        "type": "Weapon"
+    },
+    "D8A0": {
+        "name": "Infernal Talons",
+        "type": "Weapon"
+    },
+    "A7A3": {
+        "name": "Nokizaru Talons",
+        "type": "Weapon"
+    },
+    "808E": {
+        "name": "Raging Fire Talons",
+        "type": "Weapon"
+    },
+    "658C": {
+        "name": "Simple Talons",
+        "type": "Weapon"
+    },
+    "2C67": {
+        "name": "Thunderous Talons",
+        "type": "Weapon"
+    },
+    "5C43": {
+        "name": "Togakushi Talons",
+        "type": "Weapon"
+    },
+    "2D65": {
+        "name": "White Lotus Talons",
+        "type": "Weapon"
+    },
+    "1A8E": {
+        "name": "Borehole Bow",
+        "type": "Weapon"
+    },
+    "1484": {
+        "name": "Chinzei Hachiro's Bow",
+        "type": "Weapon"
+    },
+    "4662": {
+        "name": "Crimson General's Bow",
+        "type": "Weapon"
+    },
+    "DE72": {
+        "name": "Five-Man Bow",
+        "type": "Weapon"
+    },
+    "31CC": {
+        "name": "Longbow",
+        "type": "Weapon"
+    },
+    "BCD9": {
+        "name": "Lord Kamakura's Bow",
+        "type": "Weapon"
+    },
+    "B6B9": {
+        "name": "Marksman's Bow",
+        "type": "Weapon"
+    },
+    "7A44": {
+        "name": "Raishodo",
+        "type": "Weapon"
+    },
+    "75E5": {
+        "name": "Wisteria Longbow",
+        "type": "Weapon"
+    },
+    "13C8": {
+        "name": "Hino Rifle",
+        "type": "Weapon"
+    },
+    "C910": {
+        "name": "Inadome Matchlock",
+        "type": "Weapon"
+    },
+    "F8E4": {
+        "name": "Kunitomo Rifle",
+        "type": "Weapon"
+    },
+    "C41B": {
+        "name": "Negoro Rifle",
+        "type": "Weapon"
+    },
+    "7A7C": {
+        "name": "Sakai Rifle",
+        "type": "Weapon"
+    },
+    "CFB1": {
+        "name": "Tanegashima Matchlock",
+        "type": "Weapon"
+    },
+    "C81D": {
+        "name": "Crimson Hand Cannon",
+        "type": "Weapon"
+    },
+    "691A": {
+        "name": "Dragon's Roar",
+        "type": "Weapon"
+    },
+    "1857": {
+        "name": "Hand Cannon",
+        "type": "Weapon"
+    },
+    "9BE2": {
+        "name": "Lightning Cannon",
+        "type": "Weapon"
+    },
+    "5BBE": {
+        "name": "Thronecrusher Cannon",
+        "type": "Weapon"
+    },
+    "6F1C": {
+        "name": "Yoryu Cannon",
+        "type": "Weapon"
+    },
+    "EB9E": {
+        "name": "Heir's Cuirass",
+        "type": "Armor"
+    },
+    "341D": {
+        "name": "Heir's Gauntlets",
+        "type": "Armor"
+    },
+    "F63E": {
+        "name": "Heir's Waistguard",
+        "type": "Armor"
+    },
+    "26C3": {
+        "name": "Heir's Greaves",
+        "type": "Armor"
+    },
+    "89AA": {
+        "name": "Heir's Shinobi Headband",
+        "type": "Armor"
+    },
+    "C6DD": {
+        "name": "Heir's Shinobi Garment",
+        "type": "Armor"
+    },
+    "681A": {
+        "name": "Heir's Shinobi Gauntlets",
+        "type": "Armor"
+    },
+    "6682": {
+        "name": "Heir's Shinobi Waistguard",
+        "type": "Armor"
+    },
+    "583D": {
+        "name": "Heir's Shinobi Greaves",
+        "type": "Armor"
+    },
+    "A3D9": {
+        "name": "Brother's Vest",
+        "type": "Armor"
+    },
+    "1B0F": {
+        "name": "Brother's Hakama",
+        "type": "Armor"
+    },
+    "7132": {
+        "name": "Brother's Sandals",
+        "type": "Armor"
+    },
+    "4743": {
+        "name": "Sinister Tyrant's Crown",
+        "type": "Armor"
+    },
+    "C887": {
+        "name": "Sinister Tyrant's Necklace",
+        "type": "Armor"
+    },
+    "45D7": {
+        "name": "Sinister Tyrant's Gauntlets",
+        "type": "Armor"
+    },
+    "F9FA": {
+        "name": "Sinister Tyrant's Trousers",
+        "type": "Armor"
+    },
+    "9CB8": {
+        "name": "Sinister Tyrant's Boots",
+        "type": "Armor"
+    },
+    "A9F5": {
+        "name": "Tiger of Kai's Helmet",
+        "type": "Armor"
+    },
+    "A1DB": {
+        "name": "Tiger of Kai's Cuirass",
+        "type": "Armor"
+    },
+    "ACCC": {
+        "name": "Tiger of Kai's Gauntlets",
+        "type": "Armor"
+    },
+    "2068": {
+        "name": "Tiger of Kai's Waistguard",
+        "type": "Armor"
+    },
+    "B264": {
+        "name": "Tiger of Kai's Greaves",
+        "type": "Armor"
+    },
+    "B0FB": {
+        "name": "Shogunate Hat",
+        "type": "Armor"
+    },
+    "021B": {
+        "name": "Shogunate Vest",
+        "type": "Armor"
+    },
+    "46C5": {
+        "name": "Shogunate Hakama",
+        "type": "Armor"
+    },
+    "B5AC": {
+        "name": "Shogunate Gaiters",
+        "type": "Armor"
+    },
+    "8F67": {
+        "name": "First Captain's Headband",
+        "type": "Armor"
+    },
+    "5D14": {
+        "name": "First Captain's Haori",
+        "type": "Armor"
+    },
+    "A583": {
+        "name": "First Captain's Sleevelets",
+        "type": "Armor"
+    },
+    "49F5": {
+        "name": "First Captain's Hakama",
+        "type": "Armor"
+    },
+    "D639": {
+        "name": "First Captain's Sandals",
+        "type": "Armor"
+    },
+    "FD23": {
+        "name": "Lord Kamakura's Eboshi",
+        "type": "Armor"
+    },
+    "C7B1": {
+        "name": "Lord Kamakura's Cuirass",
+        "type": "Armor"
+    },
+    "F874": {
+        "name": "Lord Kamakura's Gloves",
+        "type": "Armor"
+    },
+    "F7DB": {
+        "name": "Lord Kamakura's Waistguard",
+        "type": "Armor"
+    },
+    "34BE": {
+        "name": "Lord Kamakura's Greaves",
+        "type": "Armor"
+    },
+    "8646": {
+        "name": "Crimson General's Helmet",
+        "type": "Armor"
+    },
+    "08BE": {
+        "name": "Crimson General's Cuirass",
+        "type": "Armor"
+    },
+    "F339": {
+        "name": "Crimson General's Gauntlets",
+        "type": "Armor"
+    },
+    "7726": {
+        "name": "Crimson General's Waistguard",
+        "type": "Armor"
+    },
+    "5CF8": {
+        "name": "Crimson General's Greaves",
+        "type": "Armor"
+    },
+    "D219": {
+        "name": "Shinsengumi Headband",
+        "type": "Armor"
+    },
+    "5588": {
+        "name": "Shinsengumi Haori",
+        "type": "Armor"
+    },
+    "9BF8": {
+        "name": "Shinsengumi Sleevelet",
+        "type": "Armor"
+    },
+    "0A63": {
+        "name": "Shinsengumi Hakama",
+        "type": "Armor"
+    },
+    "CCAE": {
+        "name": "Shinsengumi Sandals",
+        "type": "Armor"
+    },
+    "CCD4": {
+        "name": "Onzoshi Cuirass",
+        "type": "Armor"
+    },
+    "6FD6": {
+        "name": "Onzoshi Gauntlets",
+        "type": "Armor"
+    },
+    "771C": {
+        "name": "Onzoshi Hakama",
+        "type": "Armor"
+    },
+    "4CF2": {
+        "name": "Onzoshi Greaves",
+        "type": "Armor"
+    },
+    "28DE": {
+        "name": "Hellfire Warrior Helmet",
+        "type": "Armor"
+    },
+    "509B": {
+        "name": "Hellfire Warrior Cuirass",
+        "type": "Armor"
+    },
+    "EFAD": {
+        "name": "Hellfire Warrior Gauntlets",
+        "type": "Armor"
+    },
+    "F9B9": {
+        "name": "Hellfire Warrior Waistguard",
+        "type": "Armor"
+    },
+    "F35C": {
+        "name": "Hellfire Warrior Greaves",
+        "type": "Armor"
+    },
+    "BF1A": {
+        "name": "Hellfire Ninja Faceguard",
+        "type": "Armor"
+    },
+    "8D1F": {
+        "name": "Hellfire Ninja Garment",
+        "type": "Armor"
+    },
+    "B2D5": {
+        "name": "Hellfire Ninja Gauntlets",
+        "type": "Armor"
+    },
+    "2067": {
+        "name": "Hellfire Ninja Waistguard",
+        "type": "Armor"
+    },
+    "9C3B": {
+        "name": "Hellfire Ninja Greaves",
+        "type": "Armor"
+    },
+    "0ACA": {
+        "name": "Hellfrost Warrior Helmet",
+        "type": "Armor"
+    },
+    "3604": {
+        "name": "Hellfrost Warrior Cuirass",
+        "type": "Armor"
+    },
+    "C938": {
+        "name": "Hellfrost Warrior Gauntlets",
+        "type": "Armor"
+    },
+    "27CA": {
+        "name": "Hellfrost Warrior Waistguard",
+        "type": "Armor"
+    },
+    "03B0": {
+        "name": "Hellfrost Warrior Greaves",
+        "type": "Armor"
+    },
+    "527B": {
+        "name": "Hellfrost Ninja Faceguard",
+        "type": "Armor"
+    },
+    "47F2": {
+        "name": "Hellfrost Ninja Garment",
+        "type": "Armor"
+    },
+    "C9A9": {
+        "name": "Hellfrost Ninja Gauntlets",
+        "type": "Armor"
+    },
+    "7304": {
+        "name": "Hellfrost Ninja Waistguard",
+        "type": "Armor"
+    },
+    "5D18": {
+        "name": "Hellfrost Ninja Greaves",
+        "type": "Armor"
+    },
+    "C98C": {
+        "name": "Thief's Plated Headband",
+        "type": "Armor"
+    },
+    "8EC1": {
+        "name": "Thief's Cuirass",
+        "type": "Armor"
+    },
+    "6FF3": {
+        "name": "Thief's Gauntlets",
+        "type": "Armor"
+    },
+    "F21C": {
+        "name": "Thief's Waistguard",
+        "type": "Armor"
+    },
+    "55D3": {
+        "name": "Thief's Greaves",
+        "type": "Armor"
+    },
+    "AEAC": {
+        "name": "Irregular Troop's Hat",
+        "type": "Armor"
+    },
+    "0659": {
+        "name": "Irregular Troop's Cuirass",
+        "type": "Armor"
+    },
+    "CBD7": {
+        "name": "Irregular Troop's Gauntlets",
+        "type": "Armor"
+    },
+    "15C0": {
+        "name": "Irregular Troop's Waistguard",
+        "type": "Armor"
+    },
+    "F808": {
+        "name": "Irregular Troop's Greaves",
+        "type": "Armor"
+    },
+    "5162": {
+        "name": "Shinobi Hood",
+        "type": "Armor"
+    },
+    "9C72": {
+        "name": "Shinobi Robes",
+        "type": "Armor"
+    },
+    "E26B": {
+        "name": "Shinobi Bracers",
+        "type": "Armor"
+    },
+    "60EA": {
+        "name": "Shinobi Hakama",
+        "type": "Armor"
+    },
+    "183C": {
+        "name": "Shinobi Gaiters",
+        "type": "Armor"
+    },
+    "DCB9": {
+        "name": "Shinto Priest's Headgear (Male)\nShrine Maiden's Headpiece (Female)",
+        "type": "Armor"
+    },
+    "5558": {
+        "name": "Shinto Priest's Hunting Garb (Male)\nShrine Maiden's Gown (Female)",
+        "type": "Armor"
+    },
+    "3BE5": {
+        "name": "Shinto Priest's Bracers (Male)\nShrine Maiden's Bracers (Female)",
+        "type": "Armor"
+    },
+    "97F5": {
+        "name": "Shinto Priest's Hakama (Male)\nShrine Maiden's Hakama (Female)",
+        "type": "Armor"
+    },
+    "9ECE": {
+        "name": "Shinto Priest's Shoes (Male)\nShrine Maiden's Shoes (Female)",
+        "type": "Armor"
+    },
+    "E624": {
+        "name": "Youngblood Cuirass",
+        "type": "Armor"
+    },
+    "6D8A": {
+        "name": "Youngblood Gauntlets",
+        "type": "Armor"
+    },
+    "3129": {
+        "name": "Youngblood Waistguard",
+        "type": "Armor"
+    },
+    "C140": {
+        "name": "Youngblood Greaves",
+        "type": "Armor"
+    },
+    "4F95": {
+        "name": "Fuma Ninja Plated Headband",
+        "type": "Armor"
+    },
+    "41FC": {
+        "name": "Fuma Ninja Robe",
+        "type": "Armor"
+    },
+    "5B86": {
+        "name": "Fuma Ninja Gauntlets",
+        "type": "Armor"
+    },
+    "520C": {
+        "name": "Fuma Ninja Hakama",
+        "type": "Armor"
+    },
+    "4B74": {
+        "name": "Fuma Ninja Greaves",
+        "type": "Armor"
+    },
+    "D942": {
+        "name": "Heirloom Helmet",
+        "type": "Armor"
+    },
+    "074A": {
+        "name": "Heirloom Cuirass",
+        "type": "Armor"
+    },
+    "E83A": {
+        "name": "Heirloom Gauntlets",
+        "type": "Armor"
+    },
+    "60C0": {
+        "name": "Heirloom Greaves",
+        "type": "Armor"
+    },
+    "8989": {
+        "name": "Lone Wolf's Hood",
+        "type": "Armor"
+    },
+    "3501": {
+        "name": "Lone Wolf's Cuirass",
+        "type": "Armor"
+    },
+    "D354": {
+        "name": "Lone Wolf's Gauntlets",
+        "type": "Armor"
+    },
+    "91FE": {
+        "name": "Lone Wolf's Waistguard",
+        "type": "Armor"
+    },
+    "168E": {
+        "name": "Lone Wolf's Greaves",
+        "type": "Armor"
+    },
+    "FF31": {
+        "name": "Rogue's Helmet",
+        "type": "Armor"
+    },
+    "4B6C": {
+        "name": "Rogue's Cuirass",
+        "type": "Armor"
+    },
+    "DDD4": {
+        "name": "Rogue's Gauntlets",
+        "type": "Armor"
+    },
+    "29C4": {
+        "name": "Rogue's Waistguard",
+        "type": "Armor"
+    },
+    "DE2A": {
+        "name": "Rogue's Greaves",
+        "type": "Armor"
+    },
+    "15E8": {
+        "name": "Abacus",
+        "type": "Accessory"
+    },
+    "303F": {
+        "name": "Abacus",
+        "type": "Accessory"
+    },
+    "B0D3": {
+        "name": "Brother's Omamori",
+        "type": "Accessory"
+    },
+    "F867": {
+        "name": "Brother's Omamori",
+        "type": "Accessory"
+    },
+    "D75F": {
+        "name": "Chijiko Netsuke Charm",
+        "type": "Accessory"
+    },
+    "F55A": {
+        "name": "Chijiko Netsuke Charm",
+        "type": "Accessory"
+    },
+    "4785": {
+        "name": "Comb",
+        "type": "Accessory"
+    },
+    "CA74": {
+        "name": "Comb",
+        "type": "Accessory"
+    },
+    "97F9": {
+        "name": "Divination Board",
+        "type": "Accessory"
+    },
+    "9634": {
+        "name": "Divination Board",
+        "type": "Accessory"
+    },
+    "45A1": {
+        "name": "Dragon Whistle",
+        "type": "Accessory"
+    },
+    "3F3E": {
+        "name": "Dragon Whistle",
+        "type": "Accessory"
+    },
+    "CE6B": {
+        "name": "Fan (Black)",
+        "type": "Accessory"
+    },
+    "A896": {
+        "name": "Fan (Black)",
+        "type": "Accessory"
+    },
+    "49FA": {
+        "name": "Fan (Red)",
+        "type": "Accessory"
+    },
+    "C27D": {
+        "name": "Fan (Red)",
+        "type": "Accessory"
+    },
+    "60E1": {
+        "name": "Fan (White)",
+        "type": "Accessory"
+    },
+    "727B": {
+        "name": "Fan (White)",
+        "type": "Accessory"
+    },
+    "CF7A": {
+        "name": "Fire Omamori",
+        "type": "Accessory"
+    },
+    "9A10": {
+        "name": "Fire Omamori",
+        "type": "Accessory"
+    },
+    "BE6E": {
+        "name": "Gourd",
+        "type": "Accessory"
+    },
+    "ADEC": {
+        "name": "Gourd",
+        "type": "Accessory"
+    },
+    "2689": {
+        "name": "Hand Mirror",
+        "type": "Accessory"
+    },
+    "AA0A": {
+        "name": "Hazy Moon Flute",
+        "type": "Accessory"
+    },
+    "30D2": {
+        "name": "Hazy Moon Flute",
+        "type": "Accessory"
+    },
+    "CD2D": {
+        "name": "Japanese Scissors",
+        "type": "Accessory"
+    },
+    "333B": {
+        "name": "Japanese Scissors",
+        "type": "Accessory"
+    },
+    "E8FB": {
+        "name": "Katei",
+        "type": "Accessory"
+    },
+    "2E2D": {
+        "name": "Katei",
+        "type": "Accessory"
+    },
+    "D8A9": {
+        "name": "Kobo Daishi's Beads",
+        "type": "Accessory"
+    },
+    "7908": {
+        "name": "Kodama Netsuke Charm",
+        "type": "Accessory"
+    },
+    "02CC": {
+        "name": "Kodama Netsuke Charm",
+        "type": "Accessory"
+    },
+    "CAFD": {
+        "name": "Kunimatsu's Inkstone Box",
+        "type": "Accessory"
+    },
+    "32C0": {
+        "name": "Kusanagi Netsuke Charm",
+        "type": "Accessory"
+    },
+    "6A06": {
+        "name": "Lightning Omamori",
+        "type": "Accessory"
+    },
+    "9FCC": {
+        "name": "Lightning Omamori",
+        "type": "Accessory"
+    },
+    "3F68": {
+        "name": "Magatama (Green)",
+        "type": "Accessory"
+    },
+    "D647": {
+        "name": "Magatama (Green)",
+        "type": "Accessory"
+    },
+    "F391": {
+        "name": "Magatama (Red)",
+        "type": "Accessory"
+    },
+    "79BF": {
+        "name": "Magatama (Red)",
+        "type": "Accessory"
+    },
+    "10E6": {
+        "name": "Magatama (White)",
+        "type": "Accessory"
+    },
+    "F367": {
+        "name": "Magatama (White)",
+        "type": "Accessory"
+    },
+    "2FC7": {
+        "name": "Medicine Case (Black)",
+        "type": "Accessory"
+    },
+    "403A": {
+        "name": "Medicine Case (Black)",
+        "type": "Accessory"
+    },
+    "36CC": {
+        "name": "Medicine Case (Brown)",
+        "type": "Accessory"
+    },
+    "1B7A": {
+        "name": "Medicine Case (Brown)",
+        "type": "Accessory"
+    },
+    "C262": {
+        "name": "Medicine Case (Red)",
+        "type": "Accessory"
+    },
+    "A597": {
+        "name": "Medicine Case (Red)",
+        "type": "Accessory"
+    },
+    "188D": {
+        "name": "Omamori",
+        "type": "Accessory"
+    },
+    "982B": {
+        "name": "Omamori",
+        "type": "Accessory"
+    },
+    "35EE": {
+        "name": "Paralysis Omamori",
+        "type": "Accessory"
+    },
+    "3793": {
+        "name": "Paralysis Omamori",
+        "type": "Accessory"
+    },
+    "F0AE": {
+        "name": "Pipe",
+        "type": "Accessory"
+    },
+    "088A": {
+        "name": "Pipe",
+        "type": "Accessory"
+    },
+    "5624": {
+        "name": "Poison Omamori",
+        "type": "Accessory"
+    },
+    "72B3": {
+        "name": "Poison Omamori",
+        "type": "Accessory"
+    },
+    "D022": {
+        "name": "Prayer Beads (Blue)",
+        "type": "Accessory"
+    },
+    "9A5D": {
+        "name": "Prayer Beads (Blue)",
+        "type": "Accessory"
+    },
+    "5477": {
+        "name": "Prayer Beads (Yellow)",
+        "type": "Accessory"
+    },
+    "BA31": {
+        "name": "Prayer Beads (Yellow)",
+        "type": "Accessory"
+    },
+    "14C3": {
+        "name": "Prayer Beads (Pink)",
+        "type": "Accessory"
+    },
+    "D2CB": {
+        "name": "Prayer Beads (Pink)",
+        "type": "Accessory"
+    },
+    "69E9": {
+        "name": "Scampuss Furball Netsuke Charm",
+        "type": "Accessory"
+    },
+    "EE2D": {
+        "name": "Scampuss Furball Netsuke Charm",
+        "type": "Accessory"
+    },
+    "BDF1": {
+        "name": "Semiore Flute",
+        "type": "Accessory"
+    },
+    "F6BD": {
+        "name": "Semiore Flute",
+        "type": "Accessory"
+    },
+    "228C": {
+        "name": "Shaman Queen's Necklace",
+        "type": "Accessory"
+    },
+    "E1C0": {
+        "name": "Shingen's Fan",
+        "type": "Accessory"
+    },
+    "3F70": {
+        "name": "Two Leaves",
+        "type": "Accessory"
+    },
+    "75F8": {
+        "name": "Two Leaves",
+        "type": "Accessory"
+    },
+    "6D1E": {
+        "name": "Water Dragon",
+        "type": "Accessory"
+    },
+    "A794": {
+        "name": "Water Dragon",
+        "type": "Accessory"
+    },
+    "FA1A": {
+        "name": "Water Omamori",
+        "type": "Accessory"
+    },
+    "2E64": {
+        "name": "Water Omamori",
+        "type": "Accessory"
+    },
+    "44D6": {
+        "name": "Wind Omamori",
+        "type": "Accessory"
+    },
+    "4EC2": {
+        "name": "Wind Omamori",
+        "type": "Accessory"
+    },
+    "C358": {
+        "name": "Writing Set",
+        "type": "Accessory"
+    },
+    "028E": {
+        "name": "Writing Set",
+        "type": "Accessory"
+    },
+    "5EA0": {
+        "name": "Yasakani Magatama",
+        "type": "Accessory"
+    },
+    "8749": {
+        "name": "Yasakani Magatama",
+        "type": "Accessory"
+    },
+    "1BCE": {
+        "name": "Aberrant Soldier Soul Core",
+        "type": "Soul Core"
+    },
+    "366D": {
+        "name": "Bloodedge Demon Soul Core",
+        "type": "Soul Core"
+    },
+    "EE7B": {
+        "name": "Daidara Bocchi Soul Core",
+        "type": "Soul Core"
+    },
+    "E8A3": {
+        "name": "Demon of Envy Soul Core",
+        "type": "Soul Core"
+    },
+    "A6D7": {
+        "name": "Demon of Pride Soul Core",
+        "type": "Soul Core"
+    },
+    "5CB3": {
+        "name": "Dweller Soul Core",
+        "type": "Soul Core"
+    },
+    "A958": {
+        "name": "Enenra Soul Core",
+        "type": "Soul Core"
+    },
+    "AFA8": {
+        "name": "Enki Soul Core",
+        "type": "Soul Core"
+    },
+    "387B": {
+        "name": "Flying Bolt Soul Core",
+        "type": "Soul Core"
+    },
+    "4384": {
+        "name": "Gaki Soul Core",
+        "type": "Soul Core"
+    },
+    "1515": {
+        "name": "Gaki Chief Soul Core",
+        "type": "Soul Core"
+    },
+    "6CD6": {
+        "name": "Galestorm Oni-Bi Soul Core",
+        "type": "Soul Core"
+    },
+    "7D90": {
+        "name": "Gozuki Soul Core",
+        "type": "Soul Core"
+    },
+    "1B16": {
+        "name": "Hino-Enma Soul Core",
+        "type": "Soul Core"
+    },
+    "AEC4": {
+        "name": "Hiruko Soul Core",
+        "type": "Soul Core"
+    },
+    "60EB": {
+        "name": "Ibaraki Doji Soul Core",
+        "type": "Soul Core"
+    },
+    "6295": {
+        "name": "Infernal Oni-Bi Soul Core",
+        "type": "Soul Core"
+    },
+    "5391": {
+        "name": "Ippon-Datara Soul Core",
+        "type": "Soul Core"
+    },
+    "B159": {
+        "name": "Itsumade Soul Core",
+        "type": "Soul Core"
+    },
+    "A63D": {
+        "name": "Jailer Oni (Hellfire) Soul Core",
+        "type": "Soul Core"
+    },
+    "0EC4": {
+        "name": "Jakotsu-Baba Soul Core",
+        "type": "Soul Core"
+    },
+    "6877": {
+        "name": "Kamaitachi Soul Core",
+        "type": "Soul Core"
+    },
+    "713B": {
+        "name": "Karasu Tengu Soul Core",
+        "type": "Soul Core"
+    },
+    "7670": {
+        "name": "Kasha Soul Core",
+        "type": "Soul Core"
+    },
+    "19BE": {
+        "name": "Kodama Soul Core",
+        "type": "Soul Core"
+    },
+    "96BF": {
+        "name": "Konaki-Jiji Soul Core",
+        "type": "Soul Core"
+    },
+    "0A6F": {
+        "name": "Koroka Soul Core",
+        "type": "Soul Core"
+    },
+    "9A69": {
+        "name": "Kyokotsu Soul Core",
+        "type": "Soul Core"
+    },
+    "88A6": {
+        "name": "Lesser Umi-Bozu Soul Core",
+        "type": "Soul Core"
+    },
+    "34BD": {
+        "name": "Maelstrom Oni-Bi Soul Core",
+        "type": "Soul Core"
+    },
+    "C462": {
+        "name": "Magatsu Warrior Soul Core",
+        "type": "Soul Core"
+    },
+    "422B": {
+        "name": "Mezuki Soul Core",
+        "type": "Soul Core"
+    },
+    "FAD1": {
+        "name": "Mikoshi Nyudo Soul Core",
+        "type": "Soul Core"
+    },
+    "F4D0": {
+        "name": "Mujina Soul Core",
+        "type": "Soul Core"
+    },
+    "DE53": {
+        "name": "Nozuchi Soul Core",
+        "type": "Soul Core"
+    },
+    "F75F": {
+        "name": "Nuppeppo Soul Core",
+        "type": "Soul Core"
+    },
+    "5CA3": {
+        "name": "Nure-Onna Soul Core",
+        "type": "Soul Core"
+    },
+    "6D0A": {
+        "name": "Nuribotoke Soul Core",
+        "type": "Soul Core"
+    },
+    "31E6": {
+        "name": "One-Eyed Oni Soul Core",
+        "type": "Soul Core"
+    },
+    "1356": {
+        "name": "Onryoki Soul Core",
+        "type": "Soul Core"
+    },
+    "F03C": {
+        "name": "Otoroshi Soul Core",
+        "type": "Soul Core"
+    },
+    "5023": {
+        "name": "Raiju Soul Core",
+        "type": "Soul Core"
+    },
+    "099F": {
+        "name": "Red Kappa Soul Core",
+        "type": "Soul Core"
+    },
+    "3888": {
+        "name": "Sentry Soul Core",
+        "type": "Soul Core"
+    },
+    "2691": {
+        "name": "Shunobon Soul Core",
+        "type": "Soul Core"
+    },
+    "6BBD": {
+        "name": "Sudama Soul Core",
+        "type": "Soul Core"
+    },
+    "D42B": {
+        "name": "Thorned Gaki Soul Core",
+        "type": "Soul Core"
+    },
+    "3190": {
+        "name": "Thunderstorm Oni-Bi Soul Core",
+        "type": "Soul Core"
+    },
+    "87A3": {
+        "name": "Waira Soul Core",
+        "type": "Soul Core"
+    },
+    "F9C7": {
+        "name": "Wheelmonk Soul Core",
+        "type": "Soul Core"
+    },
+    "8916": {
+        "name": "Yagyo Soldier Soul Core",
+        "type": "Soul Core"
+    },
+    "536E": {
+        "name": "Yamainu Soul Core",
+        "type": "Soul Core"
+    },
+    "0597": {
+        "name": "Yamanba Soul Core",
+        "type": "Soul Core"
+    },
+    "FBDF": {
+        "name": "Yasha Soul Core",
+        "type": "Soul Core"
+    },
+    "7DF5": {
+        "name": "Yoki Soul Core",
+        "type": "Soul Core"
+    },
+    "8A2C": {
+        "name": "Ascetic Talisman",
+        "type": "item"
+    },
+    "DE10": {
+        "name": "Carnage Talisman",
+        "type": "item"
+    },
+    "036F": {
+        "name": "Cleansing Talisman",
+        "type": "item"
+    },
+    "8E5C": {
+        "name": "Cutting Blast Talisman",
+        "type": "item"
+    },
+    "BBE5": {
+        "name": "Feather Talisman",
+        "type": "item"
+    },
+    "7640": {
+        "name": "Firestop Talisman",
+        "type": "item"
+    },
+    "CC8C": {
+        "name": "Lifeseal Talisman",
+        "type": "item"
+    },
+    "E8B3": {
+        "name": "Lightning Shot Talisman",
+        "type": "item"
+    },
+    "4014": {
+        "name": "Luckbringer Talisman",
+        "type": "item"
+    },
+    "9D72": {
+        "name": "Power Talisman",
+        "type": "item"
+    },
+    "95C3": {
+        "name": "Trueflight Talisman",
+        "type": "item"
+    },
+    "BABF": {
+        "name": "Water Familiar Talisman",
+        "type": "item"
+    },
+    "03ED": {
+        "name": "Weakness Talisman",
+        "type": "item"
+    },
+    "2718": {
+        "name": "Wealthbringer Talisman",
+        "type": "item"
+    },
+    "DCBB": {
+        "name": "Summoning Seal: Bloodedge Demon",
+        "type": "item"
+    },
+    "1DAE": {
+        "name": "Summoning Seal: Jailer Oni (Hellfire)",
+        "type": "item"
+    },
+    "B47D": {
+        "name": "Summoning Seal: Jakotsu-Baba",
+        "type": "item"
+    },
+    "A7EA": {
+        "name": "Summoning Seal: Mezuki",
+        "type": "item"
+    },
+    "9CAA": {
+        "name": "Summoning Seal: Scampuss",
+        "type": "item"
+    },
+    "AD34": {
+        "name": "Summoning Seal: Yoki",
+        "type": "item"
+    },
+    "EEF3": {
+        "name": "Arrow",
+        "type": "item"
+    },
+    "0BA7": {
+        "name": "Incendiary Arrow",
+        "type": "item"
+    },
+    "CF79": {
+        "name": "Rifle Ammunition",
+        "type": "item"
+    },
+    "1465": {
+        "name": "Antidote",
+        "type": "item"
+    },
+    "6EFA": {
+        "name": "Antiparalytic Needle",
+        "type": "item"
+    },
+    "A796": {
+        "name": "Arrowproof Amulet",
+        "type": "item"
+    },
+    "224E": {
+        "name": "Daion-Jin's Sake",
+        "type": "item"
+    },
+    "D3E7": {
+        "name": "Dung Ball",
+        "type": "item"
+    },
+    "E705": {
+        "name": "Elixir",
+        "type": "item"
+    },
+    "E353": {
+        "name": "Embercite Fragment",
+        "type": "item"
+    },
+    "664D": {
+        "name": "Fireproof Amulet",
+        "type": "item"
+    },
+    "0995": {
+        "name": "Fragrant Wood",
+        "type": "item"
+    },
+    "B465": {
+        "name": "Healing Pill",
+        "type": "item"
+    },
+    "81F6": {
+        "name": "Herbal Remedy",
+        "type": "item"
+    },
+    "9A05": {
+        "name": "Lantern Plant Fruit",
+        "type": "item"
+    },
+    "2AE0": {
+        "name": "Large Spirit Stone",
+        "type": "item"
+    },
+    "AAE4": {
+        "name": "Luckbringer Amulet",
+        "type": "item"
+    },
+    "A971": {
+        "name": "Lumicite Crystal",
+        "type": "item"
+    },
+    "CD46": {
+        "name": "Lumicite Fragment",
+        "type": "item"
+    },
+    "93B5": {
+        "name": "Lumicite Shard",
+        "type": "item"
+    },
+    "42CC": {
+        "name": "Power Pill",
+        "type": "item"
+    },
+    "B09C": {
+        "name": "Reguvenation Pill",
+        "type": "item"
+    },
+    "0F14": {
+        "name": "Righteous Jasper",
+        "type": "item"
+    },
+    "418A": {
+        "name": "Salt",
+        "type": "item"
+    },
+    "7AFC": {
+        "name": "Sacred Ash",
+        "type": "item"
+    },
+    "2A38": {
+        "name": "Sacred Water",
+        "type": "item"
+    },
+    "5665": {
+        "name": "Small Spirit Stone",
+        "type": "item"
+    },
+    "515A": {
+        "name": "Smoke Ball",
+        "type": "item"
+    },
+    "AF72": {
+        "name": "Spirit Stone",
+        "type": "item"
+    },
+    "9932": {
+        "name": "Steel Pill",
+        "type": "item"
+    },
+    "5A3F": {
+        "name": "Summoner's Candle",
+        "type": "item"
+    },
+    "5F4C": {
+        "name": "Throwing Stone",
+        "type": "item"
+    },
+    "DB5E": {
+        "name": "Tiger-Running Amulet",
+        "type": "item"
+    },
+    "4359": {
+        "name": "Travel Amulet",
+        "type": "item"
+    },
+    "1B3A": {
+        "name": "Uchiko Powder",
+        "type": "item"
+    },
+    "4E30": {
+        "name": "Water Amulet",
+        "type": "item"
+    },
+    "9622": {
+        "name": "Yokai Water Pot",
+        "type": "item"
+    },
+    "CF2A": {
+        "name": "Bloody Iron Key",
+        "type": "item"
+    },
+    "0258": {
+        "name": "Craft Guide: Poisonous Smoke Ball",
+        "type": "item"
+    },
+    "9473": {
+        "name": "Craft Guide: Saisetsu-Shin's Sake",
+        "type": "item"
+    },
+    "A4A7": {
+        "name": "Dirty Key",
+        "type": "item"
+    },
+    "F594": {
+        "name": "Guiding Mirror",
+        "type": "item"
+    },
+    "CE6C": {
+        "name": "Ninja's Memorandum",
+        "type": "item"
+    },
+    "FDD8": {
+        "name": "Ninja's Text",
+        "type": "item"
+    },
+    "DDF8": {
+        "name": "Ochoko Cup",
+        "type": "item"
+    },
+    "60A1": {
+        "name": "Physick",
+        "type": "item"
+    },
+    "3D13": {
+        "name": "Samurai's Memorandum",
+        "type": "item"
+    },
+    "D07B": {
+        "name": "Samurai's Text",
+        "type": "item"
+    },
+    "7760": {
+        "name": "Secret Skills Text: Armor Piercer",
+        "type": "item"
+    },
+    "281B": {
+        "name": "Secret Skills Text: Attack Mastery 1",
+        "type": "item"
+    },
+    "195C": {
+        "name": "Secret Skills Text: Enduring Destruction",
+        "type": "item"
+    },
+    "600C": {
+        "name": "Secret Skills Text: Lingering Spirit",
+        "type": "item"
+    },
+    "9AF9": {
+        "name": "Secret Skills Text: Panacea Curefast",
+        "type": "item"
+    },
+    "7308": {
+        "name": "Secret Skills Text: Roaring Deflect",
+        "type": "item"
+    },
+    "35E9": {
+        "name": "Secret Skills Text: Running Water",
+        "type": "item"
+    },
+    "CD79": {
+        "name": "Secret Skills Text: Sneak Thief",
+        "type": "item"
+    },
+    "9366": {
+        "name": "Secret Skills Text: Supreme Parry",
+        "type": "item"
+    },
+    "88C7": {
+        "name": "Secret Skills Text: Tachi Arts",
+        "type": "item"
+    },
+    "7ACD": {
+        "name": "Secret Skills Text: Thrown Blade Counter",
+        "type": "item"
+    },
+    "AA40": {
+        "name": "Secret Skills Text: Unshakable",
+        "type": "item"
+    },
+    "54B1": {
+        "name": "Secret Skills Text: Vital Spirit",
+        "type": "item"
+    },
+    "5DF4": {
+        "name": "Smithing Text: Grimy & Rusty Hoe",
+        "type": "item"
+    },
+    "41D0": {
+        "name": "Smithing Text: Hellfire Ninja Attire",
+        "type": "item"
+    },
+    "7CB6": {
+        "name": "Smithing Text: Hellfire Warrior Armor",
+        "type": "item"
+    },
+    "1A34": {
+        "name": "Smithing Text: Hellfrost Ninja Attire",
+        "type": "item"
+    },
+    "0B71": {
+        "name": "Smithing Text: Hellfrost Warrior Armor",
+        "type": "item"
+    },
+    "3154": {
+        "name": "Smithing Text: Infernal Axe",
+        "type": "item"
+    },
+    "5302": {
+        "name": "Smithing Text: Infernal Cestuses",
+        "type": "item"
+    },
+    "3294": {
+        "name": "Smithing Text: Infernal Hatchets",
+        "type": "item"
+    },
+    "A53A": {
+        "name": "Smithing Text: Infernal Katana",
+        "type": "item"
+    },
+    "2386": {
+        "name": "Smithing Text: Infernal Dual Katana",
+        "type": "item"
+    },
+    "356D": {
+        "name": "Smithing Text: Infernal Kusarigama",
+        "type": "item"
+    },
+    "80A0": {
+        "name": "Smithing Text: Infernal Dual Ninja Swords",
+        "type": "item"
+    },
+    "C273": {
+        "name": "Smithing Text: Infernal Ninja Sword",
+        "type": "item"
+    },
+    "8509": {
+        "name": "Smithing Text: Infernal Odachi",
+        "type": "item"
+    },
+    "76F4": {
+        "name": "Smithing Text: Infernal Spear",
+        "type": "item"
+    },
+    "FEE1": {
+        "name": "Smithing Text: Infernal Splitstaff",
+        "type": "item"
+    },
+    "28CC": {
+        "name": "Smithing Text: Infernal Switchglaive",
+        "type": "item"
+    },
+    "B343": {
+        "name": "Smithing Text: Infernal Talons",
+        "type": "item"
+    },
+    "2283": {
+        "name": "Smithing Text: Infernal Tonfa",
+        "type": "item"
+    },
+    "7B64": {
+        "name": "Smithing Text: Lone Wolf's Armor",
+        "type": "item"
+    },
+    "D205": {
+        "name": "Smithing Text: Youngblood Armor",
+        "type": "item"
+    },
+    "3B68": {
+        "name": "Scampuss Furball",
+        "type": "item"
+    },
+    "4D83": {
+        "name": "Warrior's Text",
+        "type": "item"
+    },
+    "C9F1": {
+        "name": "Yokai Teardrop",
+        "type": "item"
+    },
+    "962B": {
+        "name": "Azure Soul Ore",
+        "type": "item"
+    },
+    "FC54": {
+        "name": "Bloodedge Demon's Blood",
+        "type": "item"
+    },
+    "5A62": {
+        "name": "Bloody Sawtooth",
+        "type": "item"
+    },
+    "ECE2": {
+        "name": "Colossal Incisor",
+        "type": "item"
+    },
+    "73A1": {
+        "name": "Demon's Horn",
+        "type": "item"
+    },
+    "F13E": {
+        "name": "Ingot",
+        "type": "item"
+    },
+    "16CE": {
+        "name": "Iron Platelet",
+        "type": "item"
+    },
+    "366A": {
+        "name": "Kappa Shell",
+        "type": "item"
+    },
+    "8BB3": {
+        "name": "Lacquer",
+        "type": "item"
+    },
+    "ABAE": {
+        "name": "Leather Cord",
+        "type": "item"
+    },
+    "E798": {
+        "name": "Leather Platelet",
+        "type": "item"
+    },
+    "7BC5": {
+        "name": "Material Essence (Amrita Gauge)",
+        "type": "item"
+    },
+    "00F0": {
+        "name": "Material Essence (Damage Dealt)",
+        "type": "item"
+    },
+    "F8BE": {
+        "name": "Material Essence (Item Drops)",
+        "type": "item"
+    },
+    "8D3A": {
+        "name": "Material Essence (Ki Damage Dealt)",
+        "type": "item"
+    },
+    "2BD2": {
+        "name": "Material Essence (Ki Recovery)",
+        "type": "item"
+    },
+    "FDE8": {
+        "name": "Material Essence (Life Recovery)",
+        "type": "item"
+    },
+    "0AAB": {
+        "name": "Material Essence (Move/Dodge)",
+        "type": "item"
+    },
+    "637E": {
+        "name": "Material Essence (Ranged)",
+        "type": "item"
+    },
+    "076F": {
+        "name": "Material Essence (Special)",
+        "type": "item"
+    },
+    "468B": {
+        "name": "Material Essence (Spirit Force)",
+        "type": "item"
+    },
+    "E455": {
+        "name": "Material Essence (Status Ailment Infliction)",
+        "type": "item"
+    },
+    "2A64": {
+        "name": "Mutated Skin",
+        "type": "item"
+    },
+    "290F": {
+        "name": "Ravenous Claws",
+        "type": "item"
+    },
+    "ABA5": {
+        "name": "Sharp Stinger",
+        "type": "item"
+    },
+    "9DAE": {
+        "name": "Tamahagane",
+        "type": "item"
+    },
+    "41FE": {
+        "name": "Umbracite",
+        "type": "item"
+    },
+    "B79F": {
+        "name": "Viridian Soul Ore",
+        "type": "item"
+    },
+    "FA80": {
+        "name": "Warped Jawbone",
+        "type": "item"
+    },
+    "5E17": {
+        "name": "Wood",
+        "type": "item"
+    },
+    "3887": {
+        "name": "Yellow Soul Ore",
+        "type": "item"
+    }
+}

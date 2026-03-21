@@ -1,0 +1,1280 @@
+[
+    {
+        "Effect": "Amrita Bonus (Inflict Blustered)",
+        "Effect Max": "D+",
+        "type": "Accessory",
+        "id": "F575"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Electrified)",
+        "Effect Max": "D+",
+        "type": "Weapon",
+        "id": "077E"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Saturated)",
+        "Effect Max": "D+",
+        "type": "Weapon",
+        "id": "02E3"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+1.6%",
+        "type": "Armor",
+        "id": "56D1"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+1.6%",
+        "type": "Armor",
+        "id": "3191"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+1.2%",
+        "type": "Armor",
+        "id": "A920"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+0.8%",
+        "type": "Armor",
+        "id": "D9A7"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+8.5%",
+        "type": "Soul Core",
+        "id": "D4D6"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+3.1%",
+        "type": "Accessory",
+        "id": "12FB"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+3.1%",
+        "type": "Accessory",
+        "id": "513A"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+0.8%",
+        "type": "Armor",
+        "id": "95DE"
+    },
+    {
+        "Effect": "Amrita Earned",
+        "Effect Max": "+0.8%",
+        "type": "Weapon",
+        "id": "47B3"
+    },
+    {
+        "Effect": "Amrita Gauge Charge",
+        "Effect Max": "+0.7%",
+        "type": "Weapon",
+        "id": "3719"
+    },
+    {
+        "Effect": "Attack Bonus (Heart)",
+        "Effect Max": "D+",
+        "type": "Weapon",
+        "id": "EDE2"
+    },
+    {
+        "Effect": "Attack Bonus (Magic)",
+        "Effect Max": "D+",
+        "type": "Weapon",
+        "id": "E36A"
+    },
+    {
+        "Effect": "Attack Bonus (Stamina)",
+        "Effect Max": "D+",
+        "type": "Weapon",
+        "id": "41DC"
+    },
+    {
+        "Effect": "Auto-Grave Recovery",
+        "Effect Max": "+8.0%",
+        "type": "Accessory",
+        "id": "4142"
+    },
+    {
+        "Effect": "Backstab Damage",
+        "Effect Max": "+4.5%",
+        "type": "Weapon",
+        "id": "AEEF"
+    },
+    {
+        "Effect": "Base Defense",
+        "Effect Max": "+9",
+        "type": "Armor",
+        "id": "23BA"
+    },
+    {
+        "Effect": "Bluster Accumulation (Enemy)",
+        "Effect Max": "+8.0%",
+        "type": "Accessory",
+        "id": "9696"
+    },
+    {
+        "Effect": "Bow Damage",
+        "Effect Max": "+1.7%",
+        "type": "Accessory",
+        "id": "190E"
+    },
+    {
+        "Effect": "Bow Ki Damage",
+        "Effect Max": "+10.0%",
+        "type": "Weapon",
+        "id": "7E07"
+    },
+    {
+        "Effect": "Bullseye Bonus",
+        "Effect Max": "+4.5%",
+        "type": "Weapon",
+        "id": "4A20"
+    },
+    {
+        "Effect": "Crucible Weapon Drop Rate",
+        "Effect Max": "?",
+        "type": "Weapon",
+        "id": "89C2"
+    },
+    {
+        "Effect": "Damage Taken",
+        "Effect Max": "-1.2%",
+        "type": "Armor",
+        "id": "DBBE"
+    },
+    {
+        "Effect": "Damage Taken (Critical)",
+        "Effect Max": "-7.4%",
+        "type": "Armor",
+        "id": "7377"
+    },
+    {
+        "Effect": "Damage Taken (While Attacking)",
+        "Effect Max": "-2.0%",
+        "type": "Armor",
+        "id": "75B9"
+    },
+    {
+        "Effect": "Damage Taken in Midair",
+        "Effect Max": "-2.1%",
+        "type": "Armor",
+        "id": "4181"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Fire)",
+        "Effect Max": "-10.0%",
+        "type": "Accessory",
+        "id": "BD5C"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Fire)",
+        "Effect Max": "-1.5%",
+        "type": "Armor",
+        "id": "8329"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Poison)",
+        "Effect Max": "-7.0%",
+        "type": "Soul Core",
+        "id": "1A26"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken",
+        "Effect Max": "+3",
+        "type": "Armor",
+        "id": "1CEE"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken (Guarding)",
+        "Effect Max": "-1.7%",
+        "type": "Armor",
+        "id": "72FB"
+    },
+    {
+        "Effect": "Dodge Ki Consumption",
+        "Effect Max": "-1.0%",
+        "type": "Armor",
+        "id": "6FFB"
+    },
+    {
+        "Effect": "Dodge Ki Consumption",
+        "Effect Max": "-3.0%",
+        "type": "Armor",
+        "id": "187F"
+    },
+    {
+        "Effect": "Dodge Ki Consumption",
+        "Effect Max": "-2.0%",
+        "type": "Armor",
+        "id": "FAE9"
+    },
+    {
+        "Effect": "Dodge Ki Consumption",
+        "Effect Max": "-2.0%",
+        "type": "Armor",
+        "id": "DD05"
+    },
+    {
+        "Effect": "Dual Elements (Lightning & Fire)",
+        "Effect Max": "?",
+        "type": "Weapon",
+        "id": "209C"
+    },
+    {
+        "Effect": "Dual Elements (Water & Lightning)",
+        "Effect Max": "+11",
+        "type": "Weapon",
+        "id": "3346"
+    },
+    {
+        "Effect": "Equipment Drop Rate",
+        "Effect Max": "+0.8%",
+        "type": "Armor",
+        "id": "4D97"
+    },
+    {
+        "Effect": "Equipment Drop Rate",
+        "Effect Max": "+1.2%",
+        "type": "Armor",
+        "id": "5976"
+    },
+    {
+        "Effect": "Equipment Drop Rate",
+        "Effect Max": "+1.6%",
+        "type": "Armor",
+        "id": "A820"
+    },
+    {
+        "Effect": "Equipment Drop Rate",
+        "Effect Max": "+4.0%",
+        "type": "Armor",
+        "id": "8DF5"
+    },
+    {
+        "Effect": "Faster Ki Recovery (Critical)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "5D08"
+    },
+    {
+        "Effect": "Faster Movement (50% Ki or Less)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "810F"
+    },
+    {
+        "Effect": "Faster Movement (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "7E05"
+    },
+    {
+        "Effect": "Faster Movement (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "0DA7"
+    },
+    {
+        "Effect": "Faster Movement (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "87A4"
+    },
+    {
+        "Effect": "Faster Movement (Deflect)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "EFC8"
+    },
+    {
+        "Effect": "Faster Movement (Enemy Killed)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "2B5B"
+    },
+    {
+        "Effect": "Faster Movement (Onmyo Magic Hit)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "9995"
+    },
+    {
+        "Effect": "Faster Movement (Onmyo Magic Hit)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "1CE2"
+    },
+    {
+        "Effect": "Faster Movement (Purification)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "4E46"
+    },
+    {
+        "Effect": "Fire Damage",
+        "Effect Max": "+4.7%",
+        "type": "Weapon",
+        "id": "F93F"
+    },
+    {
+        "Effect": "Fire Damage Reduction",
+        "Effect Max": "+15",
+        "type": "Accessory",
+        "id": "D559"
+    },
+    {
+        "Effect": "Fire Resistence",
+        "Effect Max": "+10",
+        "type": "Armor",
+        "id": "AC91"
+    },
+    {
+        "Effect": "Fire Resistence",
+        "Effect Max": "+7",
+        "type": "Armor",
+        "id": "0B02"
+    },
+    {
+        "Effect": "Glory Obtained",
+        "Effect Max": "+0.4%",
+        "type": "Weapon",
+        "id": "F1B1"
+    },
+    {
+        "Effect": "Gold Earned",
+        "Effect Max": "+1.2%",
+        "type": "Armor",
+        "id": "41D0"
+    },
+    {
+        "Effect": "Gold Earned",
+        "Effect Max": "+1.8%",
+        "type": "Armor",
+        "id": "312D"
+    },
+    {
+        "Effect": "Gold Earned",
+        "Effect Max": "+2.4%",
+        "type": "Armor",
+        "id": "D012"
+    },
+    {
+        "Effect": "Gold Earned",
+        "Effect Max": "+3.1%",
+        "type": "Accessory",
+        "id": "4CF0"
+    },
+    {
+        "Effect": "Gold Earned",
+        "Effect Max": "+1.2%",
+        "type": "Weapon",
+        "id": "FE03"
+    },
+    {
+        "Effect": "Grace of Benzaiten",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "2AE6"
+    },
+    {
+        "Effect": "Grace of Daikokuten",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "5012"
+    },
+    {
+        "Effect": "Grace of Ebisu",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "8CCC"
+    },
+    {
+        "Effect": "Grace of Fukurokuju",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "7BEA"
+    },
+    {
+        "Effect": "Grace of Hachiman",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "B1E9"
+    },
+    {
+        "Effect": "Grace of Hotei",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "590C"
+    },
+    {
+        "Effect": "Grace of Inari",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "4FA3"
+    },
+    {
+        "Effect": "Grace of Jurojin",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "B24F"
+    },
+    {
+        "Effect": "Grace of Kuzuryu",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "E8EB"
+    },
+    {
+        "Effect": "Grace of Vaisravana",
+        "Effect Max": "7 Pieces",
+        "type": "All",
+        "id": "23E5"
+    },
+    {
+        "Effect": "Guard Ki Consumption",
+        "Effect Max": "-2.0%",
+        "type": "Armor",
+        "id": "CDA8"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed",
+        "Effect Max": "+1.0%",
+        "type": "Weapon",
+        "id": "BB13"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed",
+        "Effect Max": "+2.3%",
+        "type": "Armor",
+        "id": "6F8D"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed",
+        "Effect Max": "+2.3%",
+        "type": "Armor",
+        "id": "8881"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Blustered Enemy)",
+        "Effect Max": "+1.4%",
+        "type": "Weapon",
+        "id": "5E54"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Paralyzed Enemy)",
+        "Effect Max": "+7.0%",
+        "type": "Weapon",
+        "id": "E5B9"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Saturated Enemy)",
+        "Effect Max": "+1.4%",
+        "type": "Weapon",
+        "id": "30F5"
+    },
+    {
+        "Effect": "Groundfire Gauge Charge",
+        "Effect Max": "+12.0%",
+        "type": "Accessory",
+        "id": "35E8"
+    },
+    {
+        "Effect": "High Attack Damage",
+        "Effect Max": "+4.2%",
+        "type": "Weapon",
+        "id": "8A26"
+    },
+    {
+        "Effect": "High Attack Ki Consumption",
+        "Effect Max": "-1.9%",
+        "type": "Weapon",
+        "id": "E91C"
+    },
+    {
+        "Effect": "Imbue Fire",
+        "Effect Max": "+15",
+        "type": "Weapon",
+        "id": "2C8A"
+    },
+    {
+        "Effect": "Imbue Fire",
+        "Effect Max": "+10",
+        "type": "Weapon",
+        "id": "3C4A"
+    },
+    {
+        "Effect": "Imbue Lightning",
+        "Effect Max": "+15",
+        "type": "Weapon",
+        "id": "EA58"
+    },
+    {
+        "Effect": "Imbue Lightning",
+        "Effect Max": "?",
+        "type": "Weapon",
+        "id": "EC8D"
+    },
+    {
+        "Effect": "Imbue Paralysis",
+        "Effect Max": "?",
+        "type": "Weapon",
+        "id": "E7CA"
+    },
+    {
+        "Effect": "Imbue Water",
+        "Effect Max": "+10",
+        "type": "Weapon",
+        "id": "2129"
+    },
+    {
+        "Effect": "Imbue Wind",
+        "Effect Max": "+10",
+        "type": "Weapon",
+        "id": "3A53"
+    },
+    {
+        "Effect": "Increased Luck (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Weapon",
+        "id": "F437"
+    },
+    {
+        "Effect": "Item Drop Rate",
+        "Effect Max": "+10.0%",
+        "type": "Accessory",
+        "id": "9FA2"
+    },
+    {
+        "Effect": "Item Drop Rate",
+        "Effect Max": "+4.0%",
+        "type": "Weapon",
+        "id": "09C5"
+    },
+    {
+        "Effect": "Increased Damage Dealt (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "A62F"
+    },
+    {
+        "Effect": "Ki",
+        "Effect Max": "+20",
+        "type": "Armor",
+        "id": "1DEF"
+    },
+    {
+        "Effect": "Ki Pulse Bonus",
+        "Effect Max": "+9",
+        "type": "Armor",
+        "id": "49F8"
+    },
+    {
+        "Effect": "Ki Pulse Recovery",
+        "Effect Max": "+0.4%",
+        "type": "Weapon",
+        "id": "6800"
+    },
+    {
+        "Effect": "Ki Pulse Recovery",
+        "Effect Max": "+1.3%",
+        "type": "Armor",
+        "id": "F31D"
+    },
+    {
+        "Effect": "Ki Pulse Recovery",
+        "Effect Max": "+1.3%",
+        "type": "Accessory",
+        "id": "7F32"
+    },
+    {
+        "Effect": "Ki Damage vs. Blustered Enemy",
+        "Effect Max": "+2.1%",
+        "type": "Weapon",
+        "id": "D3EA"
+    },
+    {
+        "Effect": "Ki Damage vs. Electrified Enemy",
+        "Effect Max": "+2.1%",
+        "type": "Weapon",
+        "id": "2714"
+    },
+    {
+        "Effect": "Ki Damage vs. Scorched Enemy",
+        "Effect Max": "+2.1%",
+        "type": "Weapon",
+        "id": "4AD3"
+    },
+    {
+        "Effect": "Ki Recovery Speed",
+        "Effect Max": "+3.0%",
+        "type": "Accessory",
+        "id": "2ABA"
+    },
+    {
+        "Effect": "Ki Recovery Speed",
+        "Effect Max": "+3.0%",
+        "type": "Accessory",
+        "id": "2C04"
+    },
+    {
+        "Effect": "Ki Recovery Speed",
+        "Effect Max": "+1.0%",
+        "type": "Weapon",
+        "id": "144F"
+    },
+    {
+        "Effect": "Ki Recovery Speed",
+        "Effect Max": "+2.5%",
+        "type": "Soul Core",
+        "id": "93C6"
+    },
+    {
+        "Effect": "Ki Recovery Speed",
+        "Effect Max": "+2.3%",
+        "type": "Armor",
+        "id": "03F5"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical)",
+        "Effect Max": "+8.9%",
+        "type": "Accessory",
+        "id": "A48A"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical)",
+        "Effect Max": "+8.9%",
+        "type": "Armor",
+        "id": "0A41"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical)",
+        "Effect Max": "+6.7%",
+        "type": "Armor",
+        "id": "7A17"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical)",
+        "Effect Max": "+2.3%",
+        "type": "Weapon",
+        "id": "9AF1"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed)",
+        "Effect Max": "+1.3%",
+        "type": "Weapon",
+        "id": "6826"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed)",
+        "Effect Max": "+2.7%",
+        "type": "Armor",
+        "id": "D86E"
+    },
+    {
+        "Effect": "Life",
+        "Effect Max": "+25",
+        "type": "Armor",
+        "id": "F94B"
+    },
+    {
+        "Effect": "Life",
+        "Effect Max": "+50",
+        "type": "Armor",
+        "id": "08E7"
+    },
+    {
+        "Effect": "Life",
+        "Effect Max": "+25",
+        "type": "Accessory",
+        "id": "CB3E"
+    },
+    {
+        "Effect": "Life",
+        "Effect Max": "+25",
+        "type": "Accessory",
+        "id": "6F19"
+    },
+    {
+        "Effect": "Life Drain (Bullseye)",
+        "Effect Max": "13",
+        "type": "Weapon",
+        "id": "0243"
+    },
+    {
+        "Effect": "Life Drain (Final Blow/Grapple)",
+        "Effect Max": "30",
+        "type": "Weapon",
+        "id": "3FFD"
+    },
+    {
+        "Effect": "Life Drain (Lightning Damage)",
+        "Effect Max": "C+",
+        "type": "Soul Core",
+        "id": "D0C5"
+    },
+    {
+        "Effect": "Life Drain (Ranged Weapon Hit)",
+        "Effect Max": "30",
+        "type": "Accessory",
+        "id": "A072"
+    },
+    {
+        "Effect": "Life Drain (Strong Attack)",
+        "Effect Max": "+3%",
+        "type": "Weapon",
+        "id": "EF41"
+    },
+    {
+        "Effect": "Life Recovery Amount",
+        "Effect Max": "+2.5%",
+        "type": "Accessory",
+        "id": "AAC1"
+    },
+    {
+        "Effect": "Life Recovery (Amrita Absorption)",
+        "Effect Max": "?",
+        "type": "Weapon",
+        "id": "5737"
+    },
+    {
+        "Effect": "Life Recovery (Crucible)",
+        "Effect Max": "+5.4%",
+        "type": "Armor",
+        "id": "00E1"
+    },
+    {
+        "Effect": "Life Recovery (Soul Core Gained)",
+        "Effect Max": "+53",
+        "type": "Accessory",
+        "id": "FB24"
+    },
+    {
+        "Effect": "Lightning Damage Reduction",
+        "Effect Max": "+10",
+        "type": "Accessory",
+        "id": "564E"
+    },
+    {
+        "Effect": "Lightning Resistance",
+        "Effect Max": "+10",
+        "type": "Accessory",
+        "id": "A31E"
+    },
+    {
+        "Effect": "Low Attack Ki Consumption",
+        "Effect Max": "-1.9%",
+        "type": "Weapon",
+        "id": "F5A2"
+    },
+    {
+        "Effect": "Low Guard Ki Consumption",
+        "Effect Max": "-8.0%",
+        "type": "Armor",
+        "id": "3F9C"
+    },
+    {
+        "Effect": "Luck",
+        "Effect Max": "+7",
+        "type": "Accessory",
+        "id": "BDEC"
+    },
+    {
+        "Effect": "Luck",
+        "Effect Max": "+2",
+        "type": "Armor",
+        "id": "BD9F"
+    },
+    {
+        "Effect": "Luck",
+        "Effect Max": "+2",
+        "type": "Weapon",
+        "id": "1A2C"
+    },
+    {
+        "Effect": "Luck (Critical)",
+        "Effect Max": "+15",
+        "type": "Accessory",
+        "id": "FAA0"
+    },
+    {
+        "Effect": "Luck (Critical)",
+        "Effect Max": "+5",
+        "type": "Weapon",
+        "id": "7A91"
+    },
+    {
+        "Effect": "Luck (Crucible)",
+        "Effect Max": "+3",
+        "type": "Weapon",
+        "id": "5BAA"
+    },
+    {
+        "Effect": "Luck (Crucible)",
+        "Effect Max": "+2",
+        "type": "Weapon",
+        "id": "BC10"
+    },
+    {
+        "Effect": "Living Artifact Duration",
+        "Effect Max": "+3.0%",
+        "type": "Accessory",
+        "id": "12FB"
+    },
+    {
+        "Effect": "Living Artifact Duration",
+        "Effect Max": "+3.0%",
+        "type": "Armor",
+        "id": "2886"
+    },
+    {
+        "Effect": "Martial Arts Ki Consumption",
+        "Effect Max": "-8.0%",
+        "type": "Armor",
+        "id": "4056"
+    },
+    {
+        "Effect": "Martial Arts Ki Consumption",
+        "Effect Max": "-2.0%",
+        "type": "Weapon",
+        "id": "FB3A"
+    },
+    {
+        "Effect": "Martial Art Damage",
+        "Effect Max": "+8.0%",
+        "type": "Weapon",
+        "id": "E9B1"
+    },
+    {
+        "Effect": "Martial Art Ki Damage",
+        "Effect Max": "+1.5%",
+        "type": "Weapon",
+        "id": "794B"
+    },
+    {
+        "Effect": "Martial Art Ki Damage",
+        "Effect Max": "+5.0%",
+        "type": "Weapon",
+        "id": "3790"
+    },
+    {
+        "Effect": "Max Arrows",
+        "Effect Max": "+1",
+        "type": "Weapon",
+        "id": "CFC3"
+    },
+    {
+        "Effect": "Melee Attack Ki Consumption",
+        "Effect Max": "-8.0%",
+        "type": "Armor",
+        "id": "DF9E"
+    },
+    {
+        "Effect": "Melee Attack Ki Damage (Crucible)",
+        "Effect Max": "+1.5%",
+        "type": "Armor",
+        "id": "A166"
+    },
+    {
+        "Effect": "Melee Damage",
+        "Effect Max": "+4.2%",
+        "type": "Weapon",
+        "id": "01DB"
+    },
+    {
+        "Effect": "Melee Damage",
+        "Effect Max": "+7.6%",
+        "type": "Weapon",
+        "id": "4FEB"
+    },
+    {
+        "Effect": "Melee Ki Damage",
+        "Effect Max": "+1.5%",
+        "type": "Weapon",
+        "id": "DC17"
+    },
+    {
+        "Effect": "Melee Ki Damage",
+        "Effect Max": "+3.0%",
+        "type": "Weapon",
+        "id": "21D3"
+    },
+    {
+        "Effect": "Melee Damage (Crucible)",
+        "Effect Max": "+4.9%",
+        "type": "Armor",
+        "id": "36E6"
+    },
+    {
+        "Effect": "Melee Damage (Crucible)",
+        "Effect Max": "+6.0%",
+        "type": "Weapon",
+        "id": "F6B6"
+    },
+    {
+        "Effect": "Ninjutsu Ki Damage",
+        "Effect Max": "+1.5%",
+        "type": "Weapon",
+        "id": "A5BD"
+    },
+    {
+        "Effect": "Onmyo Magic Ki Damage",
+        "Effect Max": "+1.8%",
+        "type": "Weapon",
+        "id": "510B"
+    },
+    {
+        "Effect": "Paralysis Accumulation (Enemy)",
+        "Effect Max": "+8.0%",
+        "type": "Accessory",
+        "id": "22CA"
+    },
+    {
+        "Effect": "Paralysis Accumulation (Enemy)",
+        "Effect Max": "+3.0%",
+        "type": "Weapon",
+        "id": "EE6D"
+    },
+    {
+        "Effect": "Paralysis Resistence",
+        "Effect Max": "+15",
+        "type": "Accessory",
+        "id": "03A2"
+    },
+    {
+        "Effect": "Paralysis Resistence",
+        "Effect Max": "+7",
+        "type": "Armor",
+        "id": "DDFE"
+    },
+    {
+        "Effect": "Pleiades (Ailing)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "5DF1"
+    },
+    {
+        "Effect": "Pleiades (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Accessory",
+        "id": "29BC"
+    },
+    {
+        "Effect": "Pleiades (Amrita Absorption)",
+        "Effect Max": "? ? ?",
+        "type": "Armor",
+        "id": "87E4"
+    },
+    {
+        "Effect": "Pleiades (Evade)",
+        "Effect Max": "? C+ ?",
+        "type": "Armor",
+        "id": "6769"
+    },
+    {
+        "Effect": "Pleiades (Purification)",
+        "Effect Max": "? ? ?",
+        "type": "Weapon",
+        "id": "ED18"
+    },
+    {
+        "Effect": "Poison Accumulation (Enemy)",
+        "Effect Max": "+8.0%",
+        "type": "Accessory",
+        "id": "3D9E"
+    },
+    {
+        "Effect": "Poison Accumulation (Enemy)",
+        "Effect Max": "+3.0%",
+        "type": "Weapon",
+        "id": "CAAD"
+    },
+    {
+        "Effect": "Poison Resistance",
+        "Effect Max": "+15",
+        "type": "Accessory",
+        "id": "3E32"
+    },
+    {
+        "Effect": "Poison Resistance",
+        "Effect Max": "+15",
+        "type": "Soul Core",
+        "id": "A43F"
+    },
+    {
+        "Effect": "Poison Resistance",
+        "Effect Max": "+10",
+        "type": "Accessory",
+        "id": "3500"
+    },
+    {
+        "Effect": "Pride of the Crimson Army",
+        "Effect Max": "7 Pieces",
+        "type": "Armor / Weapon",
+        "id": "4186"
+    },
+    {
+        "Effect": "Projectile Damage Taken",
+        "Effect Max": "-1.2%",
+        "type": "Accessory",
+        "id": "E13D"
+    },
+    {
+        "Effect": "Projectile Damage Taken",
+        "Effect Max": "-0.9%",
+        "type": "Armor",
+        "id": "EE52"
+    },
+    {
+        "Effect": "Projectile Damage (Unscathed)",
+        "Effect Max": "+4.0%",
+        "type": "Weapon",
+        "id": "4494"
+    },
+    {
+        "Effect": "Quick Attack Ki Consumption",
+        "Effect Max": "-1.9%",
+        "type": "Weapon",
+        "id": "9589"
+    },
+    {
+        "Effect": "Ranged Damage",
+        "Effect Max": "+1.7%",
+        "type": "Accessory",
+        "id": "0892"
+    },
+    {
+        "Effect": "Shuriken Damage",
+        "Effect Max": "+10.0%",
+        "type": "Accessory",
+        "id": "79F0"
+    },
+    {
+        "Effect": "Soul Core Drop Rate",
+        "Effect Max": "+4.0%",
+        "type": "Weapon",
+        "id": "F44B"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Damage Taken)",
+        "Effect Max": "C",
+        "type": "Armor",
+        "id": "FB83"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Elixir)",
+        "Effect Max": "+15",
+        "type": "Accessory",
+        "id": "B77B"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Final Blow/Grapple)",
+        "Effect Max": "? C+ ?",
+        "type": "Armor",
+        "id": "72F7"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Paralyzed Enemy)",
+        "Effect Max": "AAA+",
+        "type": "Weapon",
+        "id": "0DA3"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Poisoned Enemy)",
+        "Effect Max": "C+",
+        "type": "Accessory",
+        "id": "BC19"
+    },
+    {
+        "Effect": "Spirit Force Charge",
+        "Effect Max": "+1.4%",
+        "type": "Accessory",
+        "id": "9911"
+    },
+    {
+        "Effect": "Spirit Force Charge (Backstab)",
+        "Effect Max": "+0.9%",
+        "type": "Weapon",
+        "id": "C930"
+    },
+    {
+        "Effect": "Spirit Force Charge (Crucible)",
+        "Effect Max": "+1.8%",
+        "type": "Armor",
+        "id": "05EE"
+    },
+    {
+        "Effect": "Spirit Force Charge (Purification)",
+        "Effect Max": "+20",
+        "type": "Soul Core",
+        "id": "6270"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed)",
+        "Effect Max": "+1.7%",
+        "type": "Accessory",
+        "id": "5B2F"
+    },
+    {
+        "Effect": "Status Ailment Accumulation",
+        "Effect Max": "+5.0%",
+        "type": "Accessory",
+        "id": "7CA0"
+    },
+    {
+        "Effect": "Status Ailment Accumulation",
+        "Effect Max": "+5.0%",
+        "type": "Weapon",
+        "id": "844B"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption",
+        "Effect Max": "-1.0%",
+        "type": "Armor",
+        "id": "6DB4"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption",
+        "Effect Max": "-1.9%",
+        "type": "Weapon",
+        "id": "511C"
+    },
+    {
+        "Effect": "Strong Attack Ki Damage",
+        "Effect Max": "+1.9%",
+        "type": "Weapon",
+        "id": "BFC6"
+    },
+    {
+        "Effect": "Strong Attack Ki Damage",
+        "Effect Max": "+3.5%",
+        "type": "Soul Core",
+        "id": "1222"
+    },
+    {
+        "Effect": "Strong Attack Ki Damage",
+        "Effect Max": "+1.6%",
+        "type": "Weapon",
+        "id": "5107"
+    },
+    {
+        "Effect": "Stealth",
+        "Effect Max": "C-",
+        "type": "Weapon",
+        "id": "F58C"
+    },
+    {
+        "Effect": "Toughness",
+        "Effect Max": "+11",
+        "type": "Armor",
+        "id": "CBC2"
+    },
+    {
+        "Effect": "Uncanny Bolt Damage",
+        "Effect Max": "+10.0%",
+        "type": "Accessory",
+        "id": "08B2"
+    },
+    {
+        "Effect": "Uncanny Breeze Damage",
+        "Effect Max": "+10.0%",
+        "type": "Accessory",
+        "id": "F7D3"
+    },
+    {
+        "Effect": "Uncanny Breeze Gauge Charge",
+        "Effect Max": "+12.0%",
+        "type": "Accessory",
+        "id": "23AF"
+    },
+    {
+        "Effect": "Uncanny Bubble Gauge Charge",
+        "Effect Max": "+12.0%",
+        "type": "Accessory",
+        "id": "EAC2"
+    },
+    {
+        "Effect": "Uncanny Flame Damage",
+        "Effect Max": "+10.0%",
+        "type": "Accessory",
+        "id": "4508"
+    },
+    {
+        "Effect": "Untouched Projectiles",
+        "Effect Max": "+7.5%",
+        "type": "Weapon",
+        "id": "28CB"
+    },
+    {
+        "Effect": "Untouched Sacred Water",
+        "Effect Max": "10.0%",
+        "type": "Accessory",
+        "id": "FCFB"
+    },
+    {
+        "Effect": "Water Damage",
+        "Effect Max": "+6.0%",
+        "type": "Accessory",
+        "id": "E6FD"
+    },
+    {
+        "Effect": "Water Damage",
+        "Effect Max": "+4.7%",
+        "type": "Weapon",
+        "id": "FB42"
+    },
+    {
+        "Effect": "Water Damage Reduction",
+        "Effect Max": "+15",
+        "type": "Accessory",
+        "id": "FA74"
+    },
+    {
+        "Effect": "Warrior of the East's Honor",
+        "Effect Max": "6 Pieces",
+        "type": "Armor / Weapon",
+        "id": "8685"
+    },
+    {
+        "Effect": "Water Resistance",
+        "Effect Max": "+7",
+        "type": "Armor",
+        "id": "0FE9"
+    },
+    {
+        "Effect": "Water Resistance",
+        "Effect Max": "+10",
+        "type": "Armor",
+        "id": "134A"
+    },
+    {
+        "Effect": "Water Resistance",
+        "Effect Max": "+15",
+        "type": "Soul Core",
+        "id": "BD13"
+    },
+    {
+        "Effect": "Water Resistance",
+        "Effect Max": "+12",
+        "type": "Accessory",
+        "id": "A0AC"
+    },
+    {
+        "Effect": "Yokai Realm Resistance",
+        "Effect Max": "+0.5",
+        "type": "Accessory",
+        "id": "FC5B"
+    },
+    {
+        "Effect": "Yokai Realm Resistance",
+        "Effect Max": "+0.2",
+        "type": "Weapon",
+        "id": "5090"
+    }
+]
