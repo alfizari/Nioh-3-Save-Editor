@@ -43,15 +43,6 @@ Complete control over inventory:
 - Supports `items.json` for fast lookup  
 - ID → Name mapping for easy editing  
 
----
-
-### 🌀 Scroll Editing
-Edit scrolls safely and easily:
-
-- Supports Scroll of the Wise / Demon  
-- Modify effects  
-- Add / remove scrolls  
-- Edit effect values  
 
 ---
 
