@@ -1,146 +1,117 @@
-🔥 Features
-🧍 Character & Stats Editing
+# ⚔️ Nioh 3 Save Editor
 
-Modify all core stats directly:
+A powerful and easy-to-use save editor for **Nioh 3**, designed to let you modify your save data safely without needing a hex editor.
 
-Amrita
+---
 
-Gold
+## 🔥 Features
 
-Level
+### 🧍 Character & Stats Editing
+Modify all core character stats directly:
 
-Constitution
+- Amrita  
+- Gold  
+- Level  
+- Constitution  
+- Heart  
+- Courage  
+- Stamina  
+- Strength  
+- Skill  
+- Dexterity  
+- Magic  
 
-Heart
+---
 
-Courage
+### 🗡️ Weapon Editing
+Fully customize your weapons:
 
-Stamina
+- Edit Weapon IDs  
+- Change weapon modifiers / special effects  
+- Adjust rarity  
+- Modify +Level values  
+- Customize weapon slots  
 
-Strength
+---
 
-Skill
+### 📦 Item Editing
+Complete control over inventory:
 
-Dexterity
+- Modify any in-game item  
+- Add / remove items  
+- Change item quantities  
+- Supports `items.json` for fast lookup  
+- ID → Name mapping for easy editing  
 
-Magic
+---
 
-Ninjutsu
+### 🌀 Scroll Editing
+Edit scrolls safely and easily:
 
-Onmyo
+- Supports Scroll of the Wise / Demon  
+- Modify effects  
+- Add / remove scrolls  
+- Edit effect values  
 
-Weapon proficiencies (Sword, Axe, Odachi, etc.)
+---
 
-🗡️ Weapon Editing
+## 🛠️ How to Use
 
-Edit weapon IDs
+### 💻 PC Version
 
-Change weapon modifiers / effects
+1. Open the editor  
+2. Select your save file  
+3. Choose the character slot  
+4. Edit anything you want  
+5. Click **Save**  
 
-Adjust rarity
+Your save file will be updated automatically.
 
-Customize weapon quantity and slots
+---
 
-📦 Item Editing
+## 🎯 Project Goals
 
-Modify any in-game item
+This editor is built to make save editing:
 
-Add/remove items
+- Safe  
+- Simple  
+- Fast  
+- Accessible  
 
-Change item quantity
+Everything is handled through a clean UI — no hex editing required.
 
-Fully supports items.json
+---
 
-Fast lookups with ID → Name mapping
+## 📌 Requirements
 
-🌀 Scrolls Editing
+- Windows 10 / 11  
+- Python 3.12+ (if running from source)  
+- PyInstaller (for building executable)  
 
-Edit Scroll of the Wise / Demon scrolls
+---
 
-Change effects
+## ⚠️ Disclaimer
 
-Add/remove scrolls
+- Always **backup your save file** before editing  
+- Use at your own risk  
+- Online use may carry risks depending on game protections  
 
-Modify scroll values safely
+---
 
-💾 PC & PS4 Support
+## 💬 Issues / Feature Requests
 
-✔ PC (Steam) saves
-✔ PS4 saves (via Save Wizard decrypted files or discord bots)
-✔ Automatic detection of slot files
-✔ Rebuilds encrypted output for PS4
+If you encounter a bug or want a new feature:
 
-🛠️ How to Use
-1. PC Version
+1. Open an issue  
+2. Describe:
+   - What you edited  
+   - Which slot  
+   - What went wrong  
+3. Include screenshots if possible  
 
-Open the editor
+---
 
-Select your save file
+## Credit 
 
-Choose the slot
-
-Edit anything you want
-
-Save — your save file updates immediately
-
-2. PS4 Version
-
-Export save from Save Wizard or discord bots
-
-Open the decrypted save file
-
-Edit items / stats / weapons / scrolls
-
-Save and re-encrypt (the editor does this automatically)
-
-Import back using Save Wizard or encrypt with discord bot
-
-
-🎯 Goals
-
-This project aims to make Nioh 2 editing:
-
-Safe
-
-Simple
-
-Fast
-
-Accessible for PS4 and PC players
-
-Everything is contained inside one UI so you can use it without touching hex editors.
-
-📌 Requirements
-
-Windows 10/11
-
-Python 3.12 (if running from source)
-
-PyInstaller (if building)
-
-
-💬 Issues / Requests
-
-If you find a bug or want a new feature:
-
-Open an issue
-
-Describe the file, slot, and what you edited
-
-Include screenshots when possible
-
-❤️ Credits
--  Thanks to trxsh.bin for testing
--  Useful info from SW community: https://discord.gg/save-wizard
--  Nioh 2 items sheet used: https://docs.google.com/spreadsheets/d/1FWRe5tWXELL5C5rgvbfOC3sabHFFQ7Fy_q1jic_QEX4/edit?gid=70779755#gid=70779755
--  credited to:
-Skiller#4741,
-Syizm,
-Cyane,
-Noodles,
-Butter Biscuits,
-InfinityArts#0520,
-Thela#8673,
-Wudchuk,
-Full Metal Panda#4868,
-CasaBlanco87👉🏿PSN Nyballa2k6#1582
+- Data sheet used from https://www.nexusmods.com/nioh3/mods/6
+- A rework of [[pawREP](https://github.com/pawREP)] decryption tool https://github.com/pawREP/Nioh-Savedata-Decryption-Tool
