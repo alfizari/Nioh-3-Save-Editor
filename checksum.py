@@ -30,3 +30,13 @@ def patch_checksum(data):
     data= data[:0x900194] + struct.pack('<I', checksum) + data[0x900198:]
     print(f"Checksum patched: {checksum:08X}")
     return data, checksum
+
+
+def patch_checksum(data):
+    print('old checksum:', struct.unpack_from('<I', data, 0x900194)[0])
+    seed = struct.unpack_from('<I', data, 0x900190)[0]  # file offset 0x900190
+    checksum = compute_checksum(data[0x190:0x900190], seed)
+
+    data= data[:0x900194] + struct.pack('<I', checksum) + data[0x900198:]
+    print(f"Checksum patched: {checksum:08X}")
+    return data, checksum
