@@ -88,8 +88,8 @@ Everything is handled through a clean UI — no hex editing required.
 
 ## How to Build
 
-- 
-use 'pyinstaller ^
+```bash
+pyinstaller ^
 --onefile ^
 --noconsole ^
 --name "Nioh3_Save_Editor" ^
@@ -97,8 +97,9 @@ use 'pyinstaller ^
 --add-data "effects_big_endian.json;." ^
 --add-data "pc\pc.exe;pc" ^
 --add-data "PC_import\pc.exe;PC_import" ^
-main.py'
----
+main.py
+```
+
 
 ## ⚠️ Disclaimer
 
