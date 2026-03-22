@@ -1,5 +1,6 @@
 # ⚔️ Nioh 3 Save Editor
 
+## THE EDITOR SEEMS TO CORRUPT SAVE FILE< DO NOT USE IT UNTIL I FIGUre IT OUT. I only tested it on the game demo
 A powerful and easy-to-use save editor for **Nioh 3**, designed to let you modify your save data safely without needing a hex editor.
 
 ---
