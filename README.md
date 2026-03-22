@@ -86,6 +86,20 @@ Everything is handled through a clean UI — no hex editing required.
 
 ---
 
+## How to Build
+
+- 
+use 'pyinstaller ^
+--onefile ^
+--noconsole ^
+--name "Nioh3_Save_Editor" ^
+--add-data "items_little_endian.json;." ^
+--add-data "effects_big_endian.json;." ^
+--add-data "pc\pc.exe;pc" ^
+--add-data "PC_import\pc.exe;PC_import" ^
+main.py'
+---
+
 ## ⚠️ Disclaimer
 
 - Always **backup your save file** before editing  
