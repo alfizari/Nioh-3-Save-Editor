@@ -10,6 +10,7 @@ A powerful and easy-to-use save editor for **Nioh 3**, designed to let you modif
 - Export your inventory to excel
 - Import other PC saves
 - Item spawn (WIP)
+- Import another player inventory
 
 ### 🧍 Character & Stats Editing
 Modify all core character stats directly:
@@ -124,5 +125,5 @@ If you encounter a bug or want a new feature:
 
 ## Credit 
 
-- Data sheet used from https://www.nexusmods.com/nioh3/mods/6
+- Data sheet used from Darkksss1 at https://www.nexusmods.com/nioh3/mods/6
 - A rework of [[pawREP](https://github.com/pawREP)] decryption tool https://github.com/pawREP/Nioh-Savedata-Decryption-Tool
