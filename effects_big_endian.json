@@ -139,7 +139,7 @@
     },
     {
         "Effect": "Crucible Weapon Drop Rate",
-        "Effect Max": "?",
+        "Effect Max": "+10.0%",
         "type": "Weapon",
         "id": "89C2"
     },
@@ -223,7 +223,7 @@
     },
     {
         "Effect": "Dual Elements (Lightning & Fire)",
-        "Effect Max": "?",
+        "Effect Max": "+7",
         "type": "Weapon",
         "id": "209C"
     },
@@ -526,6 +526,12 @@
         "Effect Max": "?",
         "type": "Weapon",
         "id": "E7CA"
+    },
+    {
+        "Effect": "Imbue Water",
+        "Effect Max": "+6",
+        "type": "Weapon",
+        "id": "00:00:002026-04-10"
     },
     {
         "Effect": "Imbue Water",
