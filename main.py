@@ -8,15 +8,15 @@ from checksum import patch_checksum
 from openpyxl import Workbook
 import shutil
 
-AMRITA_OFFSET  = 0x3ADE25
-GOLD_OFFSET    = 0x3ADE35
-CONSTITUTION   = 0x3ADF63 - 0x24
-HEART          = 0x3ADF67 - 0x24
-STAMINA        = 0x3ADF6B - 0x24
-STRENGTH       = 0x3ADF6F - 0x24
-SKILL          = 0x3ADF73 - 0x24
-INTELLECT      = 0x3ADF77 - 0x24
-MAGIC          = 0x3ADF7B - 0x24
+AMRITA_OFFSET  = 0x3ADE49
+GOLD_OFFSET    = 0x3ADE59
+CONSTITUTION   = 0x3ADF63
+HEART          = 0x3ADF67
+STAMINA        = 0x3ADF6B
+STRENGTH       = 0x3ADF6F
+SKILL          = 0x3ADF73
+INTELLECT      = 0x3ADF77
+MAGIC          = 0x3ADF7B
 
 ITEM_START    = 0x240355
 ITEM_SIZE     = 0xF0
@@ -90,19 +90,7 @@ _MANUAL_OVERRIDES = {
     "Leggings":     "Armor",
 }
 
-# Merge: manual overrides take priority over auto-mapped entries
 _ITEM_TYPE_TO_EFFECT_TYPE = {**_auto_map, **_MANUAL_OVERRIDES}
-
-# Debug: print all item types that could NOT be mapped (will use full effect list as fallback)
-_unmapped = sorted(
-    itype for itype in set(v.get("type", "") for v in items_json.values())
-    if itype and itype not in _ITEM_TYPE_TO_EFFECT_TYPE
-)
-if _unmapped:
-    print("[effect filter] Unmapped item types (will show full effect list):", _unmapped)
-
-_mapped = sorted(set(_ITEM_TYPE_TO_EFFECT_TYPE.items()))
-print("[effect filter] Active mappings:", _mapped)
 
 
 def _get_effect_list_for_item(item):
@@ -112,11 +100,57 @@ def _get_effect_list_for_item(item):
     etype    = _ITEM_TYPE_TO_EFFECT_TYPE.get(itype)
     if etype and etype in _effects_by_type:
         return _effects_by_type[etype]
-    # Fallback — also print so you can see which type is missing a mapping
     if itype and itype != "?":
         print("[effect filter] No mapping for item type '{}' (itype={}, etype={})".format(
             itype, itype, etype))
     return effect_dropdown_list
+
+
+# ---------------------------------------------------------------------------
+# Category Effect Icon constants (0x41 per effect, relative to effect base)
+# ---------------------------------------------------------------------------
+CEI_LABELS = {
+    0x00: "Normal (Swappable)",
+    0x01: "Locked",
+    0x02: "Requires Umbracite",
+}
+
+# Effect Extra constants (0x42 per effect, relative to effect base)
+EE_LABELS = {
+    0x00: "None",
+    0x04: "Star Trait",
+    0x08: "Smithing Material",
+    0x84: "Star Trait + Unknown",  # 132 decimal
+}
+
+EQUIPPED_FLAG_OPTIONS = {
+    0x00: "Equipped",
+    0x11: "Not Equipped",
+}
+
+EQUIPMENT_FLAGS1_OPTIONS = {
+    0x00: "Normal",
+    0x02: "New",
+    0x04: "Locked",
+    0x06: "New + Locked",
+    0x01: "Familiar (check)",
+    0x86: "All Flags",
+}
+
+EQUIPMENT_FLAGS2_OPTIONS = {
+    0x00: "Normal",
+    0x02: "Favourite",
+    0x10: "Crucible Weapon",
+}
+
+RARITY_OPTIONS = {
+    0x00: "Common",
+    0x01: "Uncommon",
+    0x02: "Rare",
+    0x03: "Exotic",
+    0x04: "Divine",
+    0x05: "Ethereal",
+}
 
 
 def find_value_at_offset(section_data, offset, byte_size):
@@ -142,6 +176,9 @@ def swap_endian_hex(val):
 
 def swap_u16(val):
     return ((val & 0xFF) << 8) | (val >> 8)
+
+def read_u8(buf, offset):
+    return buf[offset]
 
 def read_u16(buf, offset):
     return int.from_bytes(buf[offset:offset + 2], "little")
@@ -170,8 +207,6 @@ def open_file():
         while backup_path.exists():
             backup_path = Path(file_path).with_name(f"SAVEDATA.BIN.BACKUP_{counter}")
             counter += 1
-        # Copy the file to backup
-
         shutil.copy(file_path, backup_path)
         print(f"Backup created: {backup_path}")
 
@@ -221,6 +256,9 @@ def import_save():
         if len(data) != 0x9001B0:
             messagebox.showerror("Import Error", "Size mismatch after import.")
             return
+        player_items()
+        player_usables()
+        player_storage()
         messagebox.showinfo("Success", "File imported. Load in-game to apply the character.")
 
 
@@ -263,21 +301,30 @@ def parse_equipment(offset):
     item["item_level_pre_forge"]  = read_u16(data, base + 0x08)
     item["plus_value"]            = read_u16(data, base + 0x0A)
     item["familiarity_raw"]       = read_u32(data, base + 0x14)
-    item["equipment_flags"]       = data[base + 0x18]
+    item["equipment_flags_1"]     = read_u8(data,  base + 0x18)
+    item["equipment_flags_2"]     = read_u8(data,  base + 0x1A)
     item["inv_index"]             = read_u16(data, base + 0x1C)
-    item["ui_1"]                  = data[base + 0x28]
-    item["ui_2"]                  = data[base + 0x29]
-    item["rarity"]                = data[base + 0x30]
+    item["ui_1"]                  = read_u8(data,  base + 0x28)
+    item["ui_2"]                  = read_u8(data,  base + 0x29)
+    item["rarity"]                = read_u8(data,  base + 0x30)
+
     effects = []
     se_base = base + 0x38
     for i in range(7):
         eo = se_base + i * 0x08
-        effects.append({"effect_id": read_u16(data, eo), "effect_value": read_u16(data, eo + 0x04)})
-    item["effects"]         = effects
-    item["equipped_flag_1"] = data[base + 0xE8]
-    item["equipped_flag_2"] = data[base + 0xEC]
+        effects.append({
+            "effect_id":            read_u16(data, eo + 0x00),
+            "effect_value":         read_u16(data, eo + 0x04),
+            "category_effect_icon": read_u8(data,  eo + 0x09),
+            "effect_extra":         read_u8(data,  eo + 0x0A),
+        })
+    item["effects"] = effects
+
+    item["equipped_flag_1"] = read_u8(data, base + 0xE8)
+    item["equipped_flag_2"] = read_u8(data, base + 0xEC)
     item["padding"]         = bytes(data[base + 0xED: base + 0xF0])
     return item
+
 
 def parse_usable(offset):
     base = offset
@@ -289,16 +336,21 @@ def parse_usable(offset):
     item["item_level_pre_forge"]  = read_u16(data, base + 0x08)
     item["plus_value"]            = read_u16(data, base + 0x0A)
     item["familiarity_raw"]       = read_u32(data, base + 0x14)
-    item["equipment_flags"]       = data[base + 0x18]
+    item["equipment_flags_1"]     = read_u8(data,  base + 0x18)
     item["inv_index"]             = read_u16(data, base + 0x1C)
-    item["ui_1"]                  = data[base + 0x28]
-    item["ui_2"]                  = data[base + 0x29]
-    item["rarity"]                = data[base + 0x30]
+    item["ui_1"]                  = read_u8(data,  base + 0x28)
+    item["ui_2"]                  = read_u8(data,  base + 0x29)
+    item["rarity"]                = read_u8(data,  base + 0x30)
     effects = []
     se_base = base + 0x38
     for i in range(7):
         eo = se_base + i * 0x08
-        effects.append({"effect_id": read_u16(data, eo), "effect_value": read_u16(data, eo + 0x04)})
+        effects.append({
+            "effect_id":            read_u16(data, eo + 0x00),
+            "effect_value":         read_u16(data, eo + 0x04),
+            "category_effect_icon": read_u8(data,  eo + 0x09),
+            "effect_extra":         read_u8(data,  eo + 0x0A),
+        })
     item["effects"] = effects
     return item
 
@@ -326,6 +378,7 @@ def player_storage():
         item["slot"] = slot
         storage.append(item)
 
+
 def _write_slot(item, base, has_equipped):
     data[base:base+2]         = write_le(item["item_id"],              2)
     data[base+2:base+4]       = write_le(item["appearance_id"],        2)
@@ -334,14 +387,20 @@ def _write_slot(item, base, has_equipped):
     data[base+8:base+10]      = write_le(item["item_level_pre_forge"], 2)
     data[base+10:base+12]     = write_le(item["plus_value"],           2)
     data[base+0x14:base+0x18] = write_le(item["familiarity_raw"],      4)
-    data[base+0x18]            = item["equipment_flags"] & 0xFF
+    data[base+0x18]            = item["equipment_flags_1"] & 0xFF
+    if has_equipped:
+        data[base+0x1A]        = item.get("equipment_flags_2", 0) & 0xFF
     data[base+0x1C:base+0x1E] = write_le(item["inv_index"],            2)
-    data[base+0x30]            = item["rarity"]          & 0xFF
+    data[base+0x30]            = item["rarity"]            & 0xFF
+
     se_base = base + 0x38
     for i, eff in enumerate(item["effects"]):
         eo = se_base + i * 0x08
-        data[eo:eo+2]   = write_le(eff["effect_id"],    2)
-        data[eo+4:eo+6] = write_le(eff["effect_value"], 2)
+        data[eo:eo+2]       = write_le(eff["effect_id"],            2)
+        data[eo+4:eo+6]     = write_le(eff["effect_value"],         2)
+        data[eo+0x09]        = eff.get("category_effect_icon", 0) & 0xFF
+        data[eo+0x0A]        = eff.get("effect_extra",          0) & 0xFF
+
     if has_equipped:
         data[base+0xE8] = item["equipped_flag_1"] & 0xFF
         data[base+0xEC] = item["equipped_flag_2"] & 0xFF
@@ -362,25 +421,16 @@ def write_storage_to_data():
 _EQUIP_TEMPLATE_HEX = ('3E AD 3E AD 01 00 A0 00 A0 00 03 00 00 00 00 40 00 00 00 00 00 00 00 00 82 00 00 00 D0 35 00 00 01 00 DB B4 00 00 00 00 B0 7D 0F 00 00 00 00 00 04 00 00 00 4F 68 00 00 04 10 00 00 0F 00 00 00 64 5F 00 00 00 00 00 00 00 00 00 00 E9 9A 00 00 4B 79 00 00 0F 00 00 00 5B 92 80 FF 00 00 00 00 00 00 00 00 3F 87 00 00 26 99 00 00 2A 00 00 00 54 83 00 07 00 00 00 00 00 00 00 00 F7 86 00 00 07 51 00 00 10 00 00 00 57 12 00 00 00 00 58 1B 00 00 00 00 02 2B 00 00 EB E8 00 00 00 00 00 00 00 0C 02 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00 00 00 00 8C 3F FF FF FF FF 00 00 00 00 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 11 00 00 00')
 _EQUIP_TEMPLATE  = bytearray.fromhex(_EQUIP_TEMPLATE_HEX.replace(" ", ""))
 
-
 _USABLE_TEMPLATE= bytearray.fromhex('7A FC 7A FC 0A 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 20 00 EC 1D 00 00 00 00 00 00 00 00 00 00 80 B1 02 00 00 00 00 00 02 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 44 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 5D 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 51 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 80 00 00 00 80 00 00 00 00 00 00 00 80 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 80 51 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00')
 
 
-
 def _display_id_to_le_bytes(id_hex_str):
-    # items_json keys are big-endian display hex (e.g. "A12B").
-    # Save file stores little-endian (bytes swapped).
     raw     = int(id_hex_str, 16)
     swapped = ((raw & 0xFF) << 8) | (raw >> 8)
     return swapped.to_bytes(2, "little")
 
 
 def _find_empty_slot_raw(start_offset, slot_size, slot_count):
-    """
-    Scan `data` directly and return the index of the first slot whose
-    first 4 bytes are all 0x00 (the actual empty-slot marker in the save).
-    Returns None if no empty slot is found.
-    """
     for i in range(slot_count):
         base = start_offset + i * slot_size
         if data[base: base + 4] == b'\x00\x00\x00\x00':
@@ -389,11 +439,6 @@ def _find_empty_slot_raw(start_offset, slot_size, slot_count):
 
 
 def _collect_used_inv_indices():
-    """
-    Scan ALL inventory sections in raw data and return a set of every
-    inv_index value (u16 at offset 0x1C of each slot) that is already in use.
-    Only reads slots whose first 4 bytes are non-zero (i.e. occupied slots).
-    """
     used = set()
     for start, size, count in [
         (ITEM_START,    ITEM_SIZE,    ITEM_SLOTS),
@@ -403,7 +448,7 @@ def _collect_used_inv_indices():
         for i in range(count):
             base = start + i * size
             if data[base: base + 4] == b'\x00\x00\x00\x00':
-                continue   # empty slot — skip
+                continue
             idx = read_u16(data, base + 0x1C)
             if idx != 0:
                 used.add(idx)
@@ -411,22 +456,13 @@ def _collect_used_inv_indices():
 
 
 def _generate_unique_inv_index():
-    """
-    Generate a unique 2-byte inventory index that:
-      - Is not already used by any occupied slot across all sections.
-      - Has no zero byte (both low byte and high byte are >= 0x01).
-    Raises RuntimeError if the entire valid space is exhausted (unlikely).
-    """
     used = _collect_used_inv_indices()
-    # Iterate over all u16 values where neither byte is 0x00:
-    # low byte in 0x01..0xFF, high byte in 0x01..0xFF  -> 255*255 = 65025 candidates
     import random
     candidates = [
         (hi << 8) | lo
         for hi in range(0x01, 0x100)
         for lo in range(0x01, 0x100)
     ]
-    # Shuffle to avoid always picking the same low values
     random.shuffle(candidates)
     for val in candidates:
         if val not in used:
@@ -435,6 +471,7 @@ def _generate_unique_inv_index():
 
 
 def spawn_equipment(item_name):
+    global data
     if data is None:
         raise RuntimeError("No save file loaded.")
     name_to_id = {v["name"]: k for k, v in items_json.items()}
@@ -450,21 +487,23 @@ def spawn_equipment(item_name):
     le_id           = _display_id_to_le_bytes(id_hex)
     slot_bytes[0:2] = le_id
     slot_bytes[2:4] = le_id
-    # Write unique inventory index at 0x1C (both bytes must be non-zero)
     inv_idx = _generate_unique_inv_index()
     slot_bytes[0x1C:0x1E] = inv_idx.to_bytes(2, "little")
 
     base = ITEM_START + slot_idx * ITEM_SIZE
     data[base: base + ITEM_SIZE] = slot_bytes
 
-    # Refresh the in-memory dict so the treeview reflects the change
     new_item         = parse_equipment(base)
     new_item["slot"] = slot_idx
     items[slot_idx]  = new_item
+
+    increment_inventory_counter(data)
+
     return slot_idx
 
 
 def spawn_usable(item_name):
+    global data
     if data is None:
         raise RuntimeError("No save file loaded.")
     name_to_id = {v["name"]: k for k, v in items_json.items()}
@@ -480,7 +519,6 @@ def spawn_usable(item_name):
     le_id           = _display_id_to_le_bytes(id_hex)
     slot_bytes[0:2] = le_id
     slot_bytes[2:4] = le_id
-    # Write unique inventory index at 0x1C (both bytes must be non-zero)
     inv_idx = _generate_unique_inv_index()
     slot_bytes[0x1C:0x1E] = inv_idx.to_bytes(2, "little")
 
@@ -490,6 +528,8 @@ def spawn_usable(item_name):
     new_item           = parse_usable(base)
     new_item["slot"]   = slot_idx
     usables[slot_idx]  = new_item
+
+    increment_inventory_counter(data)
     return slot_idx
 
 
@@ -497,7 +537,6 @@ _effect_name_by_id = {e["id"]: e["Effect"] for e in effects_json}
 
 
 def _resolve_effect_name(raw_effect_id):
-    """Convert a raw effect_id (read as LE u16 from save) to its big-endian display name."""
     if raw_effect_id == 0:
         return ""
     display_id = "{:04X}".format(raw_effect_id)
@@ -513,10 +552,14 @@ def export_to_excel(sheet_name, dataset):
     ws = wb.active
     ws.title = sheet_name
 
-    # Header: base columns + 7 effect pairs
     header = ["Slot", "Item ID", "Name", "Type", "Quantity", "Level", "Rarity"]
     for n in range(1, 8):
-        header += ["Effect {} (ID - Name)".format(n), "Effect {} Value".format(n)]
+        header += [
+            "Effect {} (ID - Name)".format(n),
+            "Effect {} Value".format(n),
+            "Effect {} Category Icon".format(n),
+            "Effect {} Extra".format(n),
+        ]
     ws.append(header)
 
     for item in dataset:
@@ -539,11 +582,18 @@ def export_to_excel(sheet_name, dataset):
             raw_id = eff["effect_id"]
             if raw_id == 0:
                 row.append("Empty")
+                row.append("")
             else:
-                display_id = "{:04X}".format(swap_u16(raw_id))
+                display_id  = "{:04X}".format(swap_u16(raw_id))
                 effect_name = _effect_name_by_id.get(display_id, display_id)
                 row.append(f"{display_id} - {effect_name}")
-            row.append(eff["effect_value"] if raw_id != 0 else "")
+                row.append(eff["effect_value"])
+            # Category Effect Icon
+            cei = eff.get("category_effect_icon", 0)
+            row.append(CEI_LABELS.get(cei, "0x{:02X}".format(cei)))
+            # Effect Extra
+            ee = eff.get("effect_extra", 0)
+            row.append(EE_LABELS.get(ee, "0x{:02X}".format(ee)))
 
         ws.append(row)
 
@@ -555,6 +605,36 @@ def export_to_excel(sheet_name, dataset):
     if save_path:
         wb.save(save_path)
         messagebox.showinfo("Success", "{} exported successfully!".format(sheet_name))
+
+# ==================== HELPERS ====================
+
+def _make_flag_combo(parent, row, col, label_text, options_dict):
+    """Create a label + OptionMenu pair for a flag field. Returns (var, menu)."""
+    tk.Label(parent, text=label_text, anchor="w").grid(row=row, column=col, sticky="w", padx=4, pady=2)
+    choices = ["{} – {}".format("0x{:02X}".format(k), v) for k, v in options_dict.items()]
+    var = tk.StringVar(value=choices[0])
+    menu = ttk.Combobox(parent, textvariable=var, values=choices, width=28, state="readonly")
+    menu.grid(row=row, column=col + 1, sticky="w", padx=4, pady=2)
+    return var, menu
+
+
+def _flag_combo_get_int(var, options_dict):
+    """Parse the hex value back out of a flag combo string."""
+    text = var.get()
+    hex_part = text.split("–")[0].strip()
+    return int(hex_part, 16)
+
+
+def _flag_combo_set(var, options_dict, int_val):
+    choices = ["{} – {}".format("0x{:02X}".format(k), v) for k, v in options_dict.items()]
+    target  = "0x{:02X}".format(int_val)
+    for c in choices:
+        if c.startswith(target):
+            var.set(c)
+            return
+    # Unknown value — show raw hex
+    var.set("0x{:02X} – Unknown".format(int_val))
+
 
 # ==================== SEARCHABLE COMBOBOX ====================
 class SearchableCombobox(ttk.Frame):
@@ -704,37 +784,47 @@ class SearchableCombobox(ttk.Frame):
 
 # ==================== ITEM EDITOR ====================
 class ItemEditor(ttk.Frame):
+    """
+    Edits a single equipment or usable slot.
+
+    Equipment has extra fields: equipment_flags_2, equipped_flag_1/2.
+    Both types now also show per-effect Category Icon and Effect Extra dropdowns.
+    """
+
+    # Simple numeric entry fields
     _EQUIP_PROPS = [
-        ("item_id",              "Item ID"),
-        ("appearance_id",        "Appearance ID"),
+        ("item_id",              "Item ID (hex LE)"),
+        ("appearance_id",        "Appearance ID (hex LE)"),
         ("quantity",             "Quantity"),
-        ("item_level",           "Item Level"),
+        ("item_level",           "Item Level  [max 170]"),
         ("item_level_pre_forge", "Item Level (Pre-Forge)"),
-        ("plus_value",           "Plus Value"),
-        ("familiarity_raw",      "Familiarity"),
-        ("equipment_flags",      "Equipment Flags"),
-        ("rarity",               "Rarity"),
-        ("equipped_flag_1",      "Equipped Flag 1"),
-        ("equipped_flag_2",      "Equipped Flag 2"),
+        ("plus_value",           "Plus Value  [max +15]"),
+        ("familiarity_raw",      "Familiarity (raw u32)"),
+        ("inv_index",            "Placement ID (inv index)"),
+        ("ui_1",                 "UI Object 1  (0x28)"),
+        ("ui_2",                 "UI Object 2  (0x29)"),
     ]
     _USABLE_PROPS = [
-        ("item_id",              "Item ID"),
-        ("appearance_id",        "Appearance ID"),
+        ("item_id",              "Item ID (hex LE)"),
+        ("appearance_id",        "Appearance ID (hex LE)"),
         ("quantity",             "Quantity"),
         ("item_level",           "Item Level"),
         ("item_level_pre_forge", "Item Level (Pre-Forge)"),
         ("plus_value",           "Plus Value"),
-        ("familiarity_raw",      "Familiarity"),
-        ("equipment_flags",      "Flags"),
-        ("rarity",               "Rarity"),
+        ("familiarity_raw",      "Familiarity (raw u32)"),
+        ("inv_index",            "Placement ID (inv index)"),
+        ("ui_1",                 "UI Object 1  (0x28)"),
+        ("ui_2",                 "UI Object 2  (0x29)"),
     ]
 
     def __init__(self, master, has_equipped, on_apply, **kwargs):
         super().__init__(master, **kwargs)
-        self._on_apply = on_apply
-        self._props    = self._EQUIP_PROPS if has_equipped else self._USABLE_PROPS
+        self._on_apply    = on_apply
+        self._has_equipped = has_equipped
+        self._props       = self._EQUIP_PROPS if has_equipped else self._USABLE_PROPS
         self._build()
 
+    # ------------------------------------------------------------------
     def _build(self):
         canvas = tk.Canvas(self)
         sb     = ttk.Scrollbar(self, orient="vertical", command=canvas.yview)
@@ -745,43 +835,187 @@ class ItemEditor(ttk.Frame):
         canvas.pack(side="left", fill="both", expand=True)
         sb.pack(side="right", fill="y")
 
+        # ── Properties ────────────────────────────────────────────────
         self._entries = {}
         pf = ttk.LabelFrame(frame, text="Properties", padding=8)
         pf.pack(fill="x", padx=5, pady=5)
+
         for i, (key, lbl) in enumerate(self._props):
             ttk.Label(pf, text=lbl).grid(row=i, column=0, sticky="w", padx=4, pady=2)
             e = ttk.Entry(pf, width=18)
             e.grid(row=i, column=1, sticky="w", padx=4, pady=2)
             self._entries[key] = e
 
-        ef = ttk.LabelFrame(frame, text="Effects", padding=8)
+        row_offset = len(self._props)
+
+        # Rarity dropdown
+        ttk.Label(pf, text="Rarity").grid(row=row_offset, column=0, sticky="w", padx=4, pady=2)
+        self._rarity_var = tk.StringVar()
+        rarity_choices   = ["{} – {}".format("0x{:02X}".format(k), v)
+                            for k, v in RARITY_OPTIONS.items()]
+        self._rarity_cb  = ttk.Combobox(pf, textvariable=self._rarity_var,
+                                         values=rarity_choices, width=28, state="readonly")
+        self._rarity_cb.grid(row=row_offset, column=1, sticky="w", padx=4, pady=2)
+        row_offset += 1
+
+        # Equipment Flags 1
+        ttk.Label(pf, text="Equipment Flags 1  (0x18)").grid(
+            row=row_offset, column=0, sticky="w", padx=4, pady=2)
+        self._flags1_var = tk.StringVar()
+        flags1_choices   = ["{} – {}".format("0x{:02X}".format(k), v)
+                            for k, v in EQUIPMENT_FLAGS1_OPTIONS.items()]
+        self._flags1_cb  = ttk.Combobox(pf, textvariable=self._flags1_var,
+                                          values=flags1_choices, width=28, state="readonly")
+        self._flags1_cb.grid(row=row_offset, column=1, sticky="w", padx=4, pady=2)
+        row_offset += 1
+
+        if self._has_equipped:
+            # Equipment Flags 2 (favourite / crucible)
+            ttk.Label(pf, text="Equipment Flags 2  (0x1A)").grid(
+                row=row_offset, column=0, sticky="w", padx=4, pady=2)
+            self._flags2_var = tk.StringVar()
+            flags2_choices   = ["{} – {}".format("0x{:02X}".format(k), v)
+                                for k, v in EQUIPMENT_FLAGS2_OPTIONS.items()]
+            self._flags2_cb  = ttk.Combobox(pf, textvariable=self._flags2_var,
+                                              values=flags2_choices, width=28, state="readonly")
+            self._flags2_cb.grid(row=row_offset, column=1, sticky="w", padx=4, pady=2)
+            row_offset += 1
+
+            # Equipped flag 1
+            ttk.Label(pf, text="Equipped Flag 1  (0xE8)").grid(
+                row=row_offset, column=0, sticky="w", padx=4, pady=2)
+            self._eq1_var = tk.StringVar()
+            eq_choices    = ["{} – {}".format("0x{:02X}".format(k), v)
+                             for k, v in EQUIPPED_FLAG_OPTIONS.items()]
+            self._eq1_cb  = ttk.Combobox(pf, textvariable=self._eq1_var,
+                                           values=eq_choices, width=28, state="readonly")
+            self._eq1_cb.grid(row=row_offset, column=1, sticky="w", padx=4, pady=2)
+            row_offset += 1
+
+            # Equipped flag 2
+            ttk.Label(pf, text="Equipped Flag 2  (0xEC)").grid(
+                row=row_offset, column=0, sticky="w", padx=4, pady=2)
+            self._eq2_var = tk.StringVar()
+            self._eq2_cb  = ttk.Combobox(pf, textvariable=self._eq2_var,
+                                           values=eq_choices, width=28, state="readonly")
+            self._eq2_cb.grid(row=row_offset, column=1, sticky="w", padx=4, pady=2)
+
+        # ── Effects ───────────────────────────────────────────────────
+        ef = ttk.LabelFrame(frame, text="Effects  (7 slots)", padding=8)
         ef.pack(fill="x", padx=5, pady=5)
+
+        # Column headers
+        for col, hdr in enumerate(["Slot", "Effect ID – Name", "Value",
+                                    "Category Icon  (0x41)", "Extra  (0x42)"]):
+            ttk.Label(ef, text=hdr, font=("TkDefaultFont", 8, "bold")).grid(
+                row=0, column=col, sticky="w", padx=4, pady=2)
+
         self._eff_combos = []
         self._eff_mags   = []
+        self._eff_cei    = []   # category_effect_icon combobox vars
+        self._eff_ee     = []   # effect_extra combobox vars
+
+        cei_choices = ["{} – {}".format("0x{:02X}".format(k), v)
+                       for k, v in CEI_LABELS.items()]
+        ee_choices  = ["{} – {}".format("0x{:02X}".format(k), v)
+                       for k, v in EE_LABELS.items()]
+
         for i in range(7):
-            ttk.Label(ef, text="Effect {}:".format(i + 1)).grid(row=i, column=0, sticky="w", padx=4, pady=2)
+            r = i + 1
+            ttk.Label(ef, text="{}:".format(i + 1)).grid(row=r, column=0, padx=4, pady=2)
+
             combo = SearchableCombobox(ef, width=34, values=effect_dropdown_list)
-            combo.grid(row=i, column=1, sticky="w", padx=4, pady=2)
+            combo.grid(row=r, column=1, sticky="w", padx=4, pady=2)
             self._eff_combos.append(combo)
-            ttk.Label(ef, text="Val:").grid(row=i, column=2, sticky="w", padx=2, pady=2)
+
             mag = ttk.Entry(ef, width=8)
-            mag.grid(row=i, column=3, sticky="w", padx=2, pady=2)
+            mag.grid(row=r, column=2, sticky="w", padx=4, pady=2)
             self._eff_mags.append(mag)
 
+            cei_var = tk.StringVar(value=cei_choices[0])
+            cei_cb  = ttk.Combobox(ef, textvariable=cei_var,
+                                    values=cei_choices, width=26, state="readonly")
+            cei_cb.grid(row=r, column=3, sticky="w", padx=4, pady=2)
+            self._eff_cei.append(cei_var)
+
+            ee_var = tk.StringVar(value=ee_choices[0])
+            ee_cb  = ttk.Combobox(ef, textvariable=ee_var,
+                                   values=ee_choices, width=26, state="readonly")
+            ee_cb.grid(row=r, column=4, sticky="w", padx=4, pady=2)
+            self._eff_ee.append(ee_var)
+
+        # ── Apply button ──────────────────────────────────────────────
         bf = ttk.Frame(frame)
         bf.pack(pady=8)
-        ttk.Button(bf, text="Apply Changes",
-                   command=lambda: self._on_apply(self._entries, self._eff_combos, self._eff_mags)
-                   ).pack()
+        ttk.Button(bf, text="Apply Changes", command=self._do_apply).pack()
 
+    # ------------------------------------------------------------------
+    def _do_apply(self):
+        self._on_apply(
+            self._entries,
+            self._eff_combos,
+            self._eff_mags,
+            self._eff_cei,
+            self._eff_ee,
+            self._rarity_var,
+            self._flags1_var,
+            getattr(self, "_flags2_var", None),
+            getattr(self, "_eq1_var",    None),
+            getattr(self, "_eq2_var",    None),
+        )
+
+    # ------------------------------------------------------------------
+    @staticmethod
+    def _parse_combo_hex(var):
+        """Extract the leading 0xNN int from a flag/option combo string."""
+        text = var.get()
+        hex_part = text.split("–")[0].strip()
+        try:
+            return int(hex_part, 16)
+        except ValueError:
+            return 0
+
+    @staticmethod
+    def _set_combo(var, cb, options_dict, int_val):
+        choices = ["{} – {}".format("0x{:02X}".format(k), v)
+                   for k, v in options_dict.items()]
+        target  = "0x{:02X}".format(int_val)
+        for c in choices:
+            if c.startswith(target):
+                var.set(c)
+                return
+        var.set("0x{:02X} – Unknown".format(int_val))
+
+    # ------------------------------------------------------------------
     def load(self, item):
+        # Numeric fields
         for key, entry in self._entries.items():
             entry.delete(0, tk.END)
             entry.insert(0, item.get(key, 0))
 
-        # Filter effect dropdowns to only show effects compatible with this item type.
-        # _get_effect_list_for_item returns the full list if no mapping is found.
-        eff_list = _get_effect_list_for_item(item)
+        # Rarity
+        self._set_combo(self._rarity_var, self._rarity_cb,
+                        RARITY_OPTIONS, item.get("rarity", 0))
+
+        # Flags 1
+        self._set_combo(self._flags1_var, self._flags1_cb,
+                        EQUIPMENT_FLAGS1_OPTIONS, item.get("equipment_flags_1", 0))
+
+        if self._has_equipped:
+            self._set_combo(self._flags2_var, self._flags2_cb,
+                            EQUIPMENT_FLAGS2_OPTIONS, item.get("equipment_flags_2", 0))
+            self._set_combo(self._eq1_var, self._eq1_cb,
+                            EQUIPPED_FLAG_OPTIONS, item.get("equipped_flag_1", 0))
+            self._set_combo(self._eq2_var, self._eq2_cb,
+                            EQUIPPED_FLAG_OPTIONS, item.get("equipped_flag_2", 0))
+
+        # Effect dropdowns filtered to item type
+        eff_list    = _get_effect_list_for_item(item)
+        cei_choices = ["{} – {}".format("0x{:02X}".format(k), v)
+                       for k, v in CEI_LABELS.items()]
+        ee_choices  = ["{} – {}".format("0x{:02X}".format(k), v)
+                       for k, v in EE_LABELS.items()]
+
         for combo in self._eff_combos:
             combo.configure(values=eff_list)
 
@@ -793,8 +1027,17 @@ class ItemEditor(ttk.Frame):
                 display_id = "{:04X}".format(raw_id)
                 matched    = next((c for c in eff_list if c.startswith(display_id)), display_id)
                 self._eff_combos[i].set(matched)
+
             self._eff_mags[i].delete(0, tk.END)
             self._eff_mags[i].insert(0, eff["effect_value"])
+
+            # Category Effect Icon
+            cei_val = eff.get("category_effect_icon", 0)
+            self._set_combo(self._eff_cei[i], None, CEI_LABELS, cei_val)
+
+            # Effect Extra
+            ee_val  = eff.get("effect_extra", 0)
+            self._set_combo(self._eff_ee[i], None, EE_LABELS, ee_val)
 
     def clear(self):
         for e in self._entries.values():
@@ -810,14 +1053,12 @@ class SpawnDialog(tk.Toplevel):
     def __init__(self, master, title_label, panel, allowed_types=None):
         super().__init__(master)
         self._panel         = panel
-        self._allowed_types = allowed_types   # None = show everything
+        self._allowed_types = allowed_types
         self.title("Spawn {}".format(title_label))
         self.geometry("520x480")
         self.resizable(False, True)
         self.grab_set()
 
-        # Build name list from items_json filtered to only the types
-        # that actually exist in the calling panel.  No hardcoded guesses.
         if allowed_types is not None:
             self._names = sorted(
                 v["name"] for v in items_json.values()
@@ -887,6 +1128,235 @@ class SpawnDialog(tk.Toplevel):
         except (ValueError, RuntimeError) as exc:
             messagebox.showerror("Spawn Failed", str(exc), parent=self)
 
+import struct
+
+def increment_inventory_counter(data: bytearray, offset=0x33E515):
+    current = struct.unpack_from("<I", data, offset)[0]
+
+    # Optional: prevent overflow (uint32 max)
+    if current >= 0xFFFFFFFF:
+        current = 0
+
+    new_value = current + 1
+    struct.pack_into("<I", data, offset, new_value)
+
+    return new_value
+# ==================== IMPORT INVENTORY DIALOG ====================
+class ImportInventoryDialog(tk.Toplevel):
+    """
+    Lets the user pick a source save file, choose which inventory
+    sections to copy (Equipment / Consumables / Storage), then
+    applies the raw byte blocks into the current save's data buffer.
+
+    All inv_index values from the source are remapped to unique IDs
+    that don't collide with anything already in the current save so
+    the game never sees duplicate placement IDs.
+    """
+
+    # Section metadata: (label, src_start, dst_start, slot_size, slot_count)
+    _SECTIONS = [
+        ("Equipment (Weapons & Armour)",
+         ITEM_START,    ITEM_START,    ITEM_SIZE,    ITEM_SLOTS),
+        ("Consumables / Materials",
+         USABLE_START,  USABLE_START,  USABLE_SIZE,  USABLE_SLOTS),
+        ("Storage Box",
+         STORAGE_START, STORAGE_START, STORAGE_SIZE, STORAGE_SLOTS),
+    ]
+
+    def __init__(self, master, app_ref):
+        super().__init__(master)
+        self._app  = app_ref
+        self.title("Import Inventory from Save")
+        self.geometry("480x320")
+        self.resizable(False, False)
+        self.grab_set()
+        self._src_path_var = tk.StringVar(value="No file selected")
+        self._src_data     = None
+        self._checks       = []
+        self._build()
+
+    # ------------------------------------------------------------------
+    def _build(self):
+        pad = dict(padx=12, pady=6)
+
+        # ── File picker row ──────────────────────────────────────────
+        file_frame = ttk.LabelFrame(self, text="Source Save File", padding=8)
+        file_frame.pack(fill="x", **pad)
+
+        ttk.Label(file_frame, textvariable=self._src_path_var,
+                  width=44, anchor="w", relief="sunken").pack(side="left", padx=(0, 6))
+        ttk.Button(file_frame, text="Browse…",
+                   command=self._browse).pack(side="left")
+
+        # ── Section checkboxes ───────────────────────────────────────
+        sec_frame = ttk.LabelFrame(self, text="Sections to Import", padding=8)
+        sec_frame.pack(fill="x", **pad)
+
+        self._checks = []
+        for label, *_ in self._SECTIONS:
+            var = tk.BooleanVar(value=True)
+            cb  = ttk.Checkbutton(sec_frame, text=label, variable=var)
+            cb.pack(anchor="w", pady=2)
+            self._checks.append(var)
+
+        # "Select all / none" convenience buttons
+        btn_row = ttk.Frame(sec_frame)
+        btn_row.pack(anchor="w", pady=(4, 0))
+        ttk.Button(btn_row, text="Select All",
+                   command=lambda: [v.set(True)  for v in self._checks]
+                   ).pack(side="left", padx=(0, 4))
+        ttk.Button(btn_row, text="Select None",
+                   command=lambda: [v.set(False) for v in self._checks]
+                   ).pack(side="left")
+
+        # ── Action buttons ───────────────────────────────────────────
+        act_frame = ttk.Frame(self)
+        act_frame.pack(fill="x", side="bottom", padx=12, pady=10)
+        ttk.Button(act_frame, text="Cancel",
+                   command=self.destroy).pack(side="right", padx=(4, 0))
+        ttk.Button(act_frame, text="Import",
+                   command=self._do_import).pack(side="right")
+
+    # ------------------------------------------------------------------
+    def _browse(self):
+        """Decrypt and load a source SAVEDATA.BIN into self._src_data."""
+        file_path = filedialog.askopenfilename(
+            title="Select Source Save File",
+            filetypes=[("Save Files", "*.BIN"), ("All Files", "*.*")]
+        )
+        if not file_path:
+            return
+        if os.path.basename(file_path) != "SAVEDATA.BIN":
+            messagebox.showerror("Error",
+                                 "Please select a SAVEDATA.BIN file.",
+                                 parent=self)
+            return
+
+        exe_path  = base_dir / "pc_import" / "pc.exe"
+        subprocess.run([str(exe_path), file_path], cwd=exe_path.parent,
+                       input="\n", text=True, capture_output=True)
+        dec_path  = exe_path.parent / "decr_SAVEDATA.BIN"
+        try:
+            with open(dec_path, "rb") as f:
+                self._src_data = bytearray(f.read())
+            self._src_path_var.set(os.path.basename(file_path) +
+                                   "  ✓  ({:,} bytes)".format(len(self._src_data)))
+        except FileNotFoundError:
+            messagebox.showerror("Error",
+                                 "Decryption failed – decr_SAVEDATA.BIN not found.",
+                                 parent=self)
+            self._src_data = None
+
+    # ------------------------------------------------------------------
+    def _remap_inv_indices(self, start, slot_size, slot_count):
+        """
+        After copying raw bytes from the source, walk every non-empty slot
+        in [start … start + slot_size*slot_count) of the *current* data
+        buffer and replace each inv_index (u16 LE @ +0x1C) with a freshly
+        generated unique value so there are no collisions with items that
+        were already in the destination save.
+        """
+        for i in range(slot_count):
+            base = start + i * slot_size
+            if data[base: base + 4] == b'\x00\x00\x00\x00':
+                continue
+            new_idx = _generate_unique_inv_index()
+            data[base + 0x1C: base + 0x1E] = new_idx.to_bytes(2, "little")
+
+    # ------------------------------------------------------------------
+    def _do_import(self):
+        if data is None:
+            messagebox.showerror("Error",
+                                 "No save file loaded. Please open your current save first.",
+                                 parent=self)
+            return
+        if self._src_data is None:
+            messagebox.showerror("Error",
+                                 "No source file selected. Click Browse… first.",
+                                 parent=self)
+            return
+
+        selected = [i for i, v in enumerate(self._checks) if v.get()]
+        if not selected:
+            messagebox.showwarning("Nothing Selected",
+                                   "Please tick at least one section to import.",
+                                   parent=self)
+            return
+
+        # Build a human-readable summary for the confirmation dialog
+        labels = [self._SECTIONS[i][0] for i in selected]
+        summary = "\n  • ".join([""] + labels)
+        if not messagebox.askyesno(
+                "Confirm Import",
+                "The following sections will be REPLACED in your current save:{}\n\n"
+                "This cannot be undone (your original save backup was made on load).\n\n"
+                "Continue?".format(summary),
+                parent=self):
+            return
+
+        # ── Perform the copy ─────────────────────────────────────────
+        imported = []
+        for idx in selected:
+            label, src_start, dst_start, slot_size, slot_count = self._SECTIONS[idx]
+            byte_len = slot_size * slot_count
+
+            # Bounds-check both buffers
+            if src_start + byte_len > len(self._src_data):
+                messagebox.showerror("Error",
+                                     "Source file is too small for section:\n{}".format(label),
+                                     parent=self)
+                return
+            if dst_start + byte_len > len(data):
+                messagebox.showerror("Error",
+                                     "Destination file is too small for section:\n{}".format(label),
+                                     parent=self)
+                return
+
+            # Raw block copy
+            data[dst_start: dst_start + byte_len] = \
+                self._src_data[src_start: src_start + byte_len]
+
+            # Remap inv_index values to avoid collisions
+            self._remap_inv_indices(dst_start, slot_size, slot_count)
+            imported.append(label)
+
+        # ── Re-parse affected sections and rebuild UI panels ─────────
+        rebuild_keys = []
+        for idx in selected:
+            label = self._SECTIONS[idx][0]
+            if "Equipment" in label:
+                player_items()
+                rebuild_keys.append("equipment")
+            elif "Consumables" in label:
+                player_usables()
+                rebuild_keys.append("usables")
+            elif "Storage" in label:
+                player_storage()
+                rebuild_keys.append("storage")
+
+        app = self._app
+        if "equipment" in rebuild_keys:
+            app._rebuild_panel("equipment", app._tab_equipment,
+                               items,   write_items_to_data,   True,
+                               "Equipment", use_subtabs=True)
+        if "usables" in rebuild_keys:
+            app._rebuild_panel("usables",  app._tab_usables,
+                               usables, write_usables_to_data, False,
+                               "Consumable", use_subtabs=False)
+        if "storage" in rebuild_keys:
+            app._rebuild_panel("storage",  app._tab_storage,
+                               storage, write_storage_to_data, False,
+                               "Storage Item", use_subtabs=False)
+
+        messagebox.showinfo(
+            "Import Complete",
+            "Successfully imported:\n  • {}\n\n"
+            "Remember to Save File to write the changes to disk.".format(
+                "\n  • ".join(imported)),
+            parent=self)
+        self.destroy()
+
+
 # ==================== INVENTORY PANEL ====================
 class InventoryPanel(ttk.Frame):
     def __init__(self, master, dataset, write_fn,
@@ -950,22 +1420,27 @@ class InventoryPanel(ttk.Frame):
         fe   = ttk.Entry(fbar, textvariable=fvar, width=26)
         fe.pack(side="left", padx=4)
 
-        cols = ("slot", "item_id", "name", "type", "quantity", "level", "rarity")
+        cols = ("slot", "item_id", "name", "type", "quantity", "level", "rarity", "flags1", "flags2")
         tree = ttk.Treeview(parent, columns=cols, show="headings", height=24)
         vsb  = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
         tree.configure(yscrollcommand=vsb.set)
         tree.pack(side="left", fill="both", expand=True)
         vsb.pack(side="right", fill="y")
 
-        for col in cols:
-            tree.heading(col, text=col.capitalize())
-        tree.column("slot",     width=45)
-        tree.column("item_id",  width=70)
-        tree.column("name",     width=220)
-        tree.column("type",     width=120)
-        tree.column("quantity", width=65)
-        tree.column("level",    width=50)
-        tree.column("rarity",   width=50)
+        headers = {
+            "slot":     ("Slot",     45),
+            "item_id":  ("Item ID",  70),
+            "name":     ("Name",    200),
+            "type":     ("Type",    110),
+            "quantity": ("Qty",      50),
+            "level":    ("Level",    50),
+            "rarity":   ("Rarity",   70),
+            "flags1":   ("Flags1",   70),
+            "flags2":   ("Flags2",   70),
+        }
+        for col, (hdr, w) in headers.items():
+            tree.heading(col, text=hdr)
+            tree.column(col, width=w)
 
         def populate():
             tree.delete(*tree.get_children())
@@ -979,9 +1454,17 @@ class InventoryPanel(ttk.Frame):
                     continue
                 if ft and ft not in name.lower() and ft not in type_.lower():
                     continue
+                rarity_str = RARITY_OPTIONS.get(item.get("rarity", 0),
+                                                "0x{:02X}".format(item.get("rarity", 0)))
+                f1 = item.get("equipment_flags_1", 0)
+                f2 = item.get("equipment_flags_2", 0) if self._has_equipped else "-"
+                flags1_str = EQUIPMENT_FLAGS1_OPTIONS.get(f1, "0x{:02X}".format(f1))
+                flags2_str = (EQUIPMENT_FLAGS2_OPTIONS.get(f2, "0x{:02X}".format(f2))
+                              if self._has_equipped else "-")
                 tree.insert("", "end", iid=item["slot"], values=(
                     item["slot"], hex_id, name, type_,
-                    item["quantity"], item["item_level"], item["rarity"]
+                    item["quantity"], item["item_level"],
+                    rarity_str, flags1_str, flags2_str,
                 ))
 
         fe.bind("<KeyRelease>", lambda e: populate())
@@ -989,28 +1472,23 @@ class InventoryPanel(ttk.Frame):
                    command=lambda: [fvar.set(""), populate()]
                    ).pack(side="left", padx=4)
 
-        # Spawn button — allowed_types is built from what items_json entries
-        # actually appear in this panel's dataset, so the dialog list matches
-        # exactly what the treeview shows.
         if self._has_equipped:
-            # Collect all type strings seen in the equipment dataset
             equip_types = frozenset(
                 lookup_item(swap_endian_hex(it["item_id"]))[1]
                 for it in self._dataset if it["item_id"] != 0
             )
             ttk.Button(
-                fbar, text="Spawn Equipment (WIP) (FOR SOME REASON IT SHOWS 3 DUBLICATE OF THE SAME ITEM INGAME)",
+                fbar, text="Spawn Equipment (WIP)",
                 command=lambda t=equip_types: SpawnDialog(
                     self.winfo_toplevel(), "Equipment", self, allowed_types=t)
             ).pack(side="left", padx=6)
         else:
-            # Collect all type strings seen in the usable/storage dataset
             usable_types = frozenset(
                 lookup_item(swap_endian_hex(it["item_id"]))[1]
                 for it in self._dataset if it["item_id"] != 0
             )
             ttk.Button(
-                fbar, text="Spawn Item (WIP) (FOR SOME REASON IT SHOWS 3 DUBLICATE OF THE SAME ITEM INGAME)",
+                fbar, text="Spawn Item (WIP)",
                 command=lambda t=usable_types: SpawnDialog(
                     self.winfo_toplevel(), "Consumable / Material", self, allowed_types=t)
             ).pack(side="left", padx=6)
@@ -1053,17 +1531,33 @@ class InventoryPanel(ttk.Frame):
             self.refresh()
             messagebox.showinfo("Done", "Maxed {} {}(s) to 9999.".format(count, self._label))
 
-    def _apply(self, entries, eff_combos, eff_mags):
+    def _apply(self, entries, eff_combos, eff_mags,
+               eff_cei, eff_ee,
+               rarity_var, flags1_var, flags2_var, eq1_var, eq2_var):
         if self._sel_index is None:
             messagebox.showwarning("No Selection", "Select a {} first.".format(self._label))
             return
         item = self._dataset[self._sel_index]
+
+        # Numeric fields
         for key, entry in entries.items():
             try:
                 item[key] = int(entry.get())
             except ValueError:
                 messagebox.showerror("Error", "Invalid value for '{}'".format(key))
                 return
+
+        # Flag / dropdown fields
+        item["rarity"]           = ItemEditor._parse_combo_hex(rarity_var)
+        item["equipment_flags_1"] = ItemEditor._parse_combo_hex(flags1_var)
+        if self._has_equipped and flags2_var is not None:
+            item["equipment_flags_2"] = ItemEditor._parse_combo_hex(flags2_var)
+        if self._has_equipped and eq1_var is not None:
+            item["equipped_flag_1"] = ItemEditor._parse_combo_hex(eq1_var)
+        if self._has_equipped and eq2_var is not None:
+            item["equipped_flag_2"] = ItemEditor._parse_combo_hex(eq2_var)
+
+        # Effects
         for i in range(7):
             chosen = eff_combos[i].get()
             if chosen and chosen != "Empty":
@@ -1079,6 +1573,10 @@ class InventoryPanel(ttk.Frame):
                 except ValueError:
                     messagebox.showerror("Error", "Invalid effect value for slot {}".format(i + 1))
                     return
+
+            item["effects"][i]["category_effect_icon"] = ItemEditor._parse_combo_hex(eff_cei[i])
+            item["effects"][i]["effect_extra"]          = ItemEditor._parse_combo_hex(eff_ee[i])
+
         self.refresh()
         messagebox.showinfo("Success", "{} updated!".format(self._label))
 
@@ -1111,7 +1609,12 @@ class Nioh3Editor:
 
         import_menu = tk.Menu(menubar, tearoff=0)
         menubar.add_cascade(label="Import Save", menu=import_menu)
-        import_menu.add_command(label="Import Save", command=import_save)
+        import_menu.add_command(label="Import Full Save",      command=self.import_save)
+
+
+        import_inv_menu = tk.Menu(menubar, tearoff=0)
+        menubar.add_cascade(label="Import Inventory", menu=import_inv_menu)
+        import_inv_menu.add_command(label="Import Inventory …",   command=self.import_inventory)
 
         self.notebook = ttk.Notebook(root)
         self.notebook.pack(fill="both", expand=True, padx=5, pady=5)
@@ -1149,6 +1652,43 @@ class Nioh3Editor:
                                has_equipped=has_equipped, label=label, use_subtabs=use_subtabs)
         panel.pack(fill="both", expand=True)
         self._panels[key] = panel
+
+    def import_save(self):
+        global data
+        if not open_file_import():
+            return
+        if data is None:
+            messagebox.showerror("Error", "Please load your current save file first, then click Import.")
+            return
+        if messagebox.askyesno("Confirm", "This will replace your current character. Continue?"):
+            data = data[:0x15F] + import_data[0x15F:]
+            if len(data) != 0x9001B0:
+                messagebox.showerror("Import Error", "Size mismatch after import.")
+                return
+
+            player_items()
+            player_usables()
+            player_storage()
+
+            self._rebuild_panel("equipment", self._tab_equipment,
+                                items,   write_items_to_data,   True,  "Equipment",    use_subtabs=True)
+            self._rebuild_panel("usables",  self._tab_usables,
+                                usables, write_usables_to_data, False, "Consumable",   use_subtabs=False)
+            self._rebuild_panel("storage",  self._tab_storage,
+                                storage, write_storage_to_data, False, "Storage Item", use_subtabs=False)
+            self.update_stats_display()
+
+            messagebox.showinfo("Success", "File imported. Load in-game to apply the character.")
+
+    def import_inventory(self):
+        """Open the Import Inventory dialog."""
+        if data is None:
+            messagebox.showerror(
+                "Error",
+                "Please open your current save file first (File → Open Save File)."
+            )
+            return
+        ImportInventoryDialog(self.root, self)
 
     def create_stats_tab(self):
         self.tab_stats = ttk.Frame(self.notebook)
