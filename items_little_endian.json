@@ -11,12 +11,32 @@
         "name": "Bizen Tachi",
         "type": "Weapon"
     },
+    "D9BD": {
+        "name": "Demon Cutter",
+        "type": "Weapon"
+    },
+    "BA8F": {
+        "name": "Dojikiri Yasutsuna",
+        "type": "Weapon"
+    },
+    "25DC": {
+        "name": "Great Tengu Blade",
+        "type": "Weapon"
+    },
     "D4C0": {
         "name": "Infernal Katana",
         "type": "Weapon"
     },
+    "4824": {
+        "name": "Kashu Kiyomitsu",
+        "type": "Weapon"
+    },
     "A305": {
         "name": "Mantra Sword",
+        "type": "Weapon"
+    },
+    "3C9C": {
+        "name": "Nagasone Kotetsu",
         "type": "Weapon"
     },
     "7F54": {
@@ -59,6 +79,10 @@
         "name": "Tokagemaru",
         "type": "Weapon"
     },
+    "4DD1": {
+        "name": "Usumidori",
+        "type": "Weapon"
+    },
     "BF27": {
         "name": "Wooden Sword",
         "type": "Weapon"
@@ -67,8 +91,28 @@
         "name": "Yamatai Sword",
         "type": "Weapon"
     },
+    "1F5A": {
+        "name": "Atagi Sadamune",
+        "type": "Weapon"
+    },
+    "F974": {
+        "name": "Bizen Ichimonji",
+        "type": "Weapon"
+    },
     "C8B9": {
         "name": "Bizen Uchigatana",
+        "type": "Weapon"
+    },
+    "26CD": {
+        "name": "Demontear Sword",
+        "type": "Weapon"
+    },
+    "5690": {
+        "name": "Fujiwara Sadayasu",
+        "type": "Weapon"
+    },
+    "1B61": {
+        "name": "Heshikiri Hasebe",
         "type": "Weapon"
     },
     "180D": {
@@ -95,6 +139,10 @@
         "name": "Kyo-Oh's Blade",
         "type": "Weapon"
     },
+    "0F2A": {
+        "name": "Mikazuki Munechika",
+        "type": "Weapon"
+    },
     "C4D2": {
         "name": "Mino Uchigatana",
         "type": "Weapon"
@@ -107,8 +155,28 @@
         "name": "Raikiri",
         "type": "Weapon"
     },
+    "A5F7": {
+        "name": "Senjuin Uchigatana",
+        "type": "Weapon"
+    },
+    "2EEF": {
+        "name": "Swift Hawk",
+        "type": "Weapon"
+    },
     "E27F": {
         "name": "Tokagemaru",
+        "type": "Weapon"
+    },
+    "3F60": {
+        "name": "Usumidori",
+        "type": "Weapon"
+    },
+    "5034": {
+        "name": "Yamato Uchigatana",
+        "type": "Weapon"
+    },
+    "D63A": {
+        "name": "Brother's Dual Katana",
         "type": "Weapon"
     },
     "CE3A": {
@@ -121,6 +189,10 @@
     },
     "2F66": {
         "name": "Dual Wooden Swords",
+        "type": "Weapon"
+    },
+    "F4C6": {
+        "name": "Fudo Kuniyuki & Yagen Toshiro",
         "type": "Weapon"
     },
     "E7CD": {
@@ -137,6 +209,10 @@
     },
     "C127": {
         "name": "Infernal Dual Katana",
+        "type": "Weapon"
+    },
+    "D395": {
+        "name": "Kanesada & Yasutsugu",
         "type": "Weapon"
     },
     "6741": {
@@ -171,6 +247,22 @@
         "name": "Yamanba's Knives",
         "type": "Weapon"
     },
+    "352F": {
+        "name": "Basket Blade & Boar Cutter",
+        "type": "Weapon"
+    },
+    "0342": {
+        "name": "Crucible Saws",
+        "type": "Weapon"
+    },
+    "E8BE": {
+        "name": "Dual Bloodstained Cleavers",
+        "type": "Weapon"
+    },
+    "A1A3": {
+        "name": "Dual Wooden Swords",
+        "type": "Weapon"
+    },
     "0CC2": {
         "name": "Go-no-Yoshihiro Twin Swords",
         "type": "Weapon"
@@ -183,12 +275,32 @@
         "name": "Infernal Dual Ninja Swords",
         "type": "Weapon"
     },
+    "49C9": {
+        "name": "Little Crow & Quickdraw",
+        "type": "Weapon"
+    },
+    "24A2": {
+        "name": "Magoroku Kanemoto Dual Katana",
+        "type": "Weapon"
+    },
     "1BE3": {
         "name": "Mino Dual Uchigatana",
         "type": "Weapon"
     },
     "2822": {
         "name": "Nosada Dual Katana",
+        "type": "Weapon"
+    },
+    "3A0D": {
+        "name": "Seki Dual Uchigatana",
+        "type": "Weapon"
+    },
+    "8F2C": {
+        "name": "Seki Kaneyoshi Dual Tachi",
+        "type": "Weapon"
+    },
+    "8C30": {
+        "name": "Shichisei & Heishishorin",
         "type": "Weapon"
     },
     "BC44": {
@@ -199,16 +311,24 @@
         "name": "Soshu Masamune Dual Katana",
         "type": "Weapon"
     },
+    "EDA3": {
+        "name": "Weathered Bone & Bleached Twig",
+        "type": "Weapon"
+    },
+    "09C0": {
+        "name": "Yamanba's Knives",
+        "type": "Weapon"
+    },
+    "E8F6": {
+        "name": "Birdflight Cross Spear",
+        "type": "Weapon"
+    },
     "589B": {
         "name": "Bishamon Spear",
         "type": "Weapon"
     },
     "BC6C": {
         "name": "Bonepile Spear",
-        "type": "Weapon"
-    },
-    "E8F6": {
-        "name": "Birdflight Cross Spear",
         "type": "Weapon"
     },
     "655B": {
@@ -229,6 +349,10 @@
     },
     "358A": {
         "name": "Crucible Sasumata",
+        "type": "Weapon"
+    },
+    "9DA3": {
+        "name": "Hanzo The Demon's Spear",
         "type": "Weapon"
     },
     "B298": {
@@ -255,12 +379,12 @@
         "name": "Ningen Mukotsu",
         "type": "Weapon"
     },
-    "94E5": {
-        "name": "Otegine",
-        "type": "Weapon"
-    },
     "CE07": {
         "name": "Officer's Spear",
+        "type": "Weapon"
+    },
+    "94E5": {
+        "name": "Otegine",
         "type": "Weapon"
     },
     "19FD": {
@@ -287,6 +411,10 @@
         "name": "Swan Spear",
         "type": "Weapon"
     },
+    "D6E8": {
+        "name": "Tombokiri",
+        "type": "Weapon"
+    },
     "7665": {
         "name": "Torch Spear",
         "type": "Weapon"
@@ -307,6 +435,10 @@
         "name": "Yamatai Spear",
         "type": "Weapon"
     },
+    "9E14": {
+        "name": "Billhook Kusarigama",
+        "type": "Weapon"
+    },
     "E2EA": {
         "name": "Black Bamboo Kusarigama",
         "type": "Weapon"
@@ -315,12 +447,16 @@
         "name": "Chunin's Kusarigama",
         "type": "Weapon"
     },
+    "0849": {
+        "name": "Crescent Moon Kusarigama",
+        "type": "Weapon"
+    },
     "1CD1": {
         "name": "Custom Kusarigama",
         "type": "Weapon"
     },
-    "0849": {
-        "name": "Crescent Moon Kusarigama",
+    "598A": {
+        "name": "Demon Fang Kusarigama",
         "type": "Weapon"
     },
     "C901": {
@@ -363,6 +499,10 @@
         "name": "Rotten Rope Cutter",
         "type": "Weapon"
     },
+    "D738": {
+        "name": "Shishido Kusarigama",
+        "type": "Weapon"
+    },
     "9550": {
         "name": "Snowmelt Kusarigama",
         "type": "Weapon"
@@ -403,20 +543,24 @@
         "name": "Bandit Axe",
         "type": "Weapon"
     },
+    "8E69": {
+        "name": "Benkei's Axe",
+        "type": "Weapon"
+    },
     "0740": {
         "name": "Black Steel Axe",
         "type": "Weapon"
     },
-    "E626": {
-        "name": "Brute's Axe",
+    "C68D": {
+        "name": "Blessed Vajra Hammer",
         "type": "Weapon"
     },
     "5ECD": {
         "name": "Bronze Hammer",
         "type": "Weapon"
     },
-    "C68D": {
-        "name": "Blessed Vajra Hammer",
+    "E626": {
+        "name": "Brute's Axe",
         "type": "Weapon"
     },
     "81B8": {
@@ -439,12 +583,20 @@
         "name": "Genno's Hammer",
         "type": "Weapon"
     },
-    "9EEA": {
-        "name": "Helmsplitter Axe",
+    "C84A": {
+        "name": "Guardian Monk's Hammer",
+        "type": "Weapon"
+    },
+    "8FD9": {
+        "name": "Gunner's Hammer",
         "type": "Weapon"
     },
     "A1BB": {
         "name": "Heavyweight Axe",
+        "type": "Weapon"
+    },
+    "9EEA": {
+        "name": "Helmsplitter Axe",
         "type": "Weapon"
     },
     "CB72": {
@@ -487,12 +639,20 @@
         "name": "Rusty Hoe",
         "type": "Weapon"
     },
+    "4FAE": {
+        "name": "Ryomen Sukuna's Axe",
+        "type": "Weapon"
+    },
     "3180": {
         "name": "Slayer's Axe",
         "type": "Weapon"
     },
     "96C2": {
         "name": "Spearbreaker Hammer",
+        "type": "Weapon"
+    },
+    "FA0C": {
+        "name": "Swordsmith's Hammer",
         "type": "Weapon"
     },
     "432F": {
@@ -513,6 +673,10 @@
     },
     "4227": {
         "name": "Iron Tonfa",
+        "type": "Weapon"
+    },
+    "7441": {
+        "name": "Last Ninja's Tonfa",
         "type": "Weapon"
     },
     "222E": {
@@ -579,6 +743,10 @@
         "name": "Yin-Yang Tonfa",
         "type": "Weapon"
     },
+    "D660": {
+        "name": "Bandit Leader's Odachi",
+        "type": "Weapon"
+    },
     "AA83": {
         "name": "Bizen Odachi",
         "type": "Weapon"
@@ -597,6 +765,10 @@
     },
     "07D9": {
         "name": "Firefly Blade",
+        "type": "Weapon"
+    },
+    "CDA7": {
+        "name": "Ibaraki Doji's Odachi",
         "type": "Weapon"
     },
     "D39C": {
@@ -651,8 +823,24 @@
         "name": "Rai Kuniyuki Odachi",
         "type": "Weapon"
     },
+    "74EF": {
+        "name": "Ryomen Sukuna's Sword",
+        "type": "Weapon"
+    },
+    "C16A": {
+        "name": "Second Captain's Odachi",
+        "type": "Weapon"
+    },
     "35A7": {
         "name": "Sekishu Kazusada",
+        "type": "Weapon"
+    },
+    "2621": {
+        "name": "Slayer's Odachi",
+        "type": "Weapon"
+    },
+    "00EE": {
+        "name": "Stone Splitter",
         "type": "Weapon"
     },
     "2FDD": {
@@ -671,48 +859,56 @@
         "name": "Taro Tachi",
         "type": "Weapon"
     },
-    "41D6": {
-        "name": "Wooden Odachi",
+    "9A1D": {
+        "name": "Urn Splitter",
         "type": "Weapon"
     },
-    "BBCC": {
-        "name": "Yamato Odachi",
+    "41D6": {
+        "name": "Wooden Odachi",
         "type": "Weapon"
     },
     "9235": {
         "name": "Yamashiro Odachi",
         "type": "Weapon"
     },
-    "3FB1": {
-        "name": "Barbarian's Hatchets",
+    "BBCC": {
+        "name": "Yamato Odachi",
         "type": "Weapon"
     },
-    "5543": {
-        "name": "Brigand's Hatchets",
+    "3FB1": {
+        "name": "Barbarian's Hatchets",
         "type": "Weapon"
     },
     "CE48": {
         "name": "Black Rain & Thunder",
         "type": "Weapon"
     },
-    "8023": {
-        "name": "Echoing Thunder",
+    "5543": {
+        "name": "Brigand's Hatchets",
         "type": "Weapon"
     },
-    "C66C": {
-        "name": "Gyosha Hatchets",
+    "8023": {
+        "name": "Echoing Thunder",
         "type": "Weapon"
     },
     "08A5": {
         "name": "Grimy Hatchet & Rusty Hoe",
         "type": "Weapon"
     },
-    "5488": {
-        "name": "Hero's Hatchets",
+    "C66C": {
+        "name": "Gyosha Hatchets",
         "type": "Weapon"
     },
     "46E0": {
         "name": "Haguro Ninja Hatchets",
+        "type": "Weapon"
+    },
+    "83C7": {
+        "name": "Heizo's Hatchets",
+        "type": "Weapon"
+    },
+    "5488": {
+        "name": "Hero's Hatchets",
         "type": "Weapon"
     },
     "33F3": {
@@ -775,12 +971,12 @@
         "name": "Deviant's Switchglaive",
         "type": "Weapon"
     },
-    "D5E9": {
-        "name": "Extinction Switchglaive",
-        "type": "Weapon"
-    },
     "9B06": {
         "name": "Evil-Crusher Switchglaive",
+        "type": "Weapon"
+    },
+    "D5E9": {
+        "name": "Extinction Switchglaive",
         "type": "Weapon"
     },
     "9379": {
@@ -799,8 +995,20 @@
         "name": "Kanemitsu Switchglaive",
         "type": "Weapon"
     },
+    "58C3": {
+        "name": "Lilac Switchglaive",
+        "type": "Weapon"
+    },
     "548B": {
         "name": "Martial Artist's Switchglaive",
+        "type": "Weapon"
+    },
+    "6CC4": {
+        "name": "Merciful Switchglaive",
+        "type": "Weapon"
+    },
+    "3CEA": {
+        "name": "Myojin Scythe",
         "type": "Weapon"
     },
     "B5FE": {
@@ -823,12 +1031,16 @@
         "name": "Seething Dragon",
         "type": "Weapon"
     },
-    "5FB1": {
-        "name": "Suzaku's Beak",
-        "type": "Weapon"
-    },
     "AB00": {
         "name": "Seven Scalp Switchglaive",
+        "type": "Weapon"
+    },
+    "E9D5": {
+        "name": "Stone's Bane",
+        "type": "Weapon"
+    },
+    "5FB1": {
+        "name": "Suzaku's Beak",
         "type": "Weapon"
     },
     "22F3": {
@@ -843,6 +1055,10 @@
         "name": "Watatsumi's Watch",
         "type": "Weapon"
     },
+    "459E": {
+        "name": "Benkei's Splitstaff",
+        "type": "Weapon"
+    },
     "5AF9": {
         "name": "Chunin's Splitstaff",
         "type": "Weapon"
@@ -851,12 +1067,32 @@
         "name": "Dragon King Splitstaff",
         "type": "Weapon"
     },
+    "17F5": {
+        "name": "Elite Warrior's Splitstaff",
+        "type": "Weapon"
+    },
     "E4FA": {
         "name": "Evil-Crusher Splitstaff",
         "type": "Weapon"
     },
+    "E73C": {
+        "name": "Flashfire Splitstaff",
+        "type": "Weapon"
+    },
     "FDD2": {
         "name": "Genin's Splitstaff",
+        "type": "Weapon"
+    },
+    "7859": {
+        "name": "Head Ninja's Splitstaff",
+        "type": "Weapon"
+    },
+    "3A63": {
+        "name": "Heroic Monk's Splitstaff",
+        "type": "Weapon"
+    },
+    "B586": {
+        "name": "Himiko's Staff",
         "type": "Weapon"
     },
     "767D": {
@@ -871,16 +1107,40 @@
         "name": "Itinerant Monk's Splitstaff",
         "type": "Weapon"
     },
+    "1D1C": {
+        "name": "Jonin's Splitstaff",
+        "type": "Weapon"
+    },
+    "E860": {
+        "name": "Kobo Daishi's Khakkhara",
+        "type": "Weapon"
+    },
     "2C43": {
         "name": "Mikoshi's Khakkhara",
+        "type": "Weapon"
+    },
+    "7D7F": {
+        "name": "Sage's Khakkhara",
         "type": "Weapon"
     },
     "5B82": {
         "name": "Seven Scalp Splitstaff",
         "type": "Weapon"
     },
+    "60B9": {
+        "name": "Tempest Splitstaff",
+        "type": "Weapon"
+    },
+    "5E14": {
+        "name": "Tengu's Khakkhara",
+        "type": "Weapon"
+    },
     "1B85": {
         "name": "Vajra Splitstaff",
+        "type": "Weapon"
+    },
+    "E3F7": {
+        "name": "Warrior Monk's Splitstaff",
         "type": "Weapon"
     },
     "DF21": {
@@ -895,36 +1155,124 @@
         "name": "Cestuses of Malevolence",
         "type": "Weapon"
     },
-    "AE9C": {
-        "name": "Fuma Cestuses",
+    "0699": {
+        "name": "Demon Arm Cestuses",
+        "type": "Weapon"
+    },
+    "8CD2": {
+        "name": "Exorcist Cestuses",
+        "type": "Weapon"
+    },
+    "5C19": {
+        "name": "Footsoldier's Cestuses",
         "type": "Weapon"
     },
     "F101": {
         "name": "Frost Blossom Cestuses",
         "type": "Weapon"
     },
+    "AE9C": {
+        "name": "Fuma Cestuses",
+        "type": "Weapon"
+    },
+    "1399": {
+        "name": "Gallant Thief's Cestuses",
+        "type": "Weapon"
+    },
+    "1382": {
+        "name": "Hachiya Cestuses",
+        "type": "Weapon"
+    },
     "2759": {
         "name": "Infernal Cestuses",
+        "type": "Weapon"
+    },
+    "BBCE": {
+        "name": "Leather Cestuses",
+        "type": "Weapon"
+    },
+    "4747": {
+        "name": "Lord's Cestuses",
+        "type": "Weapon"
+    },
+    "CA00": {
+        "name": "Martial Artist's Cestuses",
+        "type": "Weapon"
+    },
+    "7331": {
+        "name": "Master's Cestuses",
+        "type": "Weapon"
+    },
+    "ADCA": {
+        "name": "Raging Fire Cestuses",
         "type": "Weapon"
     },
     "63D0": {
         "name": "Samurai General's Cestuses",
         "type": "Weapon"
     },
+    "3FDF": {
+        "name": "Shugendo Hermit Cestuses",
+        "type": "Weapon"
+    },
+    "77B1": {
+        "name": "Taifu Cestuses",
+        "type": "Weapon"
+    },
     "85D3": {
         "name": "Thunderous Cestuses",
+        "type": "Weapon"
+    },
+    "773B": {
+        "name": "Vermilion Cestuses",
         "type": "Weapon"
     },
     "5512": {
         "name": "White Lotus Cestuses",
         "type": "Weapon"
     },
+    "FD92": {
+        "name": "Chief's Talons",
+        "type": "Weapon"
+    },
+    "6FF4": {
+        "name": "Chunin's Talons",
+        "type": "Weapon"
+    },
+    "59A1": {
+        "name": "Frost Blossom Talons",
+        "type": "Weapon"
+    },
+    "6F27": {
+        "name": "Fuma Talons",
+        "type": "Weapon"
+    },
+    "A3AF": {
+        "name": "Fuma Chief's Talons",
+        "type": "Weapon"
+    },
     "002F": {
         "name": "Genin's Talons",
         "type": "Weapon"
     },
+    "16F7": {
+        "name": "Hachiya Talons",
+        "type": "Weapon"
+    },
     "D8A0": {
         "name": "Infernal Talons",
+        "type": "Weapon"
+    },
+    "57BC": {
+        "name": "Jonin's Talons",
+        "type": "Weapon"
+    },
+    "D1C5": {
+        "name": "Martial Artist's Talons",
+        "type": "Weapon"
+    },
+    "6858": {
+        "name": "Master's Talons",
         "type": "Weapon"
     },
     "A7A3": {
@@ -939,6 +1287,14 @@
         "name": "Simple Talons",
         "type": "Weapon"
     },
+    "1D88": {
+        "name": "Taifu Talons",
+        "type": "Weapon"
+    },
+    "94D6": {
+        "name": "Thief's Talons",
+        "type": "Weapon"
+    },
     "2C67": {
         "name": "Thunderous Talons",
         "type": "Weapon"
@@ -947,8 +1303,20 @@
         "name": "Togakushi Talons",
         "type": "Weapon"
     },
+    "8E08": {
+        "name": "Tsuchigumo Talons",
+        "type": "Weapon"
+    },
+    "FE29": {
+        "name": "Vermilion Talons",
+        "type": "Weapon"
+    },
     "2D65": {
         "name": "White Lotus Talons",
+        "type": "Weapon"
+    },
+    "1033": {
+        "name": "Yamabushi Talons",
         "type": "Weapon"
     },
     "1A8E": {
@@ -961,6 +1329,10 @@
     },
     "4662": {
         "name": "Crimson General's Bow",
+        "type": "Weapon"
+    },
+    "C163": {
+        "name": "Fan-Piercing Bow",
         "type": "Weapon"
     },
     "DE72": {
@@ -981,6 +1353,14 @@
     },
     "7A44": {
         "name": "Raishodo",
+        "type": "Weapon"
+    },
+    "4D36": {
+        "name": "Ryomen Sukuna's Bow",
+        "type": "Weapon"
+    },
+    "2026-09-3000:00:00": {
+        "name": "Seer's Bow",
         "type": "Weapon"
     },
     "75E5": {
@@ -1123,6 +1503,42 @@
         "name": "Tiger of Kai's Greaves",
         "type": "Armor"
     },
+    "1629": {
+        "name": "Shock Troop Vest",
+        "type": "Armor"
+    },
+    "EEEE": {
+        "name": "Shock Troop Gauntlets",
+        "type": "Armor"
+    },
+    "617F": {
+        "name": "Shock Troop Trousers",
+        "type": "Armor"
+    },
+    "21D9": {
+        "name": "Shock Troop Greaves",
+        "type": "Armor"
+    },
+    "64A5": {
+        "name": "Righteous Helmet",
+        "type": "Armor"
+    },
+    "851D": {
+        "name": "Righteous Cuirass",
+        "type": "Armor"
+    },
+    "3749": {
+        "name": "Righteous Gauntlets",
+        "type": "Armor"
+    },
+    "FCCE": {
+        "name": "Righteous Waistguard",
+        "type": "Armor"
+    },
+    "BFF0": {
+        "name": "Righteous Greaves",
+        "type": "Armor"
+    },
     "B0FB": {
         "name": "Shogunate Hat",
         "type": "Armor"
@@ -1159,6 +1575,66 @@
         "name": "First Captain's Sandals",
         "type": "Armor"
     },
+    "1EDE": {
+        "name": "Light Yamatai Helmet",
+        "type": "Armor"
+    },
+    "1655": {
+        "name": "Light Yamatai Cuirass",
+        "type": "Armor"
+    },
+    "2287": {
+        "name": "Light Yamatai Gauntlets",
+        "type": "Armor"
+    },
+    "D2EB": {
+        "name": "Light Yamatai Trousers",
+        "type": "Armor"
+    },
+    "D900": {
+        "name": "Light Yamatai Greaves",
+        "type": "Armor"
+    },
+    "7A94": {
+        "name": "Minamoto's Helmet",
+        "type": "Armor"
+    },
+    "BF24": {
+        "name": "Minamoto's Cuirass",
+        "type": "Armor"
+    },
+    "F056": {
+        "name": "Minamoto's Gauntlets",
+        "type": "Armor"
+    },
+    "9CA5": {
+        "name": "Minamoto's Waistguard",
+        "type": "Armor"
+    },
+    "CC58": {
+        "name": "Minamoto's Greaves",
+        "type": "Armor"
+    },
+    "3179": {
+        "name": "Fuma Chief's Mask",
+        "type": "Armor"
+    },
+    "2220": {
+        "name": "Fuma Chief's Robes",
+        "type": "Armor"
+    },
+    "D66C": {
+        "name": "Fuma Chief's Gauntlets",
+        "type": "Armor"
+    },
+    "249E": {
+        "name": "Fuma Chief's Waistguard",
+        "type": "Armor"
+    },
+    "43CC": {
+        "name": "Fuma Chief's Greaves",
+        "type": "Armor"
+    },
     "FD23": {
         "name": "Lord Kamakura's Eboshi",
         "type": "Armor"
@@ -1177,6 +1653,98 @@
     },
     "34BE": {
         "name": "Lord Kamakura's Greaves",
+        "type": "Armor"
+    },
+    "B79A": {
+        "name": "Gallant Thief's Faceplate",
+        "type": "Armor"
+    },
+    "83A1": {
+        "name": "Gallant Thief's Cuirass",
+        "type": "Armor"
+    },
+    "EC77": {
+        "name": "Gallant Thief's Gauntlets",
+        "type": "Armor"
+    },
+    "DCD7": {
+        "name": "Gallant Thief's Waistguard",
+        "type": "Armor"
+    },
+    "26EA": {
+        "name": "Gallant Thief's Greaves",
+        "type": "Armor"
+    },
+    "6455": {
+        "name": "Swordmaster's Robe",
+        "type": "Armor"
+    },
+    "B4EA": {
+        "name": "Swordmaster's Gauntlets",
+        "type": "Armor"
+    },
+    "B5D1": {
+        "name": "Swordmaster's Hakama",
+        "type": "Armor"
+    },
+    "11B7": {
+        "name": "Swordmaster's Shoes",
+        "type": "Armor"
+    },
+    "59F2": {
+        "name": "Last Ninja's Faceguard",
+        "type": "Armor"
+    },
+    "72D8": {
+        "name": "Last Ninja's Cuirass",
+        "type": "Armor"
+    },
+    "E83B": {
+        "name": "Last Ninja's Gauntlets",
+        "type": "Armor"
+    },
+    "590A": {
+        "name": "Last Ninja's Waistguard",
+        "type": "Armor"
+    },
+    "B5BE": {
+        "name": "Last Ninja's Greaves",
+        "type": "Armor"
+    },
+    "9940": {
+        "name": "Hollyhock Cuirass",
+        "type": "Armor"
+    },
+    "DE0C": {
+        "name": "Hollyhock Gauntlets",
+        "type": "Armor"
+    },
+    "F992": {
+        "name": "Hollyhock Culottes",
+        "type": "Armor"
+    },
+    "D155": {
+        "name": "Hollyhock Boots",
+        "type": "Armor"
+    },
+    "4CAC": {
+        "name": "Oniwaban Headband",
+        "type": "Armor"
+    },
+    "E0D7": {
+        "name": "Oniwaban Cuirass",
+        "type": "Armor"
+    },
+    "C008": {
+        "name": "Oniwaban Gauntlets",
+        "type": "Armor"
+    },
+    "14C8": {
+        "name": "Oniwaban Waistguard",
+        "type": "Armor"
+    },
+    "9642": {
+        "name": "Oniwaban Greaves",
         "type": "Armor"
     },
     "8646": {
@@ -1199,12 +1767,32 @@
         "name": "Crimson General's Greaves",
         "type": "Armor"
     },
+    "7B7C": {
+        "name": "Kamari Hood",
+        "type": "Armor"
+    },
+    "A960": {
+        "name": "Kamari Vest",
+        "type": "Armor"
+    },
+    "8A75": {
+        "name": "Kamari Sleeves",
+        "type": "Armor"
+    },
+    "E088": {
+        "name": "Kamari Hakama",
+        "type": "Armor"
+    },
+    "4DD2": {
+        "name": "Kamari Gaiters",
+        "type": "Armor"
+    },
     "D219": {
         "name": "Shinsengumi Headband",
         "type": "Armor"
     },
     "5588": {
-        "name": "Shinsengumi Haori",
+        "name": "Samurai General's Gauntlets",
         "type": "Armor"
     },
     "9BF8": {
@@ -1217,6 +1805,162 @@
     },
     "CCAE": {
         "name": "Shinsengumi Sandals",
+        "type": "Armor"
+    },
+    "3495": {
+        "name": "Mitsumono Faceguard",
+        "type": "Armor"
+    },
+    "6972": {
+        "name": "Mitsumono Vest",
+        "type": "Armor"
+    },
+    "A3FB": {
+        "name": "Mitsumono Gauntlets",
+        "type": "Armor"
+    },
+    "BCAD": {
+        "name": "Mitsumono Hakama",
+        "type": "Armor"
+    },
+    "6B16": {
+        "name": "Mitsumono Greaves",
+        "type": "Armor"
+    },
+    "0013": {
+        "name": "Upper Vassal's Hat",
+        "type": "Armor"
+    },
+    "8602": {
+        "name": "Upper Vassal's Robe",
+        "type": "Armor"
+    },
+    "F92D": {
+        "name": "Upper Vassal's Hakama",
+        "type": "Armor"
+    },
+    "88CF": {
+        "name": "Upper Vassal's Footwear",
+        "type": "Armor"
+    },
+    "9030": {
+        "name": "Ascetic Headgear",
+        "type": "Armor"
+    },
+    "82CE": {
+        "name": "Ascetic Robes",
+        "type": "Armor"
+    },
+    "1164": {
+        "name": "Ascetic Sleeves",
+        "type": "Armor"
+    },
+    "E79B": {
+        "name": "Ascetic Hakama",
+        "type": "Armor"
+    },
+    "8688": {
+        "name": "Ascetic Sandals",
+        "type": "Armor"
+    },
+    "5601": {
+        "name": "Yamatai Helmet",
+        "type": "Armor"
+    },
+    "E50F": {
+        "name": "Yamatai Cuirass",
+        "type": "Armor"
+    },
+    "1736": {
+        "name": "Yamatai Gauntlets",
+        "type": "Armor"
+    },
+    "33F2": {
+        "name": "Yamatai Waistguard",
+        "type": "Armor"
+    },
+    "EB40": {
+        "name": "Yamatai Greaves",
+        "type": "Armor"
+    },
+    "E88E": {
+        "name": "Naval Cap",
+        "type": "Armor"
+    },
+    "0AE6": {
+        "name": "Naval Vest",
+        "type": "Armor"
+    },
+    "690A": {
+        "name": "Naval Sleeves",
+        "type": "Armor"
+    },
+    "4DF0": {
+        "name": "Naval Hakama",
+        "type": "Armor"
+    },
+    "0A73": {
+        "name": "Naval Greaves",
+        "type": "Armor"
+    },
+    "9979": {
+        "name": "Guardian Monk's Hat",
+        "type": "Armor"
+    },
+    "94CC": {
+        "name": "Guardian Monk's Robes",
+        "type": "Armor"
+    },
+    "0B06": {
+        "name": "Guardian Monk's Sleevelets",
+        "type": "Armor"
+    },
+    "3CF9": {
+        "name": "Guardian Monk's Hakama",
+        "type": "Armor"
+    },
+    "D995": {
+        "name": "Guardian Monk's Gaiters",
+        "type": "Armor"
+    },
+    "29DC": {
+        "name": "Ninja Marksman's Faceplate",
+        "type": "Armor"
+    },
+    "6771": {
+        "name": "Ninja Marksman's Cuirass",
+        "type": "Armor"
+    },
+    "7EED": {
+        "name": "Ninja Marksman's Gauntlets",
+        "type": "Armor"
+    },
+    "0336": {
+        "name": "Ninja Marksman's Waistguard",
+        "type": "Armor"
+    },
+    "06AA": {
+        "name": "Ninja Marksman's Greaves",
+        "type": "Armor"
+    },
+    "F7C3": {
+        "name": "Goichimonshu Helmet",
+        "type": "Armor"
+    },
+    "875A": {
+        "name": "Goichimonshu Cuirass",
+        "type": "Armor"
+    },
+    "789F": {
+        "name": "Goichimonshu Gauntlets",
+        "type": "Armor"
+    },
+    "C49A": {
+        "name": "Goichimonshu Waistguard",
+        "type": "Armor"
+    },
+    "38DE": {
+        "name": "Goichimonshu Greaves",
         "type": "Armor"
     },
     "CCD4": {
@@ -1233,6 +1977,250 @@
     },
     "4CF2": {
         "name": "Onzoshi Greaves",
+        "type": "Armor"
+    },
+    "FDD1": {
+        "name": "Shuri-No-Suke's Helmet",
+        "type": "Armor"
+    },
+    "05F8": {
+        "name": "Shuri-No-Suke's Cuirass",
+        "type": "Armor"
+    },
+    "3FAD": {
+        "name": "Shuri-No-Suke's Gauntlets",
+        "type": "Armor"
+    },
+    "BC19": {
+        "name": "Shuri-No-Suke's Waistguard",
+        "type": "Armor"
+    },
+    "00CC": {
+        "name": "Shuri-No-Suke's Greaves",
+        "type": "Armor"
+    },
+    "9C60": {
+        "name": "Shadowstep Headband",
+        "type": "Armor"
+    },
+    "A053": {
+        "name": "Shadowstep Vest",
+        "type": "Armor"
+    },
+    "A4C2": {
+        "name": "Shadowstep Bracers",
+        "type": "Armor"
+    },
+    "4B95": {
+        "name": "Shadowstep Waistguard",
+        "type": "Armor"
+    },
+    "2982": {
+        "name": "Shadowstep Greaves",
+        "type": "Armor"
+    },
+    "15EC": {
+        "name": "Peerless Combatant's Robes",
+        "type": "Armor"
+    },
+    "1071": {
+        "name": "Peerless Combatant's Gauntlets",
+        "type": "Armor"
+    },
+    "E79D": {
+        "name": "Peerless Combatant's Hakama",
+        "type": "Armor"
+    },
+    "54CD": {
+        "name": "Peerless Combatant's Sandals",
+        "type": "Armor"
+    },
+    "5388": {
+        "name": "Marksman's Hat",
+        "type": "Armor"
+    },
+    "13FF": {
+        "name": "Marksman's Cuirass",
+        "type": "Armor"
+    },
+    "1A2C": {
+        "name": "Marksman's Gauntlets",
+        "type": "Armor"
+    },
+    "DC16": {
+        "name": "Marksman's Waistguard",
+        "type": "Armor"
+    },
+    "6E4E": {
+        "name": "Marksman's Greaves",
+        "type": "Armor"
+    },
+    "A9AB": {
+        "name": "Authority's Cuirass",
+        "type": "Armor"
+    },
+    "2CBA": {
+        "name": "Authority's Gauntlets",
+        "type": "Armor"
+    },
+    "4D2C": {
+        "name": "Authority's Waistguard",
+        "type": "Armor"
+    },
+    "37C2": {
+        "name": "Authority's Greaves",
+        "type": "Armor"
+    },
+    "3C55": {
+        "name": "Heizo's Faceplate",
+        "type": "Armor"
+    },
+    "A816": {
+        "name": "Heizo's Cuirass",
+        "type": "Armor"
+    },
+    "4F28": {
+        "name": "Heizo's Gauntlets",
+        "type": "Armor"
+    },
+    "E0A5": {
+        "name": "Heizo's Waistguard",
+        "type": "Armor"
+    },
+    "2FCA": {
+        "name": "Heizo's Greaves",
+        "type": "Armor"
+    },
+    "DDFA": {
+        "name": "Wayfarer's Headband",
+        "type": "Armor"
+    },
+    "0B73": {
+        "name": "Wayfarer's Vest",
+        "type": "Armor"
+    },
+    "75AB": {
+        "name": "Wayfarer's Sleevelets",
+        "type": "Armor"
+    },
+    "67B9": {
+        "name": "Wayfarer's Hakama",
+        "type": "Armor"
+    },
+    "D4C6": {
+        "name": "Wayfarer's Footwear",
+        "type": "Armor"
+    },
+    "41C6": {
+        "name": "Sage's Hat",
+        "type": "Armor"
+    },
+    "77CD": {
+        "name": "Sage's Robe",
+        "type": "Armor"
+    },
+    "C7D7": {
+        "name": "Sage's Sleeves",
+        "type": "Armor"
+    },
+    "8BCF": {
+        "name": "Sage's Hakama",
+        "type": "Armor"
+    },
+    "51A0": {
+        "name": "Sage's Sandals",
+        "type": "Armor"
+    },
+    "71C1": {
+        "name": "Lilac Eboshi",
+        "type": "Armor"
+    },
+    "A51B": {
+        "name": "Lilac Cuirass",
+        "type": "Armor"
+    },
+    "9947": {
+        "name": "Lilac Gauntlets",
+        "type": "Armor"
+    },
+    "451E": {
+        "name": "Lilac Waistguard",
+        "type": "Armor"
+    },
+    "C7A3": {
+        "name": "Lilac Greaves",
+        "type": "Armor"
+    },
+    "5EFF": {
+        "name": "Kusarigama Master Faceplate",
+        "type": "Armor"
+    },
+    "5A7A": {
+        "name": "Kusarigama Master Cuirass",
+        "type": "Armor"
+    },
+    "C7BD": {
+        "name": "Kusarigama Master Gauntlets",
+        "type": "Armor"
+    },
+    "4654": {
+        "name": "Kusarigama Master Waistguard",
+        "type": "Armor"
+    },
+    "5EBC": {
+        "name": "Kusarigama Master Greaves",
+        "type": "Armor"
+    },
+    "41EF": {
+        "name": "Gunner's Hat",
+        "type": "Armor"
+    },
+    "0C88": {
+        "name": "Gunner's Vest",
+        "type": "Armor"
+    },
+    "4728": {
+        "name": "Gunner's Hakama",
+        "type": "Armor"
+    },
+    "9934": {
+        "name": "Gunner's Gaiters",
+        "type": "Armor"
+    },
+    "C432": {
+        "name": "Robe of the Exalted",
+        "type": "Armor"
+    },
+    "CB2B": {
+        "name": "Gloves of the Exalted",
+        "type": "Armor"
+    },
+    "1DF3": {
+        "name": "Trousers of the Exalted",
+        "type": "Armor"
+    },
+    "29F6": {
+        "name": "Boots of the Exalted",
+        "type": "Armor"
+    },
+    "DB43": {
+        "name": "Vassal's Helmet",
+        "type": "Armor"
+    },
+    "C065": {
+        "name": "Vassal's Cuirass",
+        "type": "Armor"
+    },
+    "D184": {
+        "name": "Vassal's Gauntlets",
+        "type": "Armor"
+    },
+    "82D7": {
+        "name": "Vassal's Waistguard",
+        "type": "Armor"
+    },
+    "8830": {
+        "name": "Vassal's Greaves",
         "type": "Armor"
     },
     "28DE": {
@@ -1315,6 +2303,62 @@
         "name": "Hellfrost Ninja Greaves",
         "type": "Armor"
     },
+    "418D": {
+        "name": "Thunderous Warrior Helmet",
+        "type": "Armor"
+    },
+    "6D16": {
+        "name": "Thunderous Warrior Cuirass",
+        "type": "Armor"
+    },
+    "8139": {
+        "name": "Thunderous Warrior Gauntlets",
+        "type": "Armor"
+    },
+    "43BD": {
+        "name": "Thunderous Warrior Waistguard",
+        "type": "Armor"
+    },
+    "581B": {
+        "name": "Thunderous Warrior Greaves",
+        "type": "Armor"
+    },
+    "B4C5": {
+        "name": "Thunderous Ninja Faceguard",
+        "type": "Armor"
+    },
+    "3F96": {
+        "name": "Thunderous Ninja Garment",
+        "type": "Armor"
+    },
+    "A15A": {
+        "name": "Thunderous Ninja Gauntlets",
+        "type": "Armor"
+    },
+    "F7B9": {
+        "name": "Thunderous Ninja Waistguard",
+        "type": "Armor"
+    },
+    "A4A1": {
+        "name": "Thunderous Ninja Greaves",
+        "type": "Armor"
+    },
+    "7589": {
+        "name": "Training Robe",
+        "type": "Armor"
+    },
+    "0B15": {
+        "name": "Training Hakama",
+        "type": "Armor"
+    },
+    "4B59": {
+        "name": "Training Robe",
+        "type": "Armor"
+    },
+    "4FA8": {
+        "name": "Training Hakama",
+        "type": "Armor"
+    },
     "C98C": {
         "name": "Thief's Plated Headband",
         "type": "Armor"
@@ -1375,6 +2419,26 @@
         "name": "Shinobi Gaiters",
         "type": "Armor"
     },
+    "CF38": {
+        "name": "Archer's Hat",
+        "type": "Armor"
+    },
+    "B36A": {
+        "name": "Archer's Robe",
+        "type": "Armor"
+    },
+    "B279": {
+        "name": "Archer's Gauntlets",
+        "type": "Armor"
+    },
+    "CAF5": {
+        "name": "Archer's Hakama",
+        "type": "Armor"
+    },
+    "E435": {
+        "name": "Archer's Straw Sandals",
+        "type": "Armor"
+    },
     "DCB9": {
         "name": "Shinto Priest's Headgear (Male)\nShrine Maiden's Headpiece (Female)",
         "type": "Armor"
@@ -1411,6 +2475,26 @@
         "name": "Youngblood Greaves",
         "type": "Armor"
     },
+    "D7BF": {
+        "name": "Footsoldier's Hat",
+        "type": "Armor"
+    },
+    "BC35": {
+        "name": "Footsoldier's Cuirass",
+        "type": "Armor"
+    },
+    "1CCF": {
+        "name": "Footsoldier's Gauntlets",
+        "type": "Armor"
+    },
+    "FAC1": {
+        "name": "Footsoldier's Waistguard",
+        "type": "Armor"
+    },
+    "B69B": {
+        "name": "Footsoldier's Greaves",
+        "type": "Armor"
+    },
     "4F95": {
         "name": "Fuma Ninja Plated Headband",
         "type": "Armor"
@@ -1431,6 +2515,322 @@
         "name": "Fuma Ninja Greaves",
         "type": "Armor"
     },
+    "7AFA": {
+        "name": "Ronin's Faceplate",
+        "type": "Armor"
+    },
+    "17A3": {
+        "name": "Ronin's Cuirass",
+        "type": "Armor"
+    },
+    "4450": {
+        "name": "Ronin's Gauntlets",
+        "type": "Armor"
+    },
+    "CE32": {
+        "name": "Ronin's Waistguard",
+        "type": "Armor"
+    },
+    "6E7D": {
+        "name": "Ronin's Greaves",
+        "type": "Armor"
+    },
+    "49C0": {
+        "name": "Ferryman's Hood",
+        "type": "Armor"
+    },
+    "A427": {
+        "name": "Ferryman's Robes",
+        "type": "Armor"
+    },
+    "D20F": {
+        "name": "Ferryman's Bracers",
+        "type": "Armor"
+    },
+    "3FED": {
+        "name": "Ferryman's Hakama",
+        "type": "Armor"
+    },
+    "7CC2": {
+        "name": "Ferryman's Greaves",
+        "type": "Armor"
+    },
+    "82AB": {
+        "name": "Swallowtail Helmet",
+        "type": "Armor"
+    },
+    "BD63": {
+        "name": "Swallowtail Cuirass",
+        "type": "Armor"
+    },
+    "1372": {
+        "name": "Swallowtail Gauntlets",
+        "type": "Armor"
+    },
+    "4B52": {
+        "name": "Swallowtail Waistguard",
+        "type": "Armor"
+    },
+    "F67F": {
+        "name": "Swallowtail Greaves",
+        "type": "Armor"
+    },
+    "4F69": {
+        "name": "Yamabushi Headgear",
+        "type": "Armor"
+    },
+    "AEB1": {
+        "name": "Yamabushi Robes",
+        "type": "Armor"
+    },
+    "5612": {
+        "name": "Yamabushi Bracers",
+        "type": "Armor"
+    },
+    "2D73": {
+        "name": "Yamabushi Hakama",
+        "type": "Armor"
+    },
+    "B438": {
+        "name": "Yamabushi Sandals",
+        "type": "Armor"
+    },
+    "F0DE": {
+        "name": "Moonprayer Helmet",
+        "type": "Armor"
+    },
+    "4D61": {
+        "name": "Moonprayer Cuirass",
+        "type": "Armor"
+    },
+    "76AF": {
+        "name": "Moonprayer Gauntlets",
+        "type": "Armor"
+    },
+    "8DCC": {
+        "name": "Moonprayer Waistguard",
+        "type": "Armor"
+    },
+    "37C9": {
+        "name": "Moonprayer Greaves",
+        "type": "Armor"
+    },
+    "431F": {
+        "name": "Onmyo Hunting Hat",
+        "type": "Armor"
+    },
+    "3770": {
+        "name": "Onmyo Hunting Garb",
+        "type": "Armor"
+    },
+    "2026": {
+        "name": "Onmyo Hunting Bracers",
+        "type": "Armor"
+    },
+    "E379": {
+        "name": "Onmyo Hunting Hakama",
+        "type": "Armor"
+    },
+    "26CE": {
+        "name": "Onmyo Hunting Shoes",
+        "type": "Armor"
+    },
+    "45C7": {
+        "name": "Samurai General's Helmet",
+        "type": "Armor"
+    },
+    "2026-10-2100:00:00": {
+        "name": "Samurai General's Cuirass",
+        "type": "Armor"
+    },
+    "11A5": {
+        "name": "Samurai General's Waistguard",
+        "type": "Armor"
+    },
+    "AA46": {
+        "name": "Samurai General's Greaves",
+        "type": "Armor"
+    },
+    "07D2": {
+        "name": "Shinobi Faceplate",
+        "type": "Armor"
+    },
+    "FAF3": {
+        "name": "Shinobi Cuirass",
+        "type": "Armor"
+    },
+    "4F75": {
+        "name": "Shinobi Gauntlets",
+        "type": "Armor"
+    },
+    "F1EB": {
+        "name": "Shinobi Waistguard",
+        "type": "Armor"
+    },
+    "7288": {
+        "name": "Shinobi Greaves",
+        "type": "Armor"
+    },
+    "94AA": {
+        "name": "Veteran's Helmet",
+        "type": "Armor"
+    },
+    "ED14": {
+        "name": "Veteran's Cuirass",
+        "type": "Armor"
+    },
+    "85C3": {
+        "name": "Veteran's Gauntlets",
+        "type": "Armor"
+    },
+    "FBDE": {
+        "name": "Veteran's Waistguard",
+        "type": "Armor"
+    },
+    "0146": {
+        "name": "Veteran's Greaves",
+        "type": "Armor"
+    },
+    "96E6": {
+        "name": "High Priest's Headgear (Male)\nWandering Shrine Maiden's Headpiece (Female)",
+        "type": "Armor"
+    },
+    "684A": {
+        "name": "High Priest's Hunting Garb (Male)\nWandering Shrine Maiden's Gown (Female)",
+        "type": "Armor"
+    },
+    "1AE6": {
+        "name": "High Priest's Bracers (Male)\nWandering Shrine Maiden's Bracers (Female)",
+        "type": "Armor"
+    },
+    "D6AD": {
+        "name": "High Priest's Hakama (Male)\nWandering Shrine Maiden's Hakama (Female)",
+        "type": "Armor"
+    },
+    "89C7": {
+        "name": "High Priest's Shoes (Male)\nWandering Shrine Maiden's Shoes (Female)",
+        "type": "Armor"
+    },
+    "EDEF": {
+        "name": "Eccentric's Helmet",
+        "type": "Armor"
+    },
+    "F2DE": {
+        "name": "Eccentric's Cuirass",
+        "type": "Armor"
+    },
+    "1596": {
+        "name": "Eccentric's Gauntlets",
+        "type": "Armor"
+    },
+    "5484": {
+        "name": "Eccentric's Waistguard",
+        "type": "Armor"
+    },
+    "569F": {
+        "name": "Eccentric's Greaves",
+        "type": "Armor"
+    },
+    "36F7": {
+        "name": "Flying Kato's Mask",
+        "type": "Armor"
+    },
+    "68A5": {
+        "name": "Flying Kato's Robes",
+        "type": "Armor"
+    },
+    "12FE": {
+        "name": "Flying Kato's Gauntlets",
+        "type": "Armor"
+    },
+    "B2F8": {
+        "name": "Flying Kato's Waistguard",
+        "type": "Armor"
+    },
+    "FF61": {
+        "name": "Flying Kato's Greaves",
+        "type": "Armor"
+    },
+    "77B8": {
+        "name": "Great Hachiryo Helmet",
+        "type": "Armor"
+    },
+    "FFE8": {
+        "name": "Great Hachiryo Cuirass",
+        "type": "Armor"
+    },
+    "B83D": {
+        "name": "Great Hachiryo Gauntlets",
+        "type": "Armor"
+    },
+    "9F4C": {
+        "name": "Great Hachiryo Waistguard",
+        "type": "Armor"
+    },
+    "8729": {
+        "name": "Great Hachiryo Greaves",
+        "type": "Armor"
+    },
+    "D5C5": {
+        "name": "Iga Jonin Headband",
+        "type": "Armor"
+    },
+    "17BB": {
+        "name": "Iga Jonin Cuirass",
+        "type": "Armor"
+    },
+    "A628": {
+        "name": "Iga Jonin Gauntlets",
+        "type": "Armor"
+    },
+    "43AB": {
+        "name": "Iga Jonin Waistguard",
+        "type": "Armor"
+    },
+    "F2BF": {
+        "name": "Iga Jonin Greaves",
+        "type": "Armor"
+    },
+    "9D89": {
+        "name": "Brave Demon Hunter's Helmet",
+        "type": "Armor"
+    },
+    "7719": {
+        "name": "Brave Demon Hunter's Cuirass",
+        "type": "Armor"
+    },
+    "3331": {
+        "name": "Brave Demon Hunter's Gauntlets",
+        "type": "Armor"
+    },
+    "A704": {
+        "name": "Brave Demon Hunter's Waistguard",
+        "type": "Armor"
+    },
+    "38EA": {
+        "name": "Brave Demon Hunter's Greaves",
+        "type": "Armor"
+    },
+    "E93C": {
+        "name": "Blessed Sleeve Hat",
+        "type": "Armor"
+    },
+    "B744": {
+        "name": "Blessed Sleeve Cuirass",
+        "type": "Armor"
+    },
+    "DD28": {
+        "name": "Blessed Sleeve Gauntlets",
+        "type": "Armor"
+    },
+    "A544": {
+        "name": "Blessed Sleeve Waistguard",
+        "type": "Armor"
+    },
+    "6342": {
+        "name": "Blessed Sleeve Greaves",
+        "type": "Armor"
+    },
     "D942": {
         "name": "Heirloom Helmet",
         "type": "Armor"
@@ -1443,8 +2843,132 @@
         "name": "Heirloom Gauntlets",
         "type": "Armor"
     },
+    "2026-10-0500:00:00": {
+        "name": "Heirloom Waistguard",
+        "type": "Armor"
+    },
     "60C0": {
         "name": "Heirloom Greaves",
+        "type": "Armor"
+    },
+    "E196": {
+        "name": "Kobo Daishi's Hat",
+        "type": "Armor"
+    },
+    "3086": {
+        "name": "Kobo Daishi's Stole",
+        "type": "Armor"
+    },
+    "058D": {
+        "name": "Kobo Daishi's Sleevelets",
+        "type": "Armor"
+    },
+    "41EA": {
+        "name": "Kobo Daishi's Hakama",
+        "type": "Armor"
+    },
+    "0CAD": {
+        "name": "Kobo Daishi's Gaiters",
+        "type": "Armor"
+    },
+    "D8B5": {
+        "name": "Mino Veteran's Helmet",
+        "type": "Armor"
+    },
+    "2BD4": {
+        "name": "Mino Veteran's Cuirass",
+        "type": "Armor"
+    },
+    "0D82": {
+        "name": "Mino Veteran's Gauntlets",
+        "type": "Armor"
+    },
+    "993C": {
+        "name": "Mino Veteran's Waistguard",
+        "type": "Armor"
+    },
+    "F799": {
+        "name": "Mino Veteran's Greaves",
+        "type": "Armor"
+    },
+    "9F17": {
+        "name": "Exorcist's Hat",
+        "type": "Armor"
+    },
+    "3880": {
+        "name": "Exorcist's Cuirass",
+        "type": "Armor"
+    },
+    "D15A": {
+        "name": "Exorcist's Gauntlets",
+        "type": "Armor"
+    },
+    "65BD": {
+        "name": "Exorcist's Waistguard",
+        "type": "Armor"
+    },
+    "802E": {
+        "name": "Exorcist's Greaves",
+        "type": "Armor"
+    },
+    "2F1C": {
+        "name": "Tatenashi Helmet",
+        "type": "Armor"
+    },
+    "88C2": {
+        "name": "Tatenashi Cuirass",
+        "type": "Armor"
+    },
+    "92D3": {
+        "name": "Tatenashi Gauntlets",
+        "type": "Armor"
+    },
+    "7603": {
+        "name": "Tatenashi Waistguard",
+        "type": "Armor"
+    },
+    "3AFB": {
+        "name": "Tatenashi Greaves",
+        "type": "Armor"
+    },
+    "93C0": {
+        "name": "Sohaya Mask",
+        "type": "Armor"
+    },
+    "774A": {
+        "name": "Sohaya Cuirass",
+        "type": "Armor"
+    },
+    "1F1C": {
+        "name": "Sohaya Gauntlets",
+        "type": "Armor"
+    },
+    "CFC9": {
+        "name": "Sohaya Waistguard",
+        "type": "Armor"
+    },
+    "8D08": {
+        "name": "Sohaya Greaves",
+        "type": "Armor"
+    },
+    "E66D": {
+        "name": "Warrior of the East Helmet",
+        "type": "Armor"
+    },
+    "4137": {
+        "name": "Warrior of the East Cuirass",
+        "type": "Armor"
+    },
+    "D9E7": {
+        "name": "Warrior of the East Gauntlets",
+        "type": "Armor"
+    },
+    "D65F": {
+        "name": "Warrior of the East Waistguard",
+        "type": "Armor"
+    },
+    "284A": {
+        "name": "Warrior of the East Greaves",
         "type": "Armor"
     },
     "8989": {
@@ -1485,6 +3009,246 @@
     },
     "DE2A": {
         "name": "Rogue's Greaves",
+        "type": "Armor"
+    },
+    "1775": {
+        "name": "Malefactor's Helmet",
+        "type": "Armor"
+    },
+    "B9CD": {
+        "name": "Malefactor's Cuirass",
+        "type": "Armor"
+    },
+    "CDAF": {
+        "name": "Malefactor's Gauntlets",
+        "type": "Armor"
+    },
+    "4AB5": {
+        "name": "Malefactor's Waistguard",
+        "type": "Armor"
+    },
+    "DB51": {
+        "name": "Malefactor's Greaves",
+        "type": "Armor"
+    },
+    "B3EB": {
+        "name": "Demon Horde Helmet",
+        "type": "Armor"
+    },
+    "5E24": {
+        "name": "Demon Horde Cuirass",
+        "type": "Armor"
+    },
+    "67CC": {
+        "name": "Demon Horde Gauntlets",
+        "type": "Armor"
+    },
+    "BC0E": {
+        "name": "Demon Horde Waistguard",
+        "type": "Armor"
+    },
+    "3908": {
+        "name": "Demon Horde Greaves",
+        "type": "Armor"
+    },
+    "E730": {
+        "name": "Kintaro's Headband",
+        "type": "Armor"
+    },
+    "76C9": {
+        "name": "Kintaro's Cuirass",
+        "type": "Armor"
+    },
+    "716F": {
+        "name": "Kintaro's Gauntlets",
+        "type": "Armor"
+    },
+    "0D9E": {
+        "name": "Kintaro's Waistguard",
+        "type": "Armor"
+    },
+    "0665": {
+        "name": "Kintaro's Greaves",
+        "type": "Armor"
+    },
+    "FCE5": {
+        "name": "Woman's Face Mask",
+        "type": "Armor"
+    },
+    "EC81": {
+        "name": "Sincere Buddha's Helmet",
+        "type": "Armor"
+    },
+    "2A60": {
+        "name": "Sincere Buddha's Cuirass",
+        "type": "Armor"
+    },
+    "0A5E": {
+        "name": "Sincere Buddha's Gauntlets",
+        "type": "Armor"
+    },
+    "B6CA": {
+        "name": "Sincere Buddha's Waistguard",
+        "type": "Armor"
+    },
+    "73C1": {
+        "name": "Sincere Buddha's Greaves",
+        "type": "Armor"
+    },
+    "F2D5": {
+        "name": "Kodama Bowl",
+        "type": "Armor"
+    },
+    "79D6": {
+        "name": "Scion of Tamura's Helmet",
+        "type": "Armor"
+    },
+    "B29B": {
+        "name": "Scion of Tamura's Cuirass",
+        "type": "Armor"
+    },
+    "426F": {
+        "name": "Scion of Tamura's Gauntlets",
+        "type": "Armor"
+    },
+    "3CFB": {
+        "name": "Scion of Tamura's Waistguard",
+        "type": "Armor"
+    },
+    "11F3": {
+        "name": "Scion of Tamura's Greaves",
+        "type": "Armor"
+    },
+    "1607": {
+        "name": "Old Sage Mask",
+        "type": "Armor"
+    },
+    "24E1": {
+        "name": "Wild Boar Crest Helmet",
+        "type": "Armor"
+    },
+    "E909": {
+        "name": "Tengu Mask",
+        "type": "Armor"
+    },
+    "DD1A": {
+        "name": "Fan-Crested Helmet",
+        "type": "Armor"
+    },
+    "A110": {
+        "name": "Female Demon Mask",
+        "type": "Armor"
+    },
+    "97DD": {
+        "name": "Trident Vajra Sword Helmet",
+        "type": "Armor"
+    },
+    "CCCB": {
+        "name": "Black Fox Mask",
+        "type": "Armor"
+    },
+    "E3A6": {
+        "name": "Horned Turban Helmet",
+        "type": "Armor"
+    },
+    "8E5F": {
+        "name": "White Fox Mask",
+        "type": "Armor"
+    },
+    "F510": {
+        "name": "Devotional Helmet",
+        "type": "Armor"
+    },
+    "BEA9": {
+        "name": "Vengeful Spirit Mask",
+        "type": "Armor"
+    },
+    "B70F": {
+        "name": "Braided Straw Helmet",
+        "type": "Armor"
+    },
+    "A7D4": {
+        "name": "Demon God Mask",
+        "type": "Armor"
+    },
+    "50ED": {
+        "name": "Love-Crested Helmet",
+        "type": "Armor"
+    },
+    "0F41": {
+        "name": "Demon's Mask",
+        "type": "Armor"
+    },
+    "6A65": {
+        "name": "Curious Crown Helm",
+        "type": "Armor"
+    },
+    "AABB": {
+        "name": "Murakumo Helmet",
+        "type": "Armor"
+    },
+    "1BC4": {
+        "name": "Dragon Head Helmet",
+        "type": "Armor"
+    },
+    "653D": {
+        "name": "Fujin Helmet",
+        "type": "Armor"
+    },
+    "1F40": {
+        "name": "Coiled Snake Helmet",
+        "type": "Armor"
+    },
+    "6C52": {
+        "name": "Scampuss Hat",
+        "type": "Armor"
+    },
+    "9454": {
+        "name": "Hairy Caterpillar Helmet",
+        "type": "Armor"
+    },
+    "44F0": {
+        "name": "Mount Fuji Helmet",
+        "type": "Armor"
+    },
+    "FFFF": {
+        "name": "Conch Eboshi",
+        "type": "Armor"
+    },
+    "A36B": {
+        "name": "Chijiko Helmet",
+        "type": "Armor"
+    },
+    "4377": {
+        "name": "Kusanagi Helmet",
+        "type": "Armor"
+    },
+    "62DA": {
+        "name": "Twin-Snake Helmet",
+        "type": "Armor"
+    },
+    "414D": {
+        "name": "Raijin Helmet",
+        "type": "Armor"
+    },
+    "DDB3": {
+        "name": "Black Bear Fur Helmet",
+        "type": "Armor"
+    },
+    "E465": {
+        "name": "Ichi-No-Tani Helmet",
+        "type": "Armor"
+    },
+    "F709": {
+        "name": "Moon Charm Helmet",
+        "type": "Armor"
+    },
+    "D4DF": {
+        "name": "Golden Sun Helmet",
+        "type": "Armor"
+    },
+    "0154": {
+        "name": "Night Shade Mask",
         "type": "Armor"
     },
     "15E8": {
@@ -1575,6 +3339,10 @@
         "name": "Gourd",
         "type": "Accessory"
     },
+    "2026-09-2500:00:00": {
+        "name": "Hand Mirror",
+        "type": "Accessory"
+    },
     "2689": {
         "name": "Hand Mirror",
         "type": "Accessory"
@@ -1585,6 +3353,10 @@
     },
     "30D2": {
         "name": "Hazy Moon Flute",
+        "type": "Accessory"
+    },
+    "FA96": {
+        "name": "Imported Pocket Watch",
         "type": "Accessory"
     },
     "CD2D": {
@@ -1619,6 +3391,10 @@
         "name": "Kunimatsu's Inkstone Box",
         "type": "Accessory"
     },
+    "2026-05-2100:00:00": {
+        "name": "Kusanagi Netsuke Charm",
+        "type": "Accessory"
+    },
     "32C0": {
         "name": "Kusanagi Netsuke Charm",
         "type": "Accessory"
@@ -1629,6 +3405,14 @@
     },
     "9FCC": {
         "name": "Lightning Omamori",
+        "type": "Accessory"
+    },
+    "984F": {
+        "name": "Lucky Tanuki Netsuke Charm",
+        "type": "Accessory"
+    },
+    "58C5": {
+        "name": "Lucky Tanuki Netsuke Charm",
         "type": "Accessory"
     },
     "3F68": {
@@ -1759,6 +3543,10 @@
         "name": "Shingen's Fan",
         "type": "Accessory"
     },
+    "BBF5": {
+        "name": "Sinister Tyrant's Earrings",
+        "type": "Accessory"
+    },
     "3F70": {
         "name": "Two Leaves",
         "type": "Accessory"
@@ -1781,6 +3569,14 @@
     },
     "2E64": {
         "name": "Water Omamori",
+        "type": "Accessory"
+    },
+    "DB37": {
+        "name": "White Camellia Hairpin",
+        "type": "Accessory"
+    },
+    "66AF": {
+        "name": "White Camellia Hairpin",
         "type": "Accessory"
     },
     "44D6": {
@@ -1811,8 +3607,24 @@
         "name": "Aberrant Soldier Soul Core",
         "type": "Soul Core"
     },
+    "002E": {
+        "name": "Bakegani Soul Core",
+        "type": "Soul Core"
+    },
+    "9D46": {
+        "name": "Biwa Boku-Boku Soul Core",
+        "type": "Soul Core"
+    },
     "366D": {
         "name": "Bloodedge Demon Soul Core",
+        "type": "Soul Core"
+    },
+    "6578": {
+        "name": "Chijiko Soul Core",
+        "type": "Soul Core"
+    },
+    "DC5E": {
+        "name": "Crucible Wasp Soul Core",
         "type": "Soul Core"
     },
     "EE7B": {
@@ -1821,6 +3633,10 @@
     },
     "E8A3": {
         "name": "Demon of Envy Soul Core",
+        "type": "Soul Core"
+    },
+    "FF45": {
+        "name": "Demon of Obsession Soul Core",
         "type": "Soul Core"
     },
     "A6D7": {
@@ -1859,6 +3675,10 @@
         "name": "Gozuki Soul Core",
         "type": "Soul Core"
     },
+    "F3EE": {
+        "name": "Great Tengu Soul Core",
+        "type": "Soul Core"
+    },
     "1B16": {
         "name": "Hino-Enma Soul Core",
         "type": "Soul Core"
@@ -1883,16 +3703,36 @@
         "name": "Itsumade Soul Core",
         "type": "Soul Core"
     },
+    "4394": {
+        "name": "Jailer Oni (Cold Hells) Soul Core",
+        "type": "Soul Core"
+    },
     "A63D": {
         "name": "Jailer Oni (Hellfire) Soul Core",
+        "type": "Soul Core"
+    },
+    "B0B3": {
+        "name": "Jailer Oni (Needle) Soul Core",
         "type": "Soul Core"
     },
     "0EC4": {
         "name": "Jakotsu-Baba Soul Core",
         "type": "Soul Core"
     },
+    "1F12": {
+        "name": "Joro-Gumo Soul Core",
+        "type": "Soul Core"
+    },
     "6877": {
         "name": "Kamaitachi Soul Core",
+        "type": "Soul Core"
+    },
+    "AB98": {
+        "name": "Kappa Soul Core",
+        "type": "Soul Core"
+    },
+    "44A4": {
+        "name": "Karakasa Umbrella Soul Core",
         "type": "Soul Core"
     },
     "713B": {
@@ -1931,6 +3771,10 @@
         "name": "Magatsu Warrior Soul Core",
         "type": "Soul Core"
     },
+    "053B": {
+        "name": "Mermaid Soul Core",
+        "type": "Soul Core"
+    },
     "422B": {
         "name": "Mezuki Soul Core",
         "type": "Soul Core"
@@ -1941,6 +3785,10 @@
     },
     "F4D0": {
         "name": "Mujina Soul Core",
+        "type": "Soul Core"
+    },
+    "876A": {
+        "name": "Ninja Yoki Soul Core",
         "type": "Soul Core"
     },
     "DE53": {
@@ -1959,8 +3807,16 @@
         "name": "Nuribotoke Soul Core",
         "type": "Soul Core"
     },
+    "3160": {
+        "name": "Nurikabe Soul Core",
+        "type": "Soul Core"
+    },
     "31E6": {
         "name": "One-Eyed Oni Soul Core",
+        "type": "Soul Core"
+    },
+    "86C2": {
+        "name": "Onmoraki Soul Core",
         "type": "Soul Core"
     },
     "1356": {
@@ -1979,6 +3835,14 @@
         "name": "Red Kappa Soul Core",
         "type": "Soul Core"
     },
+    "51D5": {
+        "name": "Ryomen Sukuna Soul Core",
+        "type": "Soul Core"
+    },
+    "3ED0": {
+        "name": "Scampuss Soul Core",
+        "type": "Soul Core"
+    },
     "3888": {
         "name": "Sentry Soul Core",
         "type": "Soul Core"
@@ -1987,8 +3851,16 @@
         "name": "Shunobon Soul Core",
         "type": "Soul Core"
     },
+    "4E82": {
+        "name": "Skeleton Warrior Soul Core",
+        "type": "Soul Core"
+    },
     "6BBD": {
         "name": "Sudama Soul Core",
+        "type": "Soul Core"
+    },
+    "71BB": {
+        "name": "Sunakake-Baba Soul Core",
         "type": "Soul Core"
     },
     "D42B": {
@@ -1997,6 +3869,14 @@
     },
     "3190": {
         "name": "Thunderstorm Oni-Bi Soul Core",
+        "type": "Soul Core"
+    },
+    "45BD": {
+        "name": "Tsurara-Onna Soul Core",
+        "type": "Soul Core"
+    },
+    "D97B": {
+        "name": "Ubume Soul Core",
         "type": "Soul Core"
     },
     "87A3": {
@@ -2009,6 +3889,10 @@
     },
     "8916": {
         "name": "Yagyo Soldier Soul Core",
+        "type": "Soul Core"
+    },
+    "F8F4": {
+        "name": "Yamabiko Soul Core",
         "type": "Soul Core"
     },
     "536E": {
@@ -2053,6 +3937,10 @@
     },
     "CC8C": {
         "name": "Lifeseal Talisman",
+        "type": "item"
+    },
+    "NAN": {
+        "name": "Summoning Seal: Skeleton Warrior",
         "type": "item"
     },
     "E8B3": {
@@ -2143,8 +4031,16 @@
         "name": "Elixir",
         "type": "item"
     },
+    "8C70": {
+        "name": "Embercite Crystal",
+        "type": "item"
+    },
     "E353": {
         "name": "Embercite Fragment",
+        "type": "item"
+    },
+    "18DA": {
+        "name": "Embercite Shard",
         "type": "item"
     },
     "664D": {
@@ -2205,6 +4101,10 @@
     },
     "7AFC": {
         "name": "Sacred Ash",
+        "type": "item"
+    },
+    "A27E": {
+        "name": "Sacred Brush",
         "type": "item"
     },
     "2A38": {
@@ -2299,6 +4199,14 @@
         "name": "Samurai's Text",
         "type": "item"
     },
+    "1420": {
+        "name": "Secret Skills Text: Advantageous Deflect",
+        "type": "item"
+    },
+    "5926": {
+        "name": "Secret Skills Text: Aerial Strike",
+        "type": "item"
+    },
     "7760": {
         "name": "Secret Skills Text: Armor Piercer",
         "type": "item"
@@ -2311,12 +4219,24 @@
         "name": "Secret Skills Text: Enduring Destruction",
         "type": "item"
     },
+    "CE9B": {
+        "name": "Secret Skills Text: Evil-Dispelling Evade",
+        "type": "item"
+    },
     "600C": {
         "name": "Secret Skills Text: Lingering Spirit",
         "type": "item"
     },
     "9AF9": {
         "name": "Secret Skills Text: Panacea Curefast",
+        "type": "item"
+    },
+    "6908": {
+        "name": "Secret Skills Text: Rebounding Surge",
+        "type": "item"
+    },
+    "D654": {
+        "name": "Secret Skills Text: Recoup",
         "type": "item"
     },
     "7308": {
@@ -2329,6 +4249,10 @@
     },
     "CD79": {
         "name": "Secret Skills Text: Sneak Thief",
+        "type": "item"
+    },
+    "ECAF": {
+        "name": "Secret Skills Text: Summoning Basics",
         "type": "item"
     },
     "9366": {
@@ -2431,6 +4355,14 @@
         "name": "Smithing Text: Lone Wolf's Armor",
         "type": "item"
     },
+    "C576": {
+        "name": "Smithing Text: Thunderous Ninja Attire",
+        "type": "item"
+    },
+    "5937": {
+        "name": "Smithing Text: Thunderous Warrior Armor",
+        "type": "item"
+    },
     "D205": {
         "name": "Smithing Text: Youngblood Armor",
         "type": "item"
@@ -2447,8 +4379,28 @@
         "name": "Yokai Teardrop",
         "type": "item"
     },
+    "B966": {
+        "name": "Aberrant Spirit Stone",
+        "type": "item"
+    },
     "962B": {
         "name": "Azure Soul Ore",
+        "type": "item"
+    },
+    "498E": {
+        "name": "Baby Stone Fragment",
+        "type": "item"
+    },
+    "52A0": {
+        "name": "Bakegani Pincers",
+        "type": "item"
+    },
+    "201B": {
+        "name": "Behemoth Snake Skeletons",
+        "type": "item"
+    },
+    "DBA0": {
+        "name": "Biwa Pick",
         "type": "item"
     },
     "FC54": {
@@ -2459,28 +4411,128 @@
         "name": "Bloody Sawtooth",
         "type": "item"
     },
+    "1784": {
+        "name": "Broken Wheel Piece",
+        "type": "item"
+    },
+    "9D5B": {
+        "name": "Burnt Wick",
+        "type": "item"
+    },
     "ECE2": {
         "name": "Colossal Incisor",
+        "type": "item"
+    },
+    "9D41": {
+        "name": "Crooked Jawbone",
+        "type": "item"
+    },
+    "A95B": {
+        "name": "Cursed Nail",
+        "type": "item"
+    },
+    "4617": {
+        "name": "Demon Bird's Beak",
+        "type": "item"
+    },
+    "23A6": {
+        "name": "Demon of Envy's Horn",
+        "type": "item"
+    },
+    "F65B": {
+        "name": "Demon of Obsession's Horn",
+        "type": "item"
+    },
+    "ED98": {
+        "name": "Demon of Pride's Horn",
         "type": "item"
     },
     "73A1": {
         "name": "Demon's Horn",
         "type": "item"
     },
+    "A596": {
+        "name": "Enki Pelt",
+        "type": "item"
+    },
+    "3564": {
+        "name": "Everlasting Icicle",
+        "type": "item"
+    },
+    "7CD0": {
+        "name": "Ghastly Bird Feathers",
+        "type": "item"
+    },
+    "33B7": {
+        "name": "Glowing Wet Hair",
+        "type": "item"
+    },
+    "8D22": {
+        "name": "Great Ear of the Beast",
+        "type": "item"
+    },
+    "847C": {
+        "name": "Great Tengu Feather",
+        "type": "item"
+    },
+    "DBD1": {
+        "name": "Hateful Spine",
+        "type": "item"
+    },
+    "4808": {
+        "name": "Hellish Soul Gem",
+        "type": "item"
+    },
+    "2102": {
+        "name": "Hino-Enma's Cloth",
+        "type": "item"
+    },
+    "650A": {
+        "name": "Horned Skull Shard",
+        "type": "item"
+    },
+    "4548": {
+        "name": "Ibaraki Doji's Thorns",
+        "type": "item"
+    },
+    "1975": {
+        "name": "Infernal Nail",
+        "type": "item"
+    },
     "F13E": {
         "name": "Ingot",
+        "type": "item"
+    },
+    "0D8F": {
+        "name": "Ippon-Datara Fang",
         "type": "item"
     },
     "16CE": {
         "name": "Iron Platelet",
         "type": "item"
     },
+    "681B": {
+        "name": "Joro-Gumo's Leg Husk",
+        "type": "item"
+    },
     "366A": {
         "name": "Kappa Shell",
         "type": "item"
     },
+    "90CB": {
+        "name": "Karasu Tengu Feather",
+        "type": "item"
+    },
+    "7201": {
+        "name": "Konaki-Jiji Hair",
+        "type": "item"
+    },
     "8BB3": {
         "name": "Lacquer",
+        "type": "item"
+    },
+    "337E": {
+        "name": "Large Crooked Horn",
         "type": "item"
     },
     "ABAE": {
@@ -2491,6 +4543,14 @@
         "name": "Leather Platelet",
         "type": "item"
     },
+    "6860": {
+        "name": "Lesser Umi-Bozu's Eyestone",
+        "type": "item"
+    },
+    "DF06": {
+        "name": "Lock of Grey Hair",
+        "type": "item"
+    },
     "7BC5": {
         "name": "Material Essence (Amrita Gauge)",
         "type": "item"
@@ -2499,12 +4559,20 @@
         "name": "Material Essence (Damage Dealt)",
         "type": "item"
     },
+    "2026-01-0500:00:00": {
+        "name": "Material Essence (Damage Taken)",
+        "type": "item"
+    },
     "F8BE": {
         "name": "Material Essence (Item Drops)",
         "type": "item"
     },
     "8D3A": {
         "name": "Material Essence (Ki Damage Dealt)",
+        "type": "item"
+    },
+    "CD2C": {
+        "name": "Material Essence (Ki Damage Taken & Ki Consumption)",
         "type": "item"
     },
     "2BD2": {
@@ -2535,16 +4603,108 @@
         "name": "Material Essence (Status Ailment Infliction)",
         "type": "item"
     },
+    "61CB": {
+        "name": "Material Essence (Status Ailment Reduction)",
+        "type": "item"
+    },
+    "A9D2": {
+        "name": "Mujina's Scarf",
+        "type": "item"
+    },
     "2A64": {
         "name": "Mutated Skin",
+        "type": "item"
+    },
+    "25F6": {
+        "name": "Necklace of Tormented Souls",
+        "type": "item"
+    },
+    "9610": {
+        "name": "Nuppeppo Liver",
+        "type": "item"
+    },
+    "84DD": {
+        "name": "Nuribotoke's Eye",
+        "type": "item"
+    },
+    "3992": {
+        "name": "Nurikabe Fragment",
+        "type": "item"
+    },
+    "735D": {
+        "name": "One-Eyed Oni's Loincloth",
+        "type": "item"
+    },
+    "761A": {
+        "name": "Oni-Bi Core",
+        "type": "item"
+    },
+    "9CEF": {
+        "name": "Overgrown Dermis",
+        "type": "item"
+    },
+    "05DF": {
+        "name": "Pitch-Black Hair",
+        "type": "item"
+    },
+    "61F2": {
+        "name": "Primordial Mud",
+        "type": "item"
+    },
+    "B9D3": {
+        "name": "Raiju Pelt",
         "type": "item"
     },
     "290F": {
         "name": "Ravenous Claws",
         "type": "item"
     },
+    "B948": {
+        "name": "Red Kappa Shell",
+        "type": "item"
+    },
+    "413A": {
+        "name": "Sandy Cloth",
+        "type": "item"
+    },
+    "C044": {
+        "name": "Sentry's Armor Fragment",
+        "type": "item"
+    },
     "ABA5": {
         "name": "Sharp Stinger",
+        "type": "item"
+    },
+    "B0CE": {
+        "name": "Shunobon Horn",
+        "type": "item"
+    },
+    "3E8A": {
+        "name": "Sickle Blade Fragments",
+        "type": "item"
+    },
+    "DA13": {
+        "name": "Skeleton Warrior Bone",
+        "type": "item"
+    },
+    "5129": {
+        "name": "Smoldering Ash Pile",
+        "type": "item"
+    },
+    "D999": {
+        "name": "Snowclop's Loincloth",
+        "type": "item"
+    },
+    "0A31": {
+        "name": "Spirit Stone Arm",
+        "type": "item"
+    },
+    "73DF": {
+        "name": "Sturdy Vertebral Column",
+        "type": "item"
+    },
+    "F9F0": {
+        "name": "Tail of the Headless Horse",
         "type": "item"
     },
     "9DAE": {
@@ -2555,12 +4715,32 @@
         "name": "Umbracite",
         "type": "item"
     },
+    "50A1": {
+        "name": "Umbrella Rib",
+        "type": "item"
+    },
+    "CD00": {
+        "name": "Vibrant Scale",
+        "type": "item"
+    },
     "B79F": {
         "name": "Viridian Soul Ore",
         "type": "item"
     },
+    "84CE": {
+        "name": "Waira Claw",
+        "type": "item"
+    },
     "FA80": {
         "name": "Warped Jawbone",
+        "type": "item"
+    },
+    "5212": {
+        "name": "Wheel of Ice and Fire",
+        "type": "item"
+    },
+    "2C3D": {
+        "name": "White Cloth",
         "type": "item"
     },
     "5E17": {
