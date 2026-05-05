@@ -8,25 +8,25 @@ from checksum import patch_checksum
 from openpyxl import Workbook
 import shutil
 
-AMRITA_OFFSET  = 0x3ADE49
-GOLD_OFFSET    = 0x3ADE59
-CONSTITUTION   = 0x3ADF63
-HEART          = 0x3ADF67
-STAMINA        = 0x3ADF6B
-STRENGTH       = 0x3ADF6F
-SKILL          = 0x3ADF73
-INTELLECT      = 0x3ADF77
-MAGIC          = 0x3ADF7B
+AMRITA_OFFSET  = 0x3ADE49 +0xf09#3AED52
+GOLD_OFFSET    = 0x3ADE59 +0xf09#3AED62
+CONSTITUTION   = 0x3ADF63 +0xf09#3ADF6C
+HEART          = 0x3ADF67 +0xf09#3ADF70
+STAMINA        = 0x3ADF6B +0xf09#3ADF74
+STRENGTH       = 0x3ADF6F +0xf09#3ADF78
+SKILL          = 0x3ADF73 +0xf09#3ADF7C
+INTELLECT      = 0x3ADF77 +0xf09#3ADF80
+MAGIC          = 0x3ADF7B +0xf09#3ADF84
 
-ITEM_START    = 0x240355
+ITEM_START    = 0x240355 + 0xf09
 ITEM_SIZE     = 0xF0
 ITEM_SLOTS    = 0x9C4
 
-USABLE_START  = 0x2D2B21
+USABLE_START  = 0x2D2B21 + 0xf09
 USABLE_SIZE   = 0xE8
 USABLE_SLOTS  = 0x5DC
 
-STORAGE_START = 0x327A8D
+STORAGE_START = 0x327A8D + 0xf09
 STORAGE_SIZE  = 0xE8
 STORAGE_SLOTS = 0x189
 
@@ -311,10 +311,10 @@ def parse_equipment(offset):
     effects = []
     se_base = base + 0x38
     for i in range(7):
-        eo = se_base + i * 0x08
+        eo = se_base + i * 0x18
         effects.append({
             "effect_id":            read_u16(data, eo + 0x00),
-            "effect_value":         read_u16(data, eo + 0x04),
+            "effect_value": read_u32(data, eo + 0x04),
             "category_effect_icon": read_u8(data,  eo + 0x09),
             "effect_extra":         read_u8(data,  eo + 0x0A),
         })
@@ -344,10 +344,10 @@ def parse_usable(offset):
     effects = []
     se_base = base + 0x38
     for i in range(7):
-        eo = se_base + i * 0x08
+        eo = se_base + i * 0x18
         effects.append({
             "effect_id":            read_u16(data, eo + 0x00),
-            "effect_value":         read_u16(data, eo + 0x04),
+            "effect_value": read_u32(data, eo + 0x04),
             "category_effect_icon": read_u8(data,  eo + 0x09),
             "effect_extra":         read_u8(data,  eo + 0x0A),
         })
@@ -395,9 +395,9 @@ def _write_slot(item, base, has_equipped):
 
     se_base = base + 0x38
     for i, eff in enumerate(item["effects"]):
-        eo = se_base + i * 0x08
-        data[eo:eo+2]       = write_le(eff["effect_id"],            2)
-        data[eo+4:eo+6]     = write_le(eff["effect_value"],         2)
+        eo = se_base + i * 0x18
+        data[eo:eo+4]       = write_le(eff["effect_id"],            4)
+        data[eo+4:eo+8] = write_le(eff["effect_value"], 4)
         data[eo+0x09]        = eff.get("category_effect_icon", 0) & 0xFF
         data[eo+0x0A]        = eff.get("effect_extra",          0) & 0xFF
 
@@ -945,8 +945,9 @@ class ItemEditor(ttk.Frame):
             self._eff_ee.append(ee_var)
 
         # ── Apply button ──────────────────────────────────────────────
-        bf = ttk.Frame(frame)
-        bf.pack(pady=8)
+        bf = ttk.Frame(self)
+        bf.pack(side="bottom", fill="x", pady=6)
+
         ttk.Button(bf, text="Apply Changes", command=self._do_apply).pack()
 
     # ------------------------------------------------------------------
@@ -1130,7 +1131,7 @@ class SpawnDialog(tk.Toplevel):
 
 import struct
 
-def increment_inventory_counter(data: bytearray, offset=0x33E515):
+def increment_inventory_counter(data: bytearray, offset=0x33F41E):
     current = struct.unpack_from("<I", data, offset)[0]
 
     # Optional: prevent overflow (uint32 max)
@@ -1478,7 +1479,7 @@ class InventoryPanel(ttk.Frame):
                 for it in self._dataset if it["item_id"] != 0
             )
             ttk.Button(
-                fbar, text="Spawn Equipment (WIP)",
+                fbar, text="Spawn Equipment",
                 command=lambda t=equip_types: SpawnDialog(
                     self.winfo_toplevel(), "Equipment", self, allowed_types=t)
             ).pack(side="left", padx=6)
@@ -1488,7 +1489,7 @@ class InventoryPanel(ttk.Frame):
                 for it in self._dataset if it["item_id"] != 0
             )
             ttk.Button(
-                fbar, text="Spawn Item (WIP)",
+                fbar, text="Spawn Item",
                 command=lambda t=usable_types: SpawnDialog(
                     self.winfo_toplevel(), "Consumable / Material", self, allowed_types=t)
             ).pack(side="left", padx=6)
