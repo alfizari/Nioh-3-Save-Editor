@@ -1,1286 +1,4466 @@
 [
     {
-        "Effect": "Amrita Bonus (Inflict Blustered)",
-        "Effect Max": "D+",
-        "type": "Accessory",
-        "id": "F575"
+        "Effect": "A Master Swordsman's Power {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E99A"
     },
     {
-        "Effect": "Amrita Bonus (Inflict Electrified)",
-        "Effect Max": "D+",
-        "type": "Weapon",
+        "Effect": "A Multitude of Hopes {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D3EC"
+    },
+    {
+        "Effect": "Advent of the Divine {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A9D3"
+    },
+    {
+        "Effect": "Aerial Attack Damage",
+        "Effect Max": null,
+        "type": null,
+        "id": "3C09"
+    },
+    {
+        "Effect": "Aerial Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "68F1"
+    },
+    {
+        "Effect": "Aerial Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EA3E"
+    },
+    {
+        "Effect": "Aerial Attack Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "517D"
+    },
+    {
+        "Effect": "Aerial Attack Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1BB6"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Blustered) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8F87"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Electrified) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C445"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Electrified) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "077E"
     },
     {
-        "Effect": "Amrita Bonus (Inflict Saturated)",
-        "Effect Max": "D+",
-        "type": "Weapon",
+        "Effect": "Amrita Bonus (Inflict Saturated) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "08B8"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Saturated) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "02E3"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+1.6%",
-        "type": "Armor",
-        "id": "56D1"
+        "Effect": "Amrita Bonus (Inflict Scorched) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3526"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflict Scorched) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C07E"
+    },
+    {
+        "Effect": "Amrita Bonus (Inflicted Scorched) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D720"
     },
     {
         "Effect": "Amrita Earned",
-        "Effect Max": "+1.6%",
-        "type": "Armor",
-        "id": "3191"
+        "Effect Max": null,
+        "type": null,
+        "id": "84D4"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+1.2%",
-        "type": "Armor",
+        "Effect": "Amrita Earned (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6525"
+    },
+    {
+        "Effect": "Amrita Earned (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FCBA"
+    },
+    {
+        "Effect": "Amrita Earned (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "037E"
+    },
+    {
+        "Effect": "Amrita Earned (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "044D"
+    },
+    {
+        "Effect": "Amrita Earned {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "A920"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+0.8%",
-        "type": "Armor",
+        "Effect": "Amrita Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3191"
+    },
+    {
+        "Effect": "Amrita Earned {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "D9A7"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+8.5%",
-        "type": "Soul Core",
-        "id": "D4D6"
+        "Effect": "Amrita Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "56D1"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+3.1%",
-        "type": "Accessory",
-        "id": "12FB"
+        "Effect": "Amrita Earned {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "637C"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+3.1%",
-        "type": "Accessory",
-        "id": "513A"
-    },
-    {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+0.8%",
-        "type": "Armor",
+        "Effect": "Amrita Earned {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "95DE"
     },
     {
-        "Effect": "Amrita Earned",
-        "Effect Max": "+0.8%",
-        "type": "Weapon",
+        "Effect": "Amrita Earned {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "513A"
+    },
+    {
+        "Effect": "Amrita Earned {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "47B3"
     },
     {
-        "Effect": "Amrita Gauge Charge",
-        "Effect Max": "+0.7%",
-        "type": "Weapon",
+        "Effect": "Amrita Earned {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D4D6"
+    },
+    {
+        "Effect": "Amrita Gauge Charge {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AB46"
+    },
+    {
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "3719"
     },
     {
-        "Effect": "Attack Bonus (Heart)",
-        "Effect Max": "D+",
-        "type": "Weapon",
-        "id": "EDE2"
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FAE7"
     },
     {
-        "Effect": "Attack Bonus (Magic)",
-        "Effect Max": "D+",
-        "type": "Weapon",
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4514"
+    },
+    {
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F240"
+    },
+    {
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0E95"
+    },
+    {
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EEB5"
+    },
+    {
+        "Effect": "Amrita Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B987"
+    },
+    {
+        "Effect": "Amrita Sensor {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D020"
+    },
+    {
+        "Effect": "Appetite for Ascension {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E587"
+    },
+    {
+        "Effect": "Assassination Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4BD3"
+    },
+    {
+        "Effect": "Attack Bonus (Constitution) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "58A1"
+    },
+    {
+        "Effect": "Attack Bonus (Intellect) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9737"
+    },
+    {
+        "Effect": "Attack Bonus (Magic) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "E36A"
     },
     {
-        "Effect": "Attack Bonus (Stamina)",
-        "Effect Max": "D+",
-        "type": "Weapon",
-        "id": "41DC"
+        "Effect": "Attack Bonus (Skill) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C68E"
     },
     {
-        "Effect": "Auto-Grave Recovery",
-        "Effect Max": "+8.0%",
-        "type": "Accessory",
+        "Effect": "Attack Bonus (Strength) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C8DC"
+    },
+    {
+        "Effect": "Auto Life Recovery (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E48E"
+    },
+    {
+        "Effect": "Auto Life Recovery (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "ADB6"
+    },
+    {
+        "Effect": "Auto Life Recovery (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9BD6"
+    },
+    {
+        "Effect": "Auto Life Recovery (Enemy Killed) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E0C6"
+    },
+    {
+        "Effect": "Auto Life Recovery (Evade) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "731E"
+    },
+    {
+        "Effect": "Auto Life Recovery (Evade) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6C4E"
+    },
+    {
+        "Effect": "Auto-Amrita Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2E62"
+    },
+    {
+        "Effect": "Auto-Grave Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "4142"
     },
     {
-        "Effect": "Backstab Damage",
-        "Effect Max": "+4.5%",
-        "type": "Weapon",
+        "Effect": "Auto-Grave Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2E18"
+    },
+    {
+        "Effect": "Backstab Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AFA9"
+    },
+    {
+        "Effect": "Backstab Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "AEEF"
     },
     {
-        "Effect": "Base Defense",
-        "Effect Max": "+9",
-        "type": "Armor",
-        "id": "23BA"
+        "Effect": "Base Defense {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F2D2"
     },
     {
-        "Effect": "Bluster Accumulation (Enemy)",
-        "Effect Max": "+8.0%",
-        "type": "Accessory",
-        "id": "9696"
+        "Effect": "Base Defense {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BDEE"
     },
     {
-        "Effect": "Bow Damage",
-        "Effect Max": "+1.7%",
-        "type": "Accessory",
+        "Effect": "Block (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "330C"
+    },
+    {
+        "Effect": "Bluster Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6005"
+    },
+    {
+        "Effect": "Bow Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EED6"
+    },
+    {
+        "Effect": "Bow Damage {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "190E"
     },
     {
-        "Effect": "Bow Ki Damage",
-        "Effect Max": "+10.0%",
-        "type": "Weapon",
+        "Effect": "Bow Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A621"
+    },
+    {
+        "Effect": "Bow Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "7E07"
     },
     {
-        "Effect": "Bullseye Bonus",
-        "Effect Max": "+4.5%",
-        "type": "Weapon",
+        "Effect": "Bullseye Bonus {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "4A20"
     },
     {
-        "Effect": "Crucible Weapon Drop Rate",
-        "Effect Max": "+10.0%",
-        "type": "Weapon",
+        "Effect": "Bullseye Bonus {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F894"
+    },
+    {
+        "Effect": "Caltrops Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7154"
+    },
+    {
+        "Effect": "Caltrops Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "47F4"
+    },
+    {
+        "Effect": "Commander of the Rearguard {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E308"
+    },
+    {
+        "Effect": "Copy Enhancement {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "495D"
+    },
+    {
+        "Effect": "Crucible Weapon Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5212"
+    },
+    {
+        "Effect": "Crucible Weapon Drop Rate {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "89C2"
     },
     {
-        "Effect": "Damage Taken",
-        "Effect Max": "-1.2%",
-        "type": "Armor",
-        "id": "DBBE"
+        "Effect": "Crucible Weapon Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "181F"
     },
     {
-        "Effect": "Damage Taken (Critical)",
-        "Effect Max": "-7.4%",
-        "type": "Armor",
+        "Effect": "Crucible Weapon Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9982"
+    },
+    {
+        "Effect": "Cunning Spirit {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D8AB"
+    },
+    {
+        "Effect": "Damage Bonus (Familiarity) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2E93"
+    },
+    {
+        "Effect": "Damage Taken",
+        "Effect Max": null,
+        "type": null,
+        "id": "4D1C"
+    },
+    {
+        "Effect": "Damage Taken (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "7377"
     },
     {
-        "Effect": "Damage Taken (While Attacking)",
-        "Effect Max": "-2.0%",
-        "type": "Armor",
+        "Effect": "Damage Taken (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B398"
+    },
+    {
+        "Effect": "Damage Taken (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB99"
+    },
+    {
+        "Effect": "Damage Taken (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DE79"
+    },
+    {
+        "Effect": "Damage Taken (While Attacking) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AC6A"
+    },
+    {
+        "Effect": "Damage Taken (While Attacking) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "83B3"
+    },
+    {
+        "Effect": "Damage Taken (While Attacking) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "75B9"
     },
     {
-        "Effect": "Damage Taken in Midair",
-        "Effect Max": "-2.1%",
-        "type": "Armor",
+        "Effect": "Damage Taken Halved (Unscathed)",
+        "Effect Max": null,
+        "type": null,
+        "id": "C765"
+    },
+    {
+        "Effect": "Damage Taken In Midair {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7BD5"
+    },
+    {
+        "Effect": "Damage Taken In Midair {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DB4C"
+    },
+    {
+        "Effect": "Damage Taken In Midair {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "4181"
     },
     {
-        "Effect": "Damage Taken Over Time (Fire)",
-        "Effect Max": "-10.0%",
-        "type": "Accessory",
-        "id": "BD5C"
+        "Effect": "Damage Taken Over Time (Fire) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "651D"
     },
     {
-        "Effect": "Damage Taken Over Time (Fire)",
-        "Effect Max": "-1.5%",
-        "type": "Armor",
+        "Effect": "Damage Taken Over Time (Fire) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "8329"
     },
     {
-        "Effect": "Damage Taken Over Time (Poison)",
-        "Effect Max": "-7.0%",
-        "type": "Soul Core",
+        "Effect": "Damage Taken Over Time (Fire) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6C42"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Poison) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D22E"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Poison) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "66AC"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Poison) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "54B1"
+    },
+    {
+        "Effect": "Damage Taken Over Time (Poison) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "1A26"
     },
     {
-        "Effect": "Decreased Elemental Damage Taken",
-        "Effect Max": "+3",
-        "type": "Armor",
+        "Effect": "Damage Taken {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4EF5"
+    },
+    {
+        "Effect": "Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB4C"
+    },
+    {
+        "Effect": "Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DBBE"
+    },
+    {
+        "Effect": "Damage vs. Revenants {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0D0C"
+    },
+    {
+        "Effect": "Decreased Damage Dealt on Enemy (Ranged Weapon Hit) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4CB2"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3307"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9343"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CF99"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5215"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "692D"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4E81"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B6D2"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3E38"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9F50"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0678"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Enemy Killed) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AF1F"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Enemy Killed) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A42B"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Enemy Killed) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7579"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Life Recovery) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6EA7"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Medicine) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1CD3"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "860F"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "66CC"
+    },
+    {
+        "Effect": "Decreased Damage Taken (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "42D6"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken (Guarding) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C3B0"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken (Guarding) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "35E9"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3762"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8047"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E5B7"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "70D3"
+    },
+    {
+        "Effect": "Decreased Elemental Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "1CEE"
     },
     {
-        "Effect": "Decreased Elemental Damage Taken (Guarding)",
-        "Effect Max": "-1.7%",
-        "type": "Armor",
+        "Effect": "Decreased Elemental Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "72FB"
     },
     {
-        "Effect": "Dodge Ki Consumption",
-        "Effect Max": "-1.0%",
-        "type": "Armor",
-        "id": "6FFB"
+        "Effect": "Decreased Elemental Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB37"
     },
     {
-        "Effect": "Dodge Ki Consumption",
-        "Effect Max": "-3.0%",
-        "type": "Armor",
+        "Effect": "Defense (Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C403"
+    },
+    {
+        "Effect": "Defense Bonus (Amrita Gauge) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3C92"
+    },
+    {
+        "Effect": "Defense Bonus (Amrita Gauge) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CDF0"
+    },
+    {
+        "Effect": "Defense Bonus (Intellect) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB45"
+    },
+    {
+        "Effect": "Defense {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "442B"
+    },
+    {
+        "Effect": "Defense {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5700"
+    },
+    {
+        "Effect": "Defense {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7564"
+    },
+    {
+        "Effect": "Demon Incarnate {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8E04"
+    },
+    {
+        "Effect": "Descendant of Iga {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B788"
+    },
+    {
+        "Effect": "Devious Loyalty {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4A86"
+    },
+    {
+        "Effect": "Devout Practitioner {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F844"
+    },
+    {
+        "Effect": "Dodge Ki Consumption (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6B49"
+    },
+    {
+        "Effect": "Dodge Ki Consumption (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CE63"
+    },
+    {
+        "Effect": "Dodge Ki Consumption (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E1B5"
+    },
+    {
+        "Effect": "Dodge Ki Consumption (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3AEF"
+    },
+    {
+        "Effect": "Dodge Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "187F"
     },
     {
-        "Effect": "Dodge Ki Consumption",
-        "Effect Max": "-2.0%",
-        "type": "Armor",
+        "Effect": "Dodge Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "FAE9"
     },
     {
-        "Effect": "Dodge Ki Consumption",
-        "Effect Max": "-2.0%",
-        "type": "Armor",
+        "Effect": "Dodge Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6FFB"
+    },
+    {
+        "Effect": "Dodge Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "DD05"
     },
     {
-        "Effect": "Dual Elements (Lightning & Fire)",
-        "Effect Max": "+7",
-        "type": "Weapon",
+        "Effect": "Dodge Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7629"
+    },
+    {
+        "Effect": "Dodge Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6E89"
+    },
+    {
+        "Effect": "Dodge Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5A3D"
+    },
+    {
+        "Effect": "Dual Elements (Lightning & Fire) {Exotic}",
+        "Effect Max": null,
+        "type": null,
         "id": "209C"
     },
     {
-        "Effect": "Dual Elements (Water & Lightning)",
-        "Effect Max": "+11",
-        "type": "Weapon",
+        "Effect": "Dual Elements (Water & Lightning) {Exotic}",
+        "Effect Max": null,
+        "type": null,
         "id": "3346"
     },
     {
-        "Effect": "Equipment Drop Rate",
-        "Effect Max": "+0.8%",
-        "type": "Armor",
-        "id": "4D97"
+        "Effect": "Elemental Damage (Living Artifact) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "54F1"
     },
     {
-        "Effect": "Equipment Drop Rate",
-        "Effect Max": "+1.2%",
-        "type": "Armor",
-        "id": "5976"
+        "Effect": "Elemental Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5499"
     },
     {
-        "Effect": "Equipment Drop Rate",
-        "Effect Max": "+1.6%",
-        "type": "Armor",
+        "Effect": "Elixir Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BA46"
+    },
+    {
+        "Effect": "Enemy Sensor {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "450A"
+    },
+    {
+        "Effect": "Equipment Drop Rate {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "A820"
     },
     {
-        "Effect": "Equipment Drop Rate",
-        "Effect Max": "+4.0%",
-        "type": "Armor",
+        "Effect": "Equipment Drop Rate {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5976"
+    },
+    {
+        "Effect": "Equipment Drop Rate {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4D97"
+    },
+    {
+        "Effect": "Equipment Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B161"
+    },
+    {
+        "Effect": "Equipment Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "8DF5"
     },
     {
-        "Effect": "Faster Ki Recovery (Critical)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
+        "Effect": "Equipment Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5C48"
+    },
+    {
+        "Effect": "Equipment Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "88A9"
+    },
+    {
+        "Effect": "Exemplary Eye for Elegance {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AE8A"
+    },
+    {
+        "Effect": "Famed Fuma {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "946D"
+    },
+    {
+        "Effect": "Familiarity Bonus {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "23ED"
+    },
+    {
+        "Effect": "Faster Ki Recovery (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4029"
+    },
+    {
+        "Effect": "Faster Ki Recovery (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3743"
+    },
+    {
+        "Effect": "Faster Ki Recovery (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "5D08"
     },
     {
-        "Effect": "Faster Movement (50% Ki or Less)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
-        "id": "810F"
+        "Effect": "Faster Ki Recovery (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "250E"
     },
     {
-        "Effect": "Faster Movement (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
+        "Effect": "Faster Ki Recovery (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "617C"
+    },
+    {
+        "Effect": "Faster Ki Recovery (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "00B1"
+    },
+    {
+        "Effect": "Faster Movement (50% Ki or Less) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F0A7"
+    },
+    {
+        "Effect": "Faster Movement (50% Ki or Less) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CCF9"
+    },
+    {
+        "Effect": "Faster Movement (Ailing) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0887"
+    },
+    {
+        "Effect": "Faster Movement (Ailing) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9921"
+    },
+    {
+        "Effect": "Faster Movement (Amrita Absorption) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "7E05"
     },
     {
-        "Effect": "Faster Movement (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
-        "id": "0DA7"
-    },
-    {
-        "Effect": "Faster Movement (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
+        "Effect": "Faster Movement (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "87A4"
     },
     {
-        "Effect": "Faster Movement (Deflect)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
+        "Effect": "Faster Movement (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CFCB"
+    },
+    {
+        "Effect": "Faster Movement (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7826"
+    },
+    {
+        "Effect": "Faster Movement (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6EB8"
+    },
+    {
+        "Effect": "Faster Movement (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BF0A"
+    },
+    {
+        "Effect": "Faster Movement (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "EFC8"
     },
     {
-        "Effect": "Faster Movement (Enemy Killed)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
+        "Effect": "Faster Movement (Enemy Killed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FA3A"
+    },
+    {
+        "Effect": "Faster Movement (Enemy Killed) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "2B5B"
     },
     {
-        "Effect": "Faster Movement (Onmyo Magic Hit)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
+        "Effect": "Faster Movement (Enemy Killed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E3DC"
+    },
+    {
+        "Effect": "Faster Movement (Enemy Killed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6812"
+    },
+    {
+        "Effect": "Faster Movement (Evade) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2ECB"
+    },
+    {
+        "Effect": "Faster Movement (Life Recovery) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "75CD"
+    },
+    {
+        "Effect": "Faster Movement (Life Recovery) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DCF7"
+    },
+    {
+        "Effect": "Faster Movement (Ninjutsu Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "432D"
+    },
+    {
+        "Effect": "Faster Movement (Onmyo Magic Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8060"
+    },
+    {
+        "Effect": "Faster Movement (Onmyo Magic Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "9995"
     },
     {
-        "Effect": "Faster Movement (Onmyo Magic Hit)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
-        "id": "1CE2"
+        "Effect": "Faster Movement (Onmyo Magic Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DDF9"
     },
     {
-        "Effect": "Faster Movement (Purification)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
+        "Effect": "Faster Movement (Purification) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "4E46"
     },
     {
-        "Effect": "Fire Damage",
-        "Effect Max": "+4.7%",
-        "type": "Weapon",
-        "id": "F93F"
+        "Effect": "Faster Movement (Purification) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C5A3"
     },
     {
-        "Effect": "Fire Damage Reduction",
-        "Effect Max": "+15",
-        "type": "Accessory",
+        "Effect": "Faster Movement (Purification) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5FDE"
+    },
+    {
+        "Effect": "Faster Movement (Purification) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F57B"
+    },
+    {
+        "Effect": "Final Blow/Grapple Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FE14"
+    },
+    {
+        "Effect": "Fire Damage Reduction {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "D559"
     },
     {
-        "Effect": "Fire Resistence",
-        "Effect Max": "+10",
-        "type": "Armor",
-        "id": "AC91"
+        "Effect": "Fire Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EC96"
     },
     {
-        "Effect": "Fire Resistence",
-        "Effect Max": "+7",
-        "type": "Armor",
+        "Effect": "Fire Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5FE2"
+    },
+    {
+        "Effect": "Fire Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5D64"
+    },
+    {
+        "Effect": "Fire Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6CBB"
+    },
+    {
+        "Effect": "Fire Resistance {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F961"
+    },
+    {
+        "Effect": "Fire Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "0B02"
     },
     {
-        "Effect": "Glory Obtained",
-        "Effect Max": "+0.4%",
-        "type": "Weapon",
+        "Effect": "Fire Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AC91"
+    },
+    {
+        "Effect": "Fire Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A7FB"
+    },
+    {
+        "Effect": "Fire Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "646B"
+    },
+    {
+        "Effect": "Fire Shuriken Damage {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0D78"
+    },
+    {
+        "Effect": "First of the Four Guardians {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "380B"
+    },
+    {
+        "Effect": "Flame Breath Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D94C"
+    },
+    {
+        "Effect": "Flame Breath Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F766"
+    },
+    {
+        "Effect": "Founder of the Shogunate {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "73BC"
+    },
+    {
+        "Effect": "Gain Amrita (Strong Attack) {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8EFF"
+    },
+    {
+        "Effect": "General of Ruin {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EE4B"
+    },
+    {
+        "Effect": "Glory Obtained {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0F4B"
+    },
+    {
+        "Effect": "Glory Obtained {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5305"
+    },
+    {
+        "Effect": "Glory Obtained {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C434"
+    },
+    {
+        "Effect": "Glory Obtained {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "F1B1"
     },
     {
         "Effect": "Gold Earned",
-        "Effect Max": "+1.2%",
-        "type": "Armor",
-        "id": "41D0"
+        "Effect Max": null,
+        "type": null,
+        "id": "C4DD"
     },
     {
-        "Effect": "Gold Earned",
-        "Effect Max": "+1.8%",
-        "type": "Armor",
-        "id": "312D"
-    },
-    {
-        "Effect": "Gold Earned",
-        "Effect Max": "+2.4%",
-        "type": "Armor",
-        "id": "D012"
-    },
-    {
-        "Effect": "Gold Earned",
-        "Effect Max": "+3.1%",
-        "type": "Accessory",
-        "id": "4CF0"
-    },
-    {
-        "Effect": "Gold Earned",
-        "Effect Max": "+1.2%",
-        "type": "Weapon",
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "FE03"
     },
     {
-        "Effect": "Grace of Benzaiten",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D012"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "312D"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "503B"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A27D"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FFA7"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "41D0"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4CF0"
+    },
+    {
+        "Effect": "Gold Earned {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C05D"
+    },
+    {
+        "Effect": "Gold Earned {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7CED"
+    },
+    {
+        "Effect": "Gold Earned {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "74DF"
+    },
+    {
+        "Effect": "Grace of Acala {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "71F6"
+    },
+    {
+        "Effect": "Grace of Benzaiten {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "2AE6"
     },
     {
-        "Effect": "Grace of Daikokuten",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Daikokuten {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "5012"
     },
     {
-        "Effect": "Grace of Ebisu",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Ebisu {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "8CCC"
     },
     {
-        "Effect": "Grace of Fukurokuju",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Fukurokuju {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "7BEA"
     },
     {
-        "Effect": "Grace of Hachiman",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Futsunushi {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "78F6"
+    },
+    {
+        "Effect": "Grace of Hachiman {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "B1E9"
     },
     {
-        "Effect": "Grace of Hotei",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Hotei {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "590C"
     },
     {
-        "Effect": "Grace of Inari",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Inari {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "4FA3"
     },
     {
-        "Effect": "Grace of Jurojin",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Izanagi {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0140"
+    },
+    {
+        "Effect": "Grace of Jurojin {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "B24F"
     },
     {
-        "Effect": "Grace of Kuzuryu",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Kuzuryu {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "E8EB"
     },
     {
-        "Effect": "Grace of Vaisravana",
-        "Effect Max": "7 Pieces",
-        "type": "All",
+        "Effect": "Grace of Magatsuhi {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EB61"
+    },
+    {
+        "Effect": "Grace of Okuninushi {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E121"
+    },
+    {
+        "Effect": "Grace of Omoikane {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AE01"
+    },
+    {
+        "Effect": "Grace of Sakuyahime {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DC39"
+    },
+    {
+        "Effect": "Grace of Sarutahiko {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0124"
+    },
+    {
+        "Effect": "Grace of Susano {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CE68"
+    },
+    {
+        "Effect": "Grace of Tajikarao {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F20A"
+    },
+    {
+        "Effect": "Grace of Takemikazuchi {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EEEA"
+    },
+    {
+        "Effect": "Grace of Vaisravana {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "23E5"
     },
     {
-        "Effect": "Guard Ki Consumption",
-        "Effect Max": "-2.0%",
-        "type": "Armor",
-        "id": "CDA8"
+        "Effect": "Groundfire Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7444"
     },
     {
-        "Effect": "Guard Ki Recovery Speed",
-        "Effect Max": "+1.0%",
-        "type": "Weapon",
-        "id": "BB13"
-    },
-    {
-        "Effect": "Guard Ki Recovery Speed",
-        "Effect Max": "+2.3%",
-        "type": "Armor",
-        "id": "6F8D"
-    },
-    {
-        "Effect": "Guard Ki Recovery Speed",
-        "Effect Max": "+2.3%",
-        "type": "Armor",
-        "id": "8881"
-    },
-    {
-        "Effect": "Guardian Spirit Skill Damage (Blustered Enemy)",
-        "Effect Max": "+1.4%",
-        "type": "Weapon",
-        "id": "5E54"
-    },
-    {
-        "Effect": "Guardian Spirit Skill Damage (Paralyzed Enemy)",
-        "Effect Max": "+7.0%",
-        "type": "Weapon",
-        "id": "E5B9"
-    },
-    {
-        "Effect": "Guardian Spirit Skill Damage (Saturated Enemy)",
-        "Effect Max": "+1.4%",
-        "type": "Weapon",
-        "id": "30F5"
-    },
-    {
-        "Effect": "Groundfire Gauge Charge",
-        "Effect Max": "+12.0%",
-        "type": "Accessory",
+        "Effect": "Groundfire Gauge Charge {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "35E8"
     },
     {
-        "Effect": "High Attack Damage",
-        "Effect Max": "+4.2%",
-        "type": "Weapon",
+        "Effect": "Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9992"
+    },
+    {
+        "Effect": "Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9B59"
+    },
+    {
+        "Effect": "Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D287"
+    },
+    {
+        "Effect": "Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CDA8"
+    },
+    {
+        "Effect": "Guard Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "ABD0"
+    },
+    {
+        "Effect": "Guard Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "22FB"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB13"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8881"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6F8D"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CFFF"
+    },
+    {
+        "Effect": "Guard Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E450"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage",
+        "Effect Max": null,
+        "type": null,
+        "id": "CFEC"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Blustered Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5E54"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Paralyzed Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E5B9"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Poisoned Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4148"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Poisoned Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "069B"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Saturated Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "30F5"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Saturated Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "522B"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Scorched Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B285"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Damage (Scorched Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F6E1"
+    },
+    {
+        "Effect": "Guardian Spirit Skill Ki Damage",
+        "Effect Max": null,
+        "type": null,
+        "id": "7EB0"
+    },
+    {
+        "Effect": "Gunpowder Bomb Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7436"
+    },
+    {
+        "Effect": "Hand Cannon Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5EC6"
+    },
+    {
+        "Effect": "Head of the Iga Ninja {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5008"
+    },
+    {
+        "Effect": "Heal Self & Allies (Melee Kill) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "24DA"
+    },
+    {
+        "Effect": "Herald of Peace {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "725A"
+    },
+    {
+        "Effect": "High Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "8A26"
     },
     {
-        "Effect": "High Attack Ki Consumption",
-        "Effect Max": "-1.9%",
-        "type": "Weapon",
+        "Effect": "High Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E548"
+    },
+    {
+        "Effect": "High Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "E91C"
     },
     {
-        "Effect": "Imbue Fire",
-        "Effect Max": "+15",
-        "type": "Weapon",
-        "id": "2C8A"
+        "Effect": "High Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BD21"
     },
     {
-        "Effect": "Imbue Fire",
-        "Effect Max": "+10",
-        "type": "Weapon",
+        "Effect": "High Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F26C"
+    },
+    {
+        "Effect": "High Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3C52"
+    },
+    {
+        "Effect": "High Stance Marital Art Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "85A8"
+    },
+    {
+        "Effect": "High Stance Martial Art Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9796"
+    },
+    {
+        "Effect": "High Stance Martial Art Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EBF5"
+    },
+    {
+        "Effect": "Imagawa Regent {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7D01"
+    },
+    {
+        "Effect": "Imbue Fire {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "3C4A"
     },
     {
-        "Effect": "Imbue Lightning",
-        "Effect Max": "+15",
-        "type": "Weapon",
-        "id": "EA58"
+        "Effect": "Imbue Fire {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5C3B"
     },
     {
-        "Effect": "Imbue Lightning",
-        "Effect Max": "?",
-        "type": "Weapon",
+        "Effect": "Imbue Lightning {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "EC8D"
     },
     {
-        "Effect": "Imbue Paralysis",
-        "Effect Max": "?",
-        "type": "Weapon",
-        "id": "E7CA"
+        "Effect": "Imbue Water {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1004"
     },
     {
-        "Effect": "Imbue Water",
-        "Effect Max": "+6",
-        "type": "Weapon",
-        "id": "00:00:002026-04-10"
-    },
-    {
-        "Effect": "Imbue Water",
-        "Effect Max": "+10",
-        "type": "Weapon",
+        "Effect": "Imbue Water {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "2129"
     },
     {
-        "Effect": "Imbue Wind",
-        "Effect Max": "+10",
-        "type": "Weapon",
-        "id": "3A53"
+        "Effect": "Imbue Wind {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7596"
     },
     {
-        "Effect": "Increased Luck (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Weapon",
-        "id": "F437"
+        "Effect": "Increased Arts Proficiency Damage",
+        "Effect Max": null,
+        "type": null,
+        "id": "62C5"
     },
     {
-        "Effect": "Item Drop Rate",
-        "Effect Max": "+10.0%",
-        "type": "Accessory",
-        "id": "9FA2"
+        "Effect": "Increased Damage Dealt (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3576"
     },
     {
-        "Effect": "Item Drop Rate",
-        "Effect Max": "+4.0%",
-        "type": "Weapon",
-        "id": "09C5"
+        "Effect": "Increased Damage Dealt (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6A30"
     },
     {
-        "Effect": "Increased Damage Dealt (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
+        "Effect": "Increased Damage Dealt (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "16DA"
+    },
+    {
+        "Effect": "Increased Damage Dealt (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "A62F"
     },
     {
-        "Effect": "Ki",
-        "Effect Max": "+20",
-        "type": "Armor",
-        "id": "1DEF"
+        "Effect": "Increased Damage Dealt (Enemy Killed) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5D27"
     },
     {
-        "Effect": "Ki Pulse Bonus",
-        "Effect Max": "+9",
-        "type": "Armor",
-        "id": "49F8"
+        "Effect": "Increased Damage Dealt (Evade) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C3E2"
     },
     {
-        "Effect": "Ki Pulse Recovery",
-        "Effect Max": "+0.4%",
-        "type": "Weapon",
-        "id": "6800"
+        "Effect": "Increased Damage Dealt (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B72E"
     },
     {
-        "Effect": "Ki Pulse Recovery",
-        "Effect Max": "+1.3%",
-        "type": "Armor",
-        "id": "F31D"
+        "Effect": "Increased Luck (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F437"
     },
     {
-        "Effect": "Ki Pulse Recovery",
-        "Effect Max": "+1.3%",
-        "type": "Accessory",
-        "id": "7F32"
+        "Effect": "Increased Luck (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1BF3"
     },
     {
-        "Effect": "Ki Damage vs. Blustered Enemy",
-        "Effect Max": "+2.1%",
-        "type": "Weapon",
-        "id": "D3EA"
+        "Effect": "Increased Luck (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A60B"
     },
     {
-        "Effect": "Ki Damage vs. Electrified Enemy",
-        "Effect Max": "+2.1%",
-        "type": "Weapon",
+        "Effect": "Increased Luck (Amrita Absorption) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7DA8"
+    },
+    {
+        "Effect": "Increased Luck (Enemy Killed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "16E5"
+    },
+    {
+        "Effect": "Increased Luck (Enemy Killed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7F0E"
+    },
+    {
+        "Effect": "Increased Luck (Enemy Killed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F940"
+    },
+    {
+        "Effect": "Increased Luck (Enemy Killed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2C4E"
+    },
+    {
+        "Effect": "Increased Luck (Enemy Killed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "37B3"
+    },
+    {
+        "Effect": "Increased Luck (Enemy Killed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "876E"
+    },
+    {
+        "Effect": "Increased Spirit Force (Evade) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "446F"
+    },
+    {
+        "Effect": "Ingenious Schemer {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4CC3"
+    },
+    {
+        "Effect": "Item Drop Rate {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "631A"
+    },
+    {
+        "Effect": "Item Drop Rate {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9FA2"
+    },
+    {
+        "Effect": "Item Drop Rate {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "09C5"
+    },
+    {
+        "Effect": "Kai's Vice General {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9941"
+    },
+    {
+        "Effect": "Ki Consumption (Jump)",
+        "Effect Max": null,
+        "type": null,
+        "id": "369F"
+    },
+    {
+        "Effect": "Ki Consumption (Jump) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0C0E"
+    },
+    {
+        "Effect": "Ki Consumption (Jump) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5029"
+    },
+    {
+        "Effect": "Ki Consumption (Jump)",
+        "Effect Max": null,
+        "type": null,
+        "id": "369F"
+    },
+    {
+        "Effect": "Ki Consumption For Movement (Negative Effects) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D4B9"
+    },
+    {
+        "Effect": "Ki Damage vs. Blustered Enemy {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D8EA"
+    },
+    {
+        "Effect": "Ki Damage vs. Electrified Enemy {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "2714"
     },
     {
-        "Effect": "Ki Damage vs. Scorched Enemy",
-        "Effect Max": "+2.1%",
-        "type": "Weapon",
+        "Effect": "Ki Damage vs. Saturated Enemy {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "52F7"
+    },
+    {
+        "Effect": "Ki Damage vs. Scorched Enemy {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "4AD3"
     },
     {
-        "Effect": "Ki Recovery Speed",
-        "Effect Max": "+3.0%",
-        "type": "Accessory",
-        "id": "2ABA"
+        "Effect": "Ki Pulse Bonus {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CCE1"
+    },
+    {
+        "Effect": "Ki Pulse Bonus {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DC93"
+    },
+    {
+        "Effect": "Ki Pulse Bonus {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C3CF"
+    },
+    {
+        "Effect": "Ki Pulse Bonus {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "49F8"
+    },
+    {
+        "Effect": "Ki Pulse Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6800"
+    },
+    {
+        "Effect": "Ki Pulse Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F41A"
+    },
+    {
+        "Effect": "Ki Pulse Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F31D"
+    },
+    {
+        "Effect": "Ki Pulse Recovery {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7863"
     },
     {
         "Effect": "Ki Recovery Speed",
-        "Effect Max": "+3.0%",
-        "type": "Accessory",
-        "id": "2C04"
+        "Effect Max": null,
+        "type": null,
+        "id": "D405"
     },
     {
-        "Effect": "Ki Recovery Speed",
-        "Effect Max": "+1.0%",
-        "type": "Weapon",
-        "id": "144F"
-    },
-    {
-        "Effect": "Ki Recovery Speed",
-        "Effect Max": "+2.5%",
-        "type": "Soul Core",
-        "id": "93C6"
-    },
-    {
-        "Effect": "Ki Recovery Speed",
-        "Effect Max": "+2.3%",
-        "type": "Armor",
-        "id": "03F5"
-    },
-    {
-        "Effect": "Ki Recovery Speed (Critical)",
-        "Effect Max": "+8.9%",
-        "type": "Accessory",
-        "id": "A48A"
-    },
-    {
-        "Effect": "Ki Recovery Speed (Critical)",
-        "Effect Max": "+8.9%",
-        "type": "Armor",
-        "id": "0A41"
-    },
-    {
-        "Effect": "Ki Recovery Speed (Critical)",
-        "Effect Max": "+6.7%",
-        "type": "Armor",
+        "Effect": "Ki Recovery Speed (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "7A17"
     },
     {
-        "Effect": "Ki Recovery Speed (Critical)",
-        "Effect Max": "+2.3%",
-        "type": "Weapon",
+        "Effect": "Ki Recovery Speed (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "9AF1"
     },
     {
-        "Effect": "Ki Recovery Speed (Unscathed)",
-        "Effect Max": "+1.3%",
-        "type": "Weapon",
+        "Effect": "Ki Recovery Speed (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0A41"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "317F"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "705D"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A48A"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "6826"
     },
     {
-        "Effect": "Ki Recovery Speed (Unscathed)",
-        "Effect Max": "+2.7%",
-        "type": "Armor",
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B345"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB06"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "533D"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A369"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6189"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0692"
+    },
+    {
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "D86E"
     },
     {
-        "Effect": "Life",
-        "Effect Max": "+25",
-        "type": "Armor",
-        "id": "F94B"
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3F3F"
     },
     {
-        "Effect": "Life",
-        "Effect Max": "+50",
-        "type": "Armor",
-        "id": "08E7"
+        "Effect": "Ki Recovery Speed (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3CB1"
     },
     {
-        "Effect": "Life",
-        "Effect Max": "+25",
-        "type": "Accessory",
-        "id": "CB3E"
+        "Effect": "Ki Recovery Speed {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2ABA"
     },
     {
-        "Effect": "Life",
-        "Effect Max": "+25",
-        "type": "Accessory",
-        "id": "6F19"
+        "Effect": "Ki Recovery Speed {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B1D3"
     },
     {
-        "Effect": "Life Drain (Bullseye)",
-        "Effect Max": "13",
-        "type": "Weapon",
+        "Effect": "Ki Recovery Speed {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B651"
+    },
+    {
+        "Effect": "Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "144F"
+    },
+    {
+        "Effect": "Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1621"
+    },
+    {
+        "Effect": "Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8BDD"
+    },
+    {
+        "Effect": "Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "03F5"
+    },
+    {
+        "Effect": "Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2C04"
+    },
+    {
+        "Effect": "Ki Recovery Speed {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "93C6"
+    },
+    {
+        "Effect": "Ki {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0A32"
+    },
+    {
+        "Effect": "Ki {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C19F"
+    },
+    {
+        "Effect": "Ki {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1DEF"
+    },
+    {
+        "Effect": "Kintaro {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E460"
+    },
+    {
+        "Effect": "Kodama Sensor {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7104"
+    },
+    {
+        "Effect": "Kunai Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DD04"
+    },
+    {
+        "Effect": "Kunai Gauge Charge {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8264"
+    },
+    {
+        "Effect": "Life Drain (Bullseye) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "0243"
     },
     {
-        "Effect": "Life Drain (Final Blow/Grapple)",
-        "Effect Max": "30",
-        "type": "Weapon",
+        "Effect": "Life Drain (Bullseye) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7EC7"
+    },
+    {
+        "Effect": "Life Drain (Final Blow/Grapple) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B710"
+    },
+    {
+        "Effect": "Life Drain (Final Blow/Grapple) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "3FFD"
     },
     {
-        "Effect": "Life Drain (Lightning Damage)",
-        "Effect Max": "C+",
-        "type": "Soul Core",
+        "Effect": "Life Drain (Final Blow/Grapple) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8AC4"
+    },
+    {
+        "Effect": "Life Drain (Fire Damage) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "613F"
+    },
+    {
+        "Effect": "Life Drain (Fire Damage) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5A9A"
+    },
+    {
+        "Effect": "Life Drain (Fire Damage) {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "64C7"
+    },
+    {
+        "Effect": "Life Drain (Lightning Damage) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C5FB"
+    },
+    {
+        "Effect": "Life Drain (Lightning Damage) {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "05DD"
+    },
+    {
+        "Effect": "Life Drain (Lightning Damage) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "D0C5"
     },
     {
-        "Effect": "Life Drain (Ranged Weapon Hit)",
-        "Effect Max": "30",
-        "type": "Accessory",
+        "Effect": "Life Drain (Martial Arts) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FF01"
+    },
+    {
+        "Effect": "Life Drain (Melee Attack) {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F9DB"
+    },
+    {
+        "Effect": "Life Drain (Melee Kill) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D275"
+    },
+    {
+        "Effect": "Life Drain (Quick Attack) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6D3E"
+    },
+    {
+        "Effect": "Life Drain (Ranged Weapon Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "559F"
+    },
+    {
+        "Effect": "Life Drain (Ranged Weapon Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0C0A"
+    },
+    {
+        "Effect": "Life Drain (Ranged Weapon Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EE21"
+    },
+    {
+        "Effect": "Life Drain (Ranged Weapon Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "09C3"
+    },
+    {
+        "Effect": "Life Drain (Ranged Weapon Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "A072"
     },
     {
-        "Effect": "Life Drain (Strong Attack)",
-        "Effect Max": "+3%",
-        "type": "Weapon",
-        "id": "EF41"
+        "Effect": "Life Drain (Water Damage) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0054"
     },
     {
-        "Effect": "Life Recovery Amount",
-        "Effect Max": "+2.5%",
-        "type": "Accessory",
-        "id": "AAC1"
+        "Effect": "Life Drain (Wind Damage) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "640E"
     },
     {
         "Effect": "Life Recovery (Amrita Absorption)",
-        "Effect Max": "?",
-        "type": "Weapon",
-        "id": "5737"
+        "Effect Max": null,
+        "type": null,
+        "id": "2D91"
     },
     {
-        "Effect": "Life Recovery (Crucible)",
-        "Effect Max": "+5.4%",
-        "type": "Armor",
+        "Effect": "Life Recovery (Amrita Absorption) {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3523"
+    },
+    {
+        "Effect": "Life Recovery (Amrita Absorption) {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AFD2"
+    },
+    {
+        "Effect": "Life Recovery (Amrita Absorption) {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D5E0"
+    },
+    {
+        "Effect": "Life Recovery (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "00E1"
     },
     {
-        "Effect": "Life Recovery (Soul Core Gained)",
-        "Effect Max": "+53",
-        "type": "Accessory",
+        "Effect": "Life Recovery (Purification) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7803"
+    },
+    {
+        "Effect": "Life Recovery (Purification) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A157"
+    },
+    {
+        "Effect": "Life Recovery (Purification) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9F46"
+    },
+    {
+        "Effect": "Life Recovery (Soul Core Gained) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "FB24"
     },
     {
-        "Effect": "Lightning Damage Reduction",
-        "Effect Max": "+10",
-        "type": "Accessory",
+        "Effect": "Life Recovery (Yokai Realm) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2EEE"
+    },
+    {
+        "Effect": "Life Recovery Amount {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AAC1"
+    },
+    {
+        "Effect": "Life {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F94B"
+    },
+    {
+        "Effect": "Life {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C9B1"
+    },
+    {
+        "Effect": "Life {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "08E7"
+    },
+    {
+        "Effect": "Life {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6F19"
+    },
+    {
+        "Effect": "Life {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CB3E"
+    },
+    {
+        "Effect": "Life {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2C91"
+    },
+    {
+        "Effect": "Lightning Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1C18"
+    },
+    {
+        "Effect": "Lightning Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2F2C"
+    },
+    {
+        "Effect": "Lightning Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2365"
+    },
+    {
+        "Effect": "Lightning Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "564E"
     },
     {
-        "Effect": "Lightning Resistance",
-        "Effect Max": "+10",
-        "type": "Accessory",
+        "Effect": "Lightning Damage {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "384D"
+    },
+    {
+        "Effect": "Lightning Damage {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "ECEB"
+    },
+    {
+        "Effect": "Lightning Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2F59"
+    },
+    {
+        "Effect": "Lightning Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E08D"
+    },
+    {
+        "Effect": "Lightning Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "14C9"
+    },
+    {
+        "Effect": "Lightning Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "A31E"
     },
     {
-        "Effect": "Low Attack Ki Consumption",
-        "Effect Max": "-1.9%",
-        "type": "Weapon",
-        "id": "F5A2"
+        "Effect": "Lightning Step Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6D4C"
     },
     {
-        "Effect": "Low Guard Ki Consumption",
-        "Effect Max": "-8.0%",
-        "type": "Armor",
-        "id": "3F9C"
+        "Effect": "Living Artifact Damage {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "48DE"
     },
     {
-        "Effect": "Luck",
-        "Effect Max": "+7",
-        "type": "Accessory",
-        "id": "BDEC"
-    },
-    {
-        "Effect": "Luck",
-        "Effect Max": "+2",
-        "type": "Armor",
-        "id": "BD9F"
-    },
-    {
-        "Effect": "Luck",
-        "Effect Max": "+2",
-        "type": "Weapon",
-        "id": "1A2C"
-    },
-    {
-        "Effect": "Luck (Critical)",
-        "Effect Max": "+15",
-        "type": "Accessory",
-        "id": "FAA0"
-    },
-    {
-        "Effect": "Luck (Critical)",
-        "Effect Max": "+5",
-        "type": "Weapon",
-        "id": "7A91"
-    },
-    {
-        "Effect": "Luck (Crucible)",
-        "Effect Max": "+3",
-        "type": "Weapon",
-        "id": "5BAA"
-    },
-    {
-        "Effect": "Luck (Crucible)",
-        "Effect Max": "+2",
-        "type": "Weapon",
-        "id": "BC10"
-    },
-    {
-        "Effect": "Living Artifact Duration",
-        "Effect Max": "+3.0%",
-        "type": "Accessory",
-        "id": "12FB"
-    },
-    {
-        "Effect": "Living Artifact Duration",
-        "Effect Max": "+3.0%",
-        "type": "Armor",
+        "Effect": "Living Artifact Duration {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "2886"
     },
     {
-        "Effect": "Martial Arts Ki Consumption",
-        "Effect Max": "-8.0%",
-        "type": "Armor",
-        "id": "4056"
+        "Effect": "Living Artifact Duration {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "12FB"
     },
     {
-        "Effect": "Martial Arts Ki Consumption",
-        "Effect Max": "-2.0%",
-        "type": "Weapon",
-        "id": "FB3A"
+        "Effect": "Low Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B209"
+    },
+    {
+        "Effect": "Low Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8D95"
+    },
+    {
+        "Effect": "Low Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F5A2"
+    },
+    {
+        "Effect": "Low Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BBB9"
+    },
+    {
+        "Effect": "Low Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DED7"
+    },
+    {
+        "Effect": "Low Stance Martial Art Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AF72"
+    },
+    {
+        "Effect": "Low Stance Martial Art Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F098"
+    },
+    {
+        "Effect": "Low Stance Martial Art Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1D4B"
+    },
+    {
+        "Effect": "Low Stance Martial Art Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C4C3"
+    },
+    {
+        "Effect": "Luck (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A815"
+    },
+    {
+        "Effect": "Luck (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AD83"
+    },
+    {
+        "Effect": "Luck (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "89AC"
+    },
+    {
+        "Effect": "Luck (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FAA0"
+    },
+    {
+        "Effect": "Luck (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7A91"
+    },
+    {
+        "Effect": "Luck (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BC10"
+    },
+    {
+        "Effect": "Luck (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9A82"
+    },
+    {
+        "Effect": "Luck (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7896"
+    },
+    {
+        "Effect": "Luck (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5BAA"
+    },
+    {
+        "Effect": "Luck Bonus (Amrita Gauge) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1F6C"
+    },
+    {
+        "Effect": "Luck Bonus (Amrita Gauge) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D84B"
+    },
+    {
+        "Effect": "Luck Bonus (Amrita Gauge) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4FBF"
+    },
+    {
+        "Effect": "Luck Bonus (Amrita Gauge) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C7B2"
+    },
+    {
+        "Effect": "Luck {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8615"
+    },
+    {
+        "Effect": "Luck {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BD9F"
+    },
+    {
+        "Effect": "Luck {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BDEC"
+    },
+    {
+        "Effect": "Luck {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D870"
+    },
+    {
+        "Effect": "Luck {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1A2C"
+    },
+    {
+        "Effect": "Marial Arts Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "34FE"
     },
     {
         "Effect": "Martial Art Damage",
-        "Effect Max": "+8.0%",
-        "type": "Weapon",
-        "id": "E9B1"
+        "Effect Max": null,
+        "type": null,
+        "id": "AF2C"
     },
     {
-        "Effect": "Martial Art Ki Damage",
-        "Effect Max": "+1.5%",
-        "type": "Weapon",
-        "id": "794B"
+        "Effect": "Martial Art Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0F1A"
     },
     {
-        "Effect": "Martial Art Ki Damage",
-        "Effect Max": "+5.0%",
-        "type": "Weapon",
+        "Effect": "Martial Art Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A4DE"
+    },
+    {
+        "Effect": "Martial Art Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CB7F"
+    },
+    {
+        "Effect": "Martial Art Ki Damage {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "3790"
     },
     {
-        "Effect": "Max Arrows",
-        "Effect Max": "+1",
-        "type": "Weapon",
+        "Effect": "Martial Art Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "794B"
+    },
+    {
+        "Effect": "Martial Arts Ki Consumption",
+        "Effect Max": null,
+        "type": null,
+        "id": "0BF9"
+    },
+    {
+        "Effect": "Martial Arts Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FB3A"
+    },
+    {
+        "Effect": "Martial Arts Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FF4D"
+    },
+    {
+        "Effect": "Martial Arts Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4255"
+    },
+    {
+        "Effect": "Master of Gunnery {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C7AD"
+    },
+    {
+        "Effect": "Master of Illusion {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B726"
+    },
+    {
+        "Effect": "Master of the Spear {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2367"
+    },
+    {
+        "Effect": "Matchless Resentment {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A7A1"
+    },
+    {
+        "Effect": "Max Arrows {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "CFC3"
     },
     {
-        "Effect": "Melee Attack Ki Consumption",
-        "Effect Max": "-8.0%",
-        "type": "Armor",
+        "Effect": "Max Lightning Step Stock {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "214E"
+    },
+    {
+        "Effect": "Medicine Efficacy (Critical)",
+        "Effect Max": null,
+        "type": null,
+        "id": "DA46"
+    },
+    {
+        "Effect": "Medicine Efficacy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2AA4"
+    },
+    {
+        "Effect": "Melee Attack Ki Consumption (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3B60"
+    },
+    {
+        "Effect": "Melee Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FFFC"
+    },
+    {
+        "Effect": "Melee Attack Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E35C"
+    },
+    {
+        "Effect": "Melee Attack Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BF5D"
+    },
+    {
+        "Effect": "Melee Attack Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "DF9E"
     },
     {
-        "Effect": "Melee Attack Ki Damage (Crucible)",
-        "Effect Max": "+1.5%",
-        "type": "Armor",
+        "Effect": "Melee Attack Ki Damage (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "A166"
     },
     {
-        "Effect": "Melee Damage",
-        "Effect Max": "+4.2%",
-        "type": "Weapon",
-        "id": "01DB"
+        "Effect": "Melee Damage (Critical) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "143A"
     },
     {
-        "Effect": "Melee Damage",
-        "Effect Max": "+7.6%",
-        "type": "Weapon",
-        "id": "4FEB"
-    },
-    {
-        "Effect": "Melee Ki Damage",
-        "Effect Max": "+1.5%",
-        "type": "Weapon",
-        "id": "DC17"
-    },
-    {
-        "Effect": "Melee Ki Damage",
-        "Effect Max": "+3.0%",
-        "type": "Weapon",
-        "id": "21D3"
-    },
-    {
-        "Effect": "Melee Damage (Crucible)",
-        "Effect Max": "+4.9%",
-        "type": "Armor",
-        "id": "36E6"
-    },
-    {
-        "Effect": "Melee Damage (Crucible)",
-        "Effect Max": "+6.0%",
-        "type": "Weapon",
+        "Effect": "Melee Damage (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "F6B6"
     },
     {
+        "Effect": "Melee Damage (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DA7A"
+    },
+    {
+        "Effect": "Melee Damage (Crucible) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "36E6"
+    },
+    {
+        "Effect": "Melee Damage (Unscathed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "976F"
+    },
+    {
+        "Effect": "Melee Damage vs. Attacking Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "76A0"
+    },
+    {
+        "Effect": "Melee Damage vs. Attacking Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FE5F"
+    },
+    {
+        "Effect": "Melee Damage vs. Electrified Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9555"
+    },
+    {
+        "Effect": "Melee Damage vs. Saturated Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4B65"
+    },
+    {
+        "Effect": "Melee Damage vs. Unscathed Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "814A"
+    },
+    {
+        "Effect": "Melee Damage vs. Winded Enemy {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4E3E"
+    },
+    {
+        "Effect": "Melee Damage vs. Winded Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3652"
+    },
+    {
+        "Effect": "Melee Damage vs. Winded Enemy {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "67E6"
+    },
+    {
+        "Effect": "Melee Damage {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4FEB"
+    },
+    {
+        "Effect": "Melee Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "01DB"
+    },
+    {
+        "Effect": "Melee Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AA2A"
+    },
+    {
+        "Effect": "Melee Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4644"
+    },
+    {
+        "Effect": "Melee Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C4F8"
+    },
+    {
+        "Effect": "Melee Ki Damage {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "21D3"
+    },
+    {
+        "Effect": "Melee Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DC17"
+    },
+    {
+        "Effect": "Mid Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "64D2"
+    },
+    {
+        "Effect": "Mid Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1161"
+    },
+    {
+        "Effect": "Mid Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8C94"
+    },
+    {
+        "Effect": "Mid Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E9E3"
+    },
+    {
+        "Effect": "Mid Guard Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5953"
+    },
+    {
+        "Effect": "Mid Stance Martial Art Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F272"
+    },
+    {
+        "Effect": "Mid Stance Martial Art Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CE00"
+    },
+    {
+        "Effect": "Mid Stance Martial Art Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D7EF"
+    },
+    {
+        "Effect": "Ninjutsu Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D01B"
+    },
+    {
         "Effect": "Ninjutsu Ki Damage",
-        "Effect Max": "+1.5%",
-        "type": "Weapon",
+        "Effect Max": null,
+        "type": null,
+        "id": "8AE1"
+    },
+    {
+        "Effect": "Ninjutsu Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BEC1"
+    },
+    {
+        "Effect": "Ninjutsu Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0449"
+    },
+    {
+        "Effect": "Ninjutsu Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "A5BD"
     },
     {
-        "Effect": "Onmyo Magic Ki Damage",
-        "Effect Max": "+1.8%",
-        "type": "Weapon",
+        "Effect": "NO SPECIAL EFFECT",
+        "Effect Max": null,
+        "type": null,
+        "id": "FFFF"
+    },
+    {
+        "Effect": "Onmyo Magic Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "510B"
     },
     {
-        "Effect": "Paralysis Accumulation (Enemy)",
-        "Effect Max": "+8.0%",
-        "type": "Accessory",
-        "id": "22CA"
+        "Effect": "Onmyo Magic Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EA1A"
     },
     {
-        "Effect": "Paralysis Accumulation (Enemy)",
-        "Effect Max": "+3.0%",
-        "type": "Weapon",
+        "Effect": "Paralysis Accumulation (Enemy) {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "EE6D"
     },
     {
-        "Effect": "Paralysis Resistence",
-        "Effect Max": "+15",
-        "type": "Accessory",
+        "Effect": "Paralysis Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "03A2"
     },
     {
-        "Effect": "Paralysis Resistence",
-        "Effect Max": "+7",
-        "type": "Armor",
-        "id": "DDFE"
+        "Effect": "Paralysis Resistance {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4870"
     },
     {
-        "Effect": "Pleiades (Ailing)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
+        "Effect": "Paralysis Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5C13"
+    },
+    {
+        "Effect": "Paralysis Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D518"
+    },
+    {
+        "Effect": "Paralysis Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C4BC"
+    },
+    {
+        "Effect": "Picturesque Scenery {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "619A"
+    },
+    {
+        "Effect": "Pinwheel Shuriken Gauge Charge {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BBF8"
+    },
+    {
+        "Effect": "Pleiades (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "5DF1"
     },
     {
-        "Effect": "Pleiades (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Accessory",
-        "id": "29BC"
+        "Effect": "Pleiades (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9AF5"
     },
     {
-        "Effect": "Pleiades (Amrita Absorption)",
-        "Effect Max": "? ? ?",
-        "type": "Armor",
+        "Effect": "Pleiades (Ailing) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D30D"
+    },
+    {
+        "Effect": "Pleiades (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C93A"
+    },
+    {
+        "Effect": "Pleiades (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B69C"
+    },
+    {
+        "Effect": "Pleiades (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C341"
+    },
+    {
+        "Effect": "Pleiades (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "87E4"
     },
     {
-        "Effect": "Pleiades (Evade)",
-        "Effect Max": "? C+ ?",
-        "type": "Armor",
-        "id": "6769"
+        "Effect": "Pleiades (Amrita Absorption) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "29BC"
     },
     {
-        "Effect": "Pleiades (Purification)",
-        "Effect Max": "? ? ?",
-        "type": "Weapon",
+        "Effect": "Pleiades (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B34A"
+    },
+    {
+        "Effect": "Pleiades (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5568"
+    },
+    {
+        "Effect": "Pleiades (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "61CB"
+    },
+    {
+        "Effect": "Pleiades (Critical) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A297"
+    },
+    {
+        "Effect": "Pleiades (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3C24"
+    },
+    {
+        "Effect": "Pleiades (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2783"
+    },
+    {
+        "Effect": "Pleiades (Deflect) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "47F1"
+    },
+    {
+        "Effect": "Pleiades (Evade) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B06A"
+    },
+    {
+        "Effect": "Pleiades (Onmyo Magic Used) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B233"
+    },
+    {
+        "Effect": "Pleiades (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
         "id": "ED18"
     },
     {
-        "Effect": "Poison Accumulation (Enemy)",
-        "Effect Max": "+8.0%",
-        "type": "Accessory",
-        "id": "3D9E"
+        "Effect": "Pleiades (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4385"
     },
     {
-        "Effect": "Poison Accumulation (Enemy)",
-        "Effect Max": "+3.0%",
-        "type": "Weapon",
-        "id": "CAAD"
+        "Effect": "Pleiades (Purification) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B6F3"
     },
     {
-        "Effect": "Poison Resistance",
-        "Effect Max": "+15",
-        "type": "Accessory",
+        "Effect": "Poison Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C2A5"
+    },
+    {
+        "Effect": "Poison Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A5FB"
+    },
+    {
+        "Effect": "Poison Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "3E32"
     },
     {
-        "Effect": "Poison Resistance",
-        "Effect Max": "+15",
-        "type": "Soul Core",
-        "id": "A43F"
+        "Effect": "Poison Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2584"
     },
     {
-        "Effect": "Poison Resistance",
-        "Effect Max": "+10",
-        "type": "Accessory",
+        "Effect": "Poison Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3FA0"
+    },
+    {
+        "Effect": "Poison Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7BA8"
+    },
+    {
+        "Effect": "Poison Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "3500"
     },
     {
-        "Effect": "Pride of the Crimson Army",
-        "Effect Max": "7 Pieces",
-        "type": "Armor / Weapon",
+        "Effect": "Poison Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A43F"
+    },
+    {
+        "Effect": "Pride of the Crimson Army {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "4186"
     },
     {
-        "Effect": "Projectile Damage Taken",
-        "Effect Max": "-1.2%",
-        "type": "Accessory",
-        "id": "E13D"
+        "Effect": "Pride of the Sakanoue {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1D38"
     },
     {
-        "Effect": "Projectile Damage Taken",
-        "Effect Max": "-0.9%",
-        "type": "Armor",
-        "id": "EE52"
+        "Effect": "Profligate Sinner {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CD1B"
     },
     {
-        "Effect": "Projectile Damage (Unscathed)",
-        "Effect Max": "+4.0%",
-        "type": "Weapon",
+        "Effect": "Projectile Damage (Unscathed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "4494"
     },
     {
-        "Effect": "Quick Attack Ki Consumption",
-        "Effect Max": "-1.9%",
-        "type": "Weapon",
+        "Effect": "Projectile Damage (Unscathed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B7E9"
+    },
+    {
+        "Effect": "Projectile Damage Taken {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E13D"
+    },
+    {
+        "Effect": "Projectile Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EE52"
+    },
+    {
+        "Effect": "Projectile Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7F71"
+    },
+    {
+        "Effect": "Projectile Damage Taken {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2CE6"
+    },
+    {
+        "Effect": "Protection From Death (Non-Critical)",
+        "Effect Max": null,
+        "type": null,
+        "id": "FFCB"
+    },
+    {
+        "Effect": "Purifying Presence {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "63F1"
+    },
+    {
+        "Effect": "Quick Attack Break",
+        "Effect Max": null,
+        "type": null,
+        "id": "44D0"
+    },
+    {
+        "Effect": "Quick Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D841"
+    },
+    {
+        "Effect": "Quick Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9926"
+    },
+    {
+        "Effect": "Quick Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D99A"
+    },
+    {
+        "Effect": "Quick Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0187"
+    },
+    {
+        "Effect": "Quick Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "9589"
     },
     {
-        "Effect": "Ranged Damage",
-        "Effect Max": "+1.7%",
-        "type": "Accessory",
-        "id": "0892"
+        "Effect": "Quick Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C7FB"
     },
     {
-        "Effect": "Shuriken Damage",
-        "Effect Max": "+10.0%",
-        "type": "Accessory",
+        "Effect": "Quick Attack Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4BE8"
+    },
+    {
+        "Effect": "Quick-Witted Courage {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EEBF"
+    },
+    {
+        "Effect": "Ranged Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "01D4"
+    },
+    {
+        "Effect": "Reduced Movement On Enemy (Ranged Weapon Hit) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C343"
+    },
+    {
+        "Effect": "Reduced Set Bonus Requirements {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "53D4"
+    },
+    {
+        "Effect": "Rifle Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B3DB"
+    },
+    {
+        "Effect": "Rifle Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0341"
+    },
+    {
+        "Effect": "Saturation Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "050C"
+    },
+    {
+        "Effect": "Saturation Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "91E8"
+    },
+    {
+        "Effect": "Saturation Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "27F9"
+    },
+    {
+        "Effect": "Servant of the Gods {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "91F7"
+    },
+    {
+        "Effect": "Seven Misfortunes, Eight Hardships {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5AE3"
+    },
+    {
+        "Effect": "Shock Accumulation (Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7C65"
+    },
+    {
+        "Effect": "Shuriken Damage {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "79F0"
     },
     {
-        "Effect": "Soul Core Drop Rate",
-        "Effect Max": "+4.0%",
-        "type": "Weapon",
+        "Effect": "Shuriken Gauge Charge {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6B72"
+    },
+    {
+        "Effect": "Single Sword's Reverie {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "32A5"
+    },
+    {
+        "Effect": "Soul Core Drop Rate (Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "F44B"
     },
     {
-        "Effect": "Spirit Force Bonus (Damage Taken)",
-        "Effect Max": "C",
-        "type": "Armor",
+        "Effect": "Soul Core Drop Rate {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "459F"
+    },
+    {
+        "Effect": "Soul Core Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "589B"
+    },
+    {
+        "Effect": "Soul Core Drop Rate {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C925"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7266"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Amrita) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9BAB"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Amrita) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0DAC"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Amrita) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6610"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Amrita) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BE88"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Amrita) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6E5C"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Blustered Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7F70"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Critical Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C3A6"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Critical Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3F04"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Critical Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8259"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Critical Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "487F"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Damage Taken) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "FB83"
     },
     {
-        "Effect": "Spirit Force Bonus (Elixir)",
-        "Effect Max": "+15",
-        "type": "Accessory",
+        "Effect": "Spirit Force Bonus (Electrified Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "ED95"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Elixir) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "B77B"
     },
     {
-        "Effect": "Spirit Force Bonus (Final Blow/Grapple)",
-        "Effect Max": "? C+ ?",
-        "type": "Armor",
+        "Effect": "Spirit Force Bonus (Enemy Blustered) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "899B"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Blustered) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3E48"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Blustered) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C061"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Electrified) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "03D1"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Electrified) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F3DB"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Electrified) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6B5D"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Paralyzed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "14F9"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Paralyzed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3A6F"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Paralyzed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FBAA"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Poisoned) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "80D1"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Poisoned) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0CCF"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Saturated) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DE70"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Saturated) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8AB4"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Enemy Scorched) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E6E1"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Final Blow/Grapple) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BD38"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Final Blow/Grapple) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "72F7"
     },
     {
-        "Effect": "Spirit Force Bonus (Paralyzed Enemy)",
-        "Effect Max": "AAA+",
-        "type": "Weapon",
+        "Effect": "Spirit Force Bonus (Fire Damage) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "488B"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Jump) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CD22"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Paralyzed Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "0DA3"
     },
     {
-        "Effect": "Spirit Force Bonus (Poisoned Enemy)",
-        "Effect Max": "C+",
-        "type": "Accessory",
+        "Effect": "Spirit Force Bonus (Paralyzed Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "860C"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Poisoned Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2AC5"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Poisoned Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "77C0"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Poisoned Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "BC19"
     },
     {
-        "Effect": "Spirit Force Charge",
-        "Effect Max": "+1.4%",
-        "type": "Accessory",
-        "id": "9911"
-    },
-    {
-        "Effect": "Spirit Force Charge (Backstab)",
-        "Effect Max": "+0.9%",
-        "type": "Weapon",
-        "id": "C930"
-    },
-    {
-        "Effect": "Spirit Force Charge (Crucible)",
-        "Effect Max": "+1.8%",
-        "type": "Armor",
-        "id": "05EE"
-    },
-    {
-        "Effect": "Spirit Force Charge (Purification)",
-        "Effect Max": "+20",
-        "type": "Soul Core",
+        "Effect": "Spirit Force Bonus (Purification) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "6270"
     },
     {
-        "Effect": "Spirit Force Charge (Unscathed)",
-        "Effect Max": "+1.7%",
-        "type": "Accessory",
+        "Effect": "Spirit Force Bonus (Saturated Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A905"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Scorched Enemy) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "81FB"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Status Ailment) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6475"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Unscathed Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6464"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Unscathed Amrita) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4E8B"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Water Damage) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B25F"
+    },
+    {
+        "Effect": "Spirit Force Bonus (Wind Damage) {Rare}",
+        "Effect Max": null,
+        "type": null,
+        "id": "774C"
+    },
+    {
+        "Effect": "Spirit Force Charge (Ailing) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "3970"
+    },
+    {
+        "Effect": "Spirit Force Charge (Ailing) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A227"
+    },
+    {
+        "Effect": "Spirit Force Charge (Ailing) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6D8D"
+    },
+    {
+        "Effect": "Spirit Force Charge (Ailing) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "04C8"
+    },
+    {
+        "Effect": "Spirit Force Charge (Backstab) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "50D3"
+    },
+    {
+        "Effect": "Spirit Force Charge (Backstab) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "247B"
+    },
+    {
+        "Effect": "Spirit Force Charge (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AD2F"
+    },
+    {
+        "Effect": "Spirit Force Charge (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D10B"
+    },
+    {
+        "Effect": "Spirit Force Charge (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C04F"
+    },
+    {
+        "Effect": "Spirit Force Charge (Critical) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6098"
+    },
+    {
+        "Effect": "Spirit Force Charge (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D7BF"
+    },
+    {
+        "Effect": "Spirit Force Charge (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "922D"
+    },
+    {
+        "Effect": "Spirit Force Charge (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0DD5"
+    },
+    {
+        "Effect": "Spirit Force Charge (Crucible) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "05EE"
+    },
+    {
+        "Effect": "Spirit Force Charge (Enhanced) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4FAE"
+    },
+    {
+        "Effect": "Spirit Force Charge (Enhanced) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "182C"
+    },
+    {
+        "Effect": "Spirit Force Charge (Enhanced) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9FF4"
+    },
+    {
+        "Effect": "Spirit Force Charge (Enhanced) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B2F9"
+    },
+    {
+        "Effect": "Spirit Force Charge (Strong Attack) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D055"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1A1D"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1966"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C683"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A41A"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2B9A"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2DC6"
+    },
+    {
+        "Effect": "Spirit Force Charge (Unscathed) {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "5B2F"
     },
     {
-        "Effect": "Status Ailment Accumulation",
-        "Effect Max": "+5.0%",
-        "type": "Accessory",
+        "Effect": "Spirit Force Charge (Unscathed) {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A566"
+    },
+    {
+        "Effect": "Spirit Force Charge {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "DAF5"
+    },
+    {
+        "Effect": "Spirit Force Charge {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D4EE"
+    },
+    {
+        "Effect": "Spirit Force Charge {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9911"
+    },
+    {
+        "Effect": "Spirit Force Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "324D"
+    },
+    {
+        "Effect": "Spirit Force Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2BD4"
+    },
+    {
+        "Effect": "Spirit Force {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "C017"
+    },
+    {
+        "Effect": "Spirit Force {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7E56"
+    },
+    {
+        "Effect": "Spirit Force {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CC5D"
+    },
+    {
+        "Effect": "Spirit Force {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "EDB0"
+    },
+    {
+        "Effect": "Spirit Force {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "710F"
+    },
+    {
+        "Effect": "Spirit Force {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7DA9"
+    },
+    {
+        "Effect": "Status Ailment Accumulation {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "7CA0"
     },
     {
-        "Effect": "Status Ailment Accumulation",
-        "Effect Max": "+5.0%",
-        "type": "Weapon",
-        "id": "844B"
+        "Effect": "Status Ailment Duration (Confusion)",
+        "Effect Max": null,
+        "type": null,
+        "id": "99FB"
     },
     {
-        "Effect": "Strong Attack Ki Consumption",
-        "Effect Max": "-1.0%",
-        "type": "Armor",
-        "id": "6DB4"
-    },
-    {
-        "Effect": "Strong Attack Ki Consumption",
-        "Effect Max": "-1.9%",
-        "type": "Weapon",
-        "id": "511C"
-    },
-    {
-        "Effect": "Strong Attack Ki Damage",
-        "Effect Max": "+1.9%",
-        "type": "Weapon",
-        "id": "BFC6"
-    },
-    {
-        "Effect": "Strong Attack Ki Damage",
-        "Effect Max": "+3.5%",
-        "type": "Soul Core",
-        "id": "1222"
-    },
-    {
-        "Effect": "Strong Attack Ki Damage",
-        "Effect Max": "+1.6%",
-        "type": "Weapon",
-        "id": "5107"
-    },
-    {
-        "Effect": "Stealth",
-        "Effect Max": "C-",
-        "type": "Weapon",
+        "Effect": "Stealth {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "F58C"
     },
     {
-        "Effect": "Toughness",
-        "Effect Max": "+11",
-        "type": "Armor",
+        "Effect": "Stealth {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "751B"
+    },
+    {
+        "Effect": "Straight and True {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B91B"
+    },
+    {
+        "Effect": "Strong Attack Break",
+        "Effect Max": null,
+        "type": null,
+        "id": "E00D"
+    },
+    {
+        "Effect": "Strong Attack Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F948"
+    },
+    {
+        "Effect": "Strong Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2042"
+    },
+    {
+        "Effect": "Strong Attack Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AA68"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "511C"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0F6C"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6DB4"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption {Exotic}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5DA6"
+    },
+    {
+        "Effect": "Strong Attack Ki Consumption {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "193D"
+    },
+    {
+        "Effect": "Strong Attack Ki Damage {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BFC6"
+    },
+    {
+        "Effect": "Strong Attack Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5107"
+    },
+    {
+        "Effect": "Strong Attack Ki Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1222"
+    },
+    {
+        "Effect": "Swift Silence and Daring Defense {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "D524"
+    },
+    {
+        "Effect": "Sword and Zen as One {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "94A3"
+    },
+    {
+        "Effect": "Sword of Misfortune {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FD74"
+    },
+    {
+        "Effect": "The Duplicitous General {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "F41D"
+    },
+    {
+        "Effect": "The Fated Shot {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5ECC"
+    },
+    {
+        "Effect": "The God of War Looks Down {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "8569"
+    },
+    {
+        "Effect": "The Protection of Kannon {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E497"
+    },
+    {
+        "Effect": "The Rightful Eccentric {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6982"
+    },
+    {
+        "Effect": "The Tragic Hero {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "7A43"
+    },
+    {
+        "Effect": "The True Pure Land {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9D28"
+    },
+    {
+        "Effect": "Thrust Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BB28"
+    },
+    {
+        "Effect": "Toughness {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "5536"
+    },
+    {
+        "Effect": "Toughness {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "CBC2"
     },
     {
-        "Effect": "Uncanny Bolt Damage",
-        "Effect Max": "+10.0%",
-        "type": "Accessory",
+        "Effect": "Toughness {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0FF0"
+    },
+    {
+        "Effect": "Treasure Sensor {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A6A4"
+    },
+    {
+        "Effect": "Ultimate Defense {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1248"
+    },
+    {
+        "Effect": "Uncanny Bolt Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "08B2"
     },
     {
-        "Effect": "Uncanny Breeze Damage",
-        "Effect Max": "+10.0%",
-        "type": "Accessory",
+        "Effect": "Uncanny Bolt Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0865"
+    },
+    {
+        "Effect": "Uncanny Breeze Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "F7D3"
     },
     {
-        "Effect": "Uncanny Breeze Gauge Charge",
-        "Effect Max": "+12.0%",
-        "type": "Accessory",
+        "Effect": "Uncanny Breeze Gauge Charge {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "23AF"
     },
     {
-        "Effect": "Uncanny Bubble Gauge Charge",
-        "Effect Max": "+12.0%",
-        "type": "Accessory",
-        "id": "EAC2"
-    },
-    {
-        "Effect": "Uncanny Flame Damage",
-        "Effect Max": "+10.0%",
-        "type": "Accessory",
+        "Effect": "Uncanny Flame Damage {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "4508"
     },
     {
-        "Effect": "Untouched Projectiles",
-        "Effect Max": "+7.5%",
-        "type": "Weapon",
+        "Effect": "Uncanny Flame Gauge Charge {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "E364"
+    },
+    {
+        "Effect": "Unlimited Ammunition {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FE51"
+    },
+    {
+        "Effect": "Unmatched Warrior {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "681A"
+    },
+    {
+        "Effect": "Untouched Elixirs {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AB5A"
+    },
+    {
+        "Effect": "Untouched Projectiles {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "28CB"
     },
     {
-        "Effect": "Untouched Sacred Water",
-        "Effect Max": "10.0%",
-        "type": "Accessory",
+        "Effect": "Untouched Sacred Water {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BD5C"
+    },
+    {
+        "Effect": "Untouched Sacred Water {Uncommon}",
+        "Effect Max": null,
+        "type": null,
         "id": "FCFB"
     },
     {
-        "Effect": "Water Damage",
-        "Effect Max": "+6.0%",
-        "type": "Accessory",
-        "id": "E6FD"
+        "Effect": "Valiant Wanderer {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "42AA"
     },
     {
-        "Effect": "Water Damage",
-        "Effect Max": "+4.7%",
-        "type": "Weapon",
-        "id": "FB42"
-    },
-    {
-        "Effect": "Water Damage Reduction",
-        "Effect Max": "+15",
-        "type": "Accessory",
-        "id": "FA74"
-    },
-    {
-        "Effect": "Warrior of the East's Honor",
-        "Effect Max": "6 Pieces",
-        "type": "Armor / Weapon",
+        "Effect": "Warrior of the East's Honor {Divine}",
+        "Effect Max": null,
+        "type": null,
         "id": "8685"
     },
     {
-        "Effect": "Water Resistance",
-        "Effect Max": "+7",
-        "type": "Armor",
-        "id": "0FE9"
+        "Effect": "Water Damage Reduction",
+        "Effect Max": null,
+        "type": null,
+        "id": "45FA"
     },
     {
-        "Effect": "Water Resistance",
-        "Effect Max": "+10",
-        "type": "Armor",
-        "id": "134A"
+        "Effect": "Water Damage Reduction {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FA74"
     },
     {
-        "Effect": "Water Resistance",
-        "Effect Max": "+15",
-        "type": "Soul Core",
-        "id": "BD13"
+        "Effect": "Water Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B323"
     },
     {
-        "Effect": "Water Resistance",
-        "Effect Max": "+12",
-        "type": "Accessory",
+        "Effect": "Water Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "112A"
+    },
+    {
+        "Effect": "Water Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "704E"
+    },
+    {
+        "Effect": "Water Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "68BD"
+    },
+    {
+        "Effect": "Water Resistance {Exotic}",
+        "Effect Max": null,
+        "type": null,
         "id": "A0AC"
     },
     {
-        "Effect": "Yokai Realm Resistance",
-        "Effect Max": "+0.5",
-        "type": "Accessory",
-        "id": "FC5B"
+        "Effect": "Water Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "134A"
     },
     {
-        "Effect": "Yokai Realm Resistance",
-        "Effect Max": "+0.2",
-        "type": "Weapon",
+        "Effect": "Water Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "0FE9"
+    },
+    {
+        "Effect": "Water Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "AAF7"
+    },
+    {
+        "Effect": "Water Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A500"
+    },
+    {
+        "Effect": "Water Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "BD15"
+    },
+    {
+        "Effect": "Wind Damage Reduction {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A63B"
+    },
+    {
+        "Effect": "Wind Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2211"
+    },
+    {
+        "Effect": "Wind Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9D38"
+    },
+    {
+        "Effect": "Wind Damage Reduction {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B749"
+    },
+    {
+        "Effect": "Wind Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "94A4"
+    },
+    {
+        "Effect": "Wind Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "A16D"
+    },
+    {
+        "Effect": "Wind Damage {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "4D26"
+    },
+    {
+        "Effect": "Wind Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "CE87"
+    },
+    {
+        "Effect": "Wind Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "56F2"
+    },
+    {
+        "Effect": "Wind Resistance {Uncommon}",
+        "Effect Max": null,
+        "type": null,
+        "id": "9CCF"
+    },
+    {
+        "Effect": "Yokai Annihilator {Divine}",
+        "Effect Max": null,
+        "type": null,
+        "id": "B0CF"
+    },
+    {
+        "Effect": "Yokai Realm Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
         "id": "5090"
+    },
+    {
+        "Effect": "Yokai Realm Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "6304"
+    },
+    {
+        "Effect": "Yokai Realm Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "2114"
+    },
+    {
+        "Effect": "Yokai Realm Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "1272"
+    },
+    {
+        "Effect": "Yokai Realm Resistance {Common}",
+        "Effect Max": null,
+        "type": null,
+        "id": "FC5B"
     }
 ]
