@@ -1,32 +1,32 @@
 import subprocess
-from tkinter import Tk, filedialog, ttk, messagebox
+from tkinter import filedialog, ttk, messagebox
 import os
 from pathlib import Path
 import json
 import tkinter as tk
 from checksum import patch_checksum
-from openpyxl import Workbook
+
 import shutil
 
-AMRITA_OFFSET  = 0x3ADE49 +0xf09#3AED52
-GOLD_OFFSET    = 0x3ADE59 +0xf09#3AED62
-CONSTITUTION   = 0x3ADF63 +0xf09#3ADF6C
-HEART          = 0x3ADF67 +0xf09#3ADF70
-STAMINA        = 0x3ADF6B +0xf09#3ADF74
-STRENGTH       = 0x3ADF6F +0xf09#3ADF78
-SKILL          = 0x3ADF73 +0xf09#3ADF7C
-INTELLECT      = 0x3ADF77 +0xf09#3ADF80
-MAGIC          = 0x3ADF7B +0xf09#3ADF84
+AMRITA_OFFSET  = 0x3DDBB3 
+GOLD_OFFSET    = 0x3DDBC3 
+CONSTITUTION   = 0x3ADF63 + 0x2FD6A
+HEART          = 0x3ADF67 + 0x2FD6A
+STAMINA        = 0x3ADF6B + 0x2FD6A
+STRENGTH       = 0x3ADF6F + 0x2FD6A
+SKILL          = 0x3ADF73+ 0x2FD6A
+INTELLECT      = 0x3ADF77 + 0x2FD6A
+MAGIC          = 0x3ADF7B + 0x2FD6A
 
-ITEM_START    = 0x240355 + 0xf09
-ITEM_SIZE     = 0xF0
+ITEM_START    = 0x270066
+ITEM_SIZE     = 0xF0 
 ITEM_SLOTS    = 0x9C4
 
-USABLE_START  = 0x2D2B21 + 0xf09
+USABLE_START  = 0x302832
 USABLE_SIZE   = 0xE8
 USABLE_SLOTS  = 0x5DC
 
-STORAGE_START = 0x327A8D + 0xf09
+STORAGE_START = 0x35779E
 STORAGE_SIZE  = 0xE8
 STORAGE_SLOTS = 0x189
 
@@ -543,68 +543,6 @@ def _resolve_effect_name(raw_effect_id):
     return _effect_name_by_id.get(display_id, display_id)
 
 
-def export_to_excel(sheet_name, dataset):
-    if not dataset:
-        messagebox.showwarning("No Data", "Nothing to export.")
-        return
-
-    wb = Workbook()
-    ws = wb.active
-    ws.title = sheet_name
-
-    header = ["Slot", "Item ID", "Name", "Type", "Quantity", "Level", "Rarity"]
-    for n in range(1, 8):
-        header += [
-            "Effect {} (ID - Name)".format(n),
-            "Effect {} Value".format(n),
-            "Effect {} Category Icon".format(n),
-            "Effect {} Extra".format(n),
-        ]
-    ws.append(header)
-
-    for item in dataset:
-        if item["item_id"] == 0:
-            continue
-        hex_id      = swap_endian_hex(item["item_id"])
-        name, type_ = lookup_item(hex_id)
-
-        row = [
-            item["slot"],
-            hex_id,
-            name  or "Unknown",
-            type_ or "?",
-            item["quantity"],
-            item.get("item_level", 0),
-            item.get("rarity",     0),
-        ]
-
-        for eff in item.get("effects", []):
-            raw_id = eff["effect_id"]
-            if raw_id == 0:
-                row.append("Empty")
-                row.append("")
-            else:
-                display_id  = "{:04X}".format(swap_u16(raw_id))
-                effect_name = _effect_name_by_id.get(display_id, display_id)
-                row.append(f"{display_id} - {effect_name}")
-                row.append(eff["effect_value"])
-            # Category Effect Icon
-            cei = eff.get("category_effect_icon", 0)
-            row.append(CEI_LABELS.get(cei, "0x{:02X}".format(cei)))
-            # Effect Extra
-            ee = eff.get("effect_extra", 0)
-            row.append(EE_LABELS.get(ee, "0x{:02X}".format(ee)))
-
-        ws.append(row)
-
-    save_path = filedialog.asksaveasfilename(
-        defaultextension=".xlsx",
-        initialfile="{}.xlsx".format(sheet_name),
-        filetypes=[("Excel Files", "*.xlsx")]
-    )
-    if save_path:
-        wb.save(save_path)
-        messagebox.showinfo("Success", "{} exported successfully!".format(sheet_name))
 
 # ==================== HELPERS ====================
 
@@ -1478,21 +1416,7 @@ class InventoryPanel(ttk.Frame):
                 lookup_item(swap_endian_hex(it["item_id"]))[1]
                 for it in self._dataset if it["item_id"] != 0
             )
-            ttk.Button(
-                fbar, text="Spawn Equipment",
-                command=lambda t=equip_types: SpawnDialog(
-                    self.winfo_toplevel(), "Equipment", self, allowed_types=t)
-            ).pack(side="left", padx=6)
-        else:
-            usable_types = frozenset(
-                lookup_item(swap_endian_hex(it["item_id"]))[1]
-                for it in self._dataset if it["item_id"] != 0
-            )
-            ttk.Button(
-                fbar, text="Spawn Item",
-                command=lambda t=usable_types: SpawnDialog(
-                    self.winfo_toplevel(), "Consumable / Material", self, allowed_types=t)
-            ).pack(side="left", padx=6)
+
 
         tree._populate = populate
         tree.bind("<<TreeviewSelect>>", self._on_tree_select)
@@ -1599,23 +1523,9 @@ class Nioh3Editor:
         file_menu.add_separator()
         file_menu.add_command(label="Exit",           command=root.quit)
 
-        export_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Export to Excel", menu=export_menu)
-        export_menu.add_command(label="Export Equipment",
-                                command=lambda: export_to_excel("Equipment",   items))
-        export_menu.add_command(label="Export Consumables",
-                                command=lambda: export_to_excel("Consumables", usables))
-        export_menu.add_command(label="Export Storage",
-                                command=lambda: export_to_excel("Storage",     storage))
-
-        import_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Import Save", menu=import_menu)
-        import_menu.add_command(label="Import Full Save",      command=self.import_save)
 
 
-        import_inv_menu = tk.Menu(menubar, tearoff=0)
-        menubar.add_cascade(label="Import Inventory", menu=import_inv_menu)
-        import_inv_menu.add_command(label="Import Inventory …",   command=self.import_inventory)
+
 
         self.notebook = ttk.Notebook(root)
         self.notebook.pack(fill="both", expand=True, padx=5, pady=5)
