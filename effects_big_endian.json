@@ -4462,5 +4462,287 @@
         "Effect Max": null,
         "type": null,
         "id": "FC5B"
+    },
+    {
+        "Effect": "Kodama Sensor (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "CAE6"
+    },
+    {
+        "Effect": "Enemy Sensor (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "450A"
+    },
+    {
+        "Effect": "Treasure Sensor (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "A6A4"
+    },
+    {
+        "Effect": "Extended Parry Window (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "B32A"
+    },
+    {
+        "Effect": "Extended Evade Window (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "191F"
+    },
+    {
+        "Effect": "Dodge Range Up (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "0EFE"
+    },
+    {
+        "Effect": "Dual Mastery (Common) [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "F9BE"
+    },
+    {
+        "Effect": "Dual Mastery (Samurai) [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "512D"
+    },
+    {
+        "Effect": "Dual Mastery (Ninja) [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "EA74"
+    },
+    {
+        "Effect": "Ultimate Constitution [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "DAC2"
+    },
+    {
+        "Effect": "Ultimate Heart [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "B613"
+    },
+    {
+        "Effect": "Ultimate Strength [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "DFF0"
+    },
+    {
+        "Effect": "Ultimate Intellect [Scroll]",
+        "Effect Max": null,
+        "type": null,
+        "id": "6AAF"
+    },
+    {
+        "Effect": "Ultimate Magic",
+        "Effect Max": null,
+        "type": null,
+        "id": "2B06"
+    },
+    {
+        "Effect": "Ultimate Skill",
+        "Effect Max": null,
+        "type": null,
+        "id": "AE5A"
+    },
+    {
+        "Effect": "Ultimate Stamina",
+        "Effect Max": null,
+        "type": null,
+        "id": "23E8"
+    },
+    {
+        "Effect": "Untouched Summoning Seals",
+        "Effect Max": null,
+        "type": null,
+        "id": "6CE3"
+    },
+    {
+        "Effect": "Dual Elements (Fire & Water)",
+        "Effect Max": null,
+        "type": null,
+        "id": "0182"
+    },
+    {
+        "Effect": "Dual Elements (Lightning & Fire)",
+        "Effect Max": null,
+        "type": null,
+        "id": "E690"
+    },
+    {
+        "Effect": "Dual Elements (Water & Lightning)",
+        "Effect Max": null,
+        "type": null,
+        "id": "8B21"
+    },
+    {
+        "Effect": "Ranged Damage",
+        "Effect Max": null,
+        "type": null,
+        "id": "2F12"
+    },
+    {
+        "Effect": "Projectile Ki Damage (Green)",
+        "Effect Max": null,
+        "type": null,
+        "id": "DB2E"
+    },
+    {
+        "Effect": "Summon Chijiko (Ranged Weapon Hit)",
+        "Effect Max": null,
+        "type": null,
+        "id": "014C"
+    },
+    {
+        "Effect": "Bow Speed Up (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "B941"
+    },
+    {
+        "Effect": "Rifle Speed Up (Passive)",
+        "Effect Max": null,
+        "type": null,
+        "id": "0088"
+    },
+    {
+        "Effect": "Dash Speed",
+        "Effect Max": null,
+        "type": null,
+        "id": "EE0F"
+    },
+    {
+        "Effect": "Grace of Benzaiten",
+        "Effect Max": null,
+        "type": null,
+        "id": "2AE6"
+    },
+    {
+        "Effect": "Grace of Daikokuten",
+        "Effect Max": null,
+        "type": null,
+        "id": "5012"
+    },
+    {
+        "Effect": "Grace of Ebisu",
+        "Effect Max": null,
+        "type": null,
+        "id": "8CCC"
+    },
+    {
+        "Effect": "Grace of Fukurokuju",
+        "Effect Max": null,
+        "type": null,
+        "id": "7BEA"
+    },
+    {
+        "Effect": "Grace of Hachiman",
+        "Effect Max": null,
+        "type": null,
+        "id": "B1E9"
+    },
+    {
+        "Effect": "Grace of Hotei",
+        "Effect Max": null,
+        "type": null,
+        "id": "590C"
+    },
+    {
+        "Effect": "Grace of Inari",
+        "Effect Max": null,
+        "type": null,
+        "id": "4FA3"
+    },
+    {
+        "Effect": "Grace of Jurojin",
+        "Effect Max": null,
+        "type": null,
+        "id": "B24F"
+    },
+    {
+        "Effect": "Grace of Kuzuryu",
+        "Effect Max": null,
+        "type": null,
+        "id": "E8EB"
+    },
+    {
+        "Effect": "Grace of Vaisravana",
+        "Effect Max": null,
+        "type": null,
+        "id": "23E5"
+    },
+    {
+        "Effect": "Grace of Acala",
+        "Effect Max": null,
+        "type": null,
+        "id": "71F6"
+    },
+    {
+        "Effect": "Grace of Amaterasu",
+        "Effect Max": null,
+        "type": null,
+        "id": "6553"
+    },
+    {
+        "Effect": "Grace of Ame-no-Uzume",
+        "Effect Max": null,
+        "type": null,
+        "id": "4FE4"
+    },
+    {
+        "Effect": "Grace of Kagutsuchi",
+        "Effect Max": null,
+        "type": null,
+        "id": "16E2"
+    },
+    {
+        "Effect": "Grace of Owatatsumi",
+        "Effect Max": null,
+        "type": null,
+        "id": "47EC"
+    },
+    {
+        "Effect": "Grace of Magatsuhi",
+        "Effect Max": null,
+        "type": null,
+        "id": "EB61"
+    },
+    {
+        "Effect": "Grace of Marici",
+        "Effect Max": null,
+        "type": null,
+        "id": "7ECE"
+    },
+    {
+        "Effect": "Grace of Shinatsuhiko",
+        "Effect Max": null,
+        "type": null,
+        "id": "4192"
+    },
+    {
+        "Effect": "Grace of Susano",
+        "Effect Max": null,
+        "type": null,
+        "id": "CE68"
+    },
+    {
+        "Effect": "Grace of Takemikazuchi",
+        "Effect Max": null,
+        "type": null,
+        "id": "EEEA"
+    },
+    {
+        "Effect": "Grace of Tsukuyomi",
+        "Effect Max": null,
+        "type": null,
+        "id": "BABD"
     }
 ]
