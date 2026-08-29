@@ -470,6 +470,42 @@ def _generate_unique_inv_index():
     raise RuntimeError("No unique inventory index available (all 65025 slots used).")
 
 
+def _collect_used_ui_indices():
+    """Collect all UI indices (ui_1 + ui_2 as u16) currently in use."""
+    used = set()
+    for start, size, count in [
+        (ITEM_START,    ITEM_SIZE,    ITEM_SLOTS),
+        (USABLE_START,  USABLE_SIZE,  USABLE_SLOTS),
+        (STORAGE_START, STORAGE_SIZE, STORAGE_SLOTS),
+    ]:
+        for i in range(count):
+            base = start + i * size
+            if data[base: base + 4] == b'\x00\x00\x00\x00':
+                continue
+            ui_1 = read_u8(data, base + 0x28)
+            ui_2 = read_u8(data, base + 0x29)
+            ui_val = (ui_2 << 8) | ui_1  # Combine as u16
+            if ui_val != 0:
+                used.add(ui_val)
+    return used
+
+
+def _generate_unique_ui_index():
+    """Generate a unique UI index by finding the max and adding 1."""
+    used = _collect_used_ui_indices()
+    if not used:
+        return 0x0101  # Start with a safe value
+    max_val = max(used)
+    # Make sure we don't overflow; wrap if needed
+    if max_val >= 0xFFFE:
+        # Find first available gap
+        for val in range(0x0100, 0x10000):
+            if val not in used:
+                return val
+        raise RuntimeError("No unique UI index available.")
+    return max_val + 1
+
+
 def spawn_equipment(item_name):
     global data
     if data is None:
@@ -487,8 +523,15 @@ def spawn_equipment(item_name):
     le_id           = _display_id_to_le_bytes(id_hex)
     slot_bytes[0:2] = le_id
     slot_bytes[2:4] = le_id
+    
+    # Set unique inventory index
     inv_idx = _generate_unique_inv_index()
     slot_bytes[0x1C:0x1E] = inv_idx.to_bytes(2, "little")
+    
+    # Set unique UI index
+    ui_idx = _generate_unique_ui_index()
+    slot_bytes[0x28] = ui_idx & 0xFF  # ui_1 (low byte)
+    slot_bytes[0x29] = (ui_idx >> 8) & 0xFF  # ui_2 (high byte)
 
     base = ITEM_START + slot_idx * ITEM_SIZE
     data[base: base + ITEM_SIZE] = slot_bytes
@@ -519,8 +562,15 @@ def spawn_usable(item_name):
     le_id           = _display_id_to_le_bytes(id_hex)
     slot_bytes[0:2] = le_id
     slot_bytes[2:4] = le_id
+    
+    # Set unique inventory index
     inv_idx = _generate_unique_inv_index()
     slot_bytes[0x1C:0x1E] = inv_idx.to_bytes(2, "little")
+    
+    # Set unique UI index
+    ui_idx = _generate_unique_ui_index()
+    slot_bytes[0x28] = ui_idx & 0xFF  # ui_1 (low byte)
+    slot_bytes[0x29] = (ui_idx >> 8) & 0xFF  # ui_2 (high byte)
 
     base = USABLE_START + slot_idx * USABLE_SIZE
     data[base: base + USABLE_SIZE] = slot_bytes
@@ -1080,6 +1130,7 @@ def increment_inventory_counter(data: bytearray, offset=0x33F41E):
     struct.pack_into("<I", data, offset, new_value)
 
     return new_value
+
 # ==================== IMPORT INVENTORY DIALOG ====================
 class ImportInventoryDialog(tk.Toplevel):
     """
@@ -1201,6 +1252,11 @@ class ImportInventoryDialog(tk.Toplevel):
                 continue
             new_idx = _generate_unique_inv_index()
             data[base + 0x1C: base + 0x1E] = new_idx.to_bytes(2, "little")
+            
+            # Also remap UI indices
+            ui_idx = _generate_unique_ui_index()
+            data[base + 0x28] = ui_idx & 0xFF
+            data[base + 0x29] = (ui_idx >> 8) & 0xFF
 
     # ------------------------------------------------------------------
     def _do_import(self):
@@ -1255,7 +1311,7 @@ class ImportInventoryDialog(tk.Toplevel):
             data[dst_start: dst_start + byte_len] = \
                 self._src_data[src_start: src_start + byte_len]
 
-            # Remap inv_index values to avoid collisions
+            # Remap inv_index and UI index values to avoid collisions
             self._remap_inv_indices(dst_start, slot_size, slot_count)
             imported.append(label)
 
@@ -1424,6 +1480,16 @@ class InventoryPanel(ttk.Frame):
 
         bbar = ttk.Frame(parent)
         bbar.pack(fill="x", padx=5, pady=4)
+        
+        # Add spawn button based on panel type
+        if self._has_equipped:
+            ttk.Button(bbar, text="Spawn Equipment",
+                       command=self._spawn_item).pack(side="left", padx=4)
+        else:
+            ttk.Button(bbar, text="Spawn Item",
+                       command=self._spawn_item).pack(side="left", padx=4)
+        
+        # Add Max Quantity for non-equipment
         if not self._has_equipped:
             ttk.Button(bbar, text="Max Quantity", command=self._max_all).pack(side="left", padx=4)
 
@@ -1437,6 +1503,19 @@ class InventoryPanel(ttk.Frame):
         self._sel_index   = int(sel[0])
         self._active_tree = tree
         self._editor.load(self._dataset[self._sel_index])
+
+    def _spawn_item(self):
+        """Open spawn dialog for this inventory type."""
+        if self._has_equipped:
+            allowed = frozenset(
+                lookup_item(swap_endian_hex(it["item_id"]))[1]
+                for it in self._dataset if it["item_id"] != 0
+            )
+            SpawnDialog(self.root.winfo_toplevel() if hasattr(self, 'root') else None,
+                       "Equipment", self, allowed_types=allowed)
+        else:
+            SpawnDialog(self.root.winfo_toplevel() if hasattr(self, 'root') else None,
+                       "Item", self)
 
     def refresh(self):
         if self._use_subtabs:
@@ -1521,11 +1600,10 @@ class Nioh3Editor:
         file_menu.add_command(label="Open Save File", command=self.load_file)
         file_menu.add_command(label="Save File",      command=save_file)
         file_menu.add_separator()
+        file_menu.add_command(label="Import Character", command=self.import_save)
+        file_menu.add_command(label="Import Inventory", command=self.import_inventory)
+        file_menu.add_separator()
         file_menu.add_command(label="Exit",           command=root.quit)
-
-
-
-
 
         self.notebook = ttk.Notebook(root)
         self.notebook.pack(fill="both", expand=True, padx=5, pady=5)
