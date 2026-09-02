@@ -442,8 +442,8 @@ def _write_slot(item, base, has_equipped):
     se_base = base + 0x38
     for i, eff in enumerate(item["effects"]):
         eo = se_base + i * 0x18
-        data[eo:eo+4]       = write_le(eff["effect_id"],            4)
-        data[eo+4:eo+8] = write_le(eff["effect_value"], 4)
+        data[eo:eo+2]       = write_le(eff["effect_id"],   2)   # was eo:eo+4, 4
+        data[eo+4:eo+8]     = write_le(eff["effect_value"], 4)  # unchanged
         data[eo+0x09]        = eff.get("category_effect_icon", 0) & 0xFF
         data[eo+0x0A]        = eff.get("effect_extra",          0) & 0xFF
 
@@ -484,7 +484,7 @@ def _write_scroll(item, base):
     se_base = base + 0x34
     for i, eff in enumerate(item["effects"]):
         eo = se_base + i * 0x18
-        data[eo:eo+4]           = write_le(eff["effect_id"], 4)
+        data[eo:eo+2]            = write_le(eff["effect_id"], 2)  # was eo:eo+4, 4, and wrong var
         data[eo+8:eo+12]         = write_le(eff["effect_value"], 4)
         data[eo+0x0D]           = eff.get("category_effect_icon", 0) & 0xFF
         data[eo+0x0E]           = eff.get("effect_extra", 0) & 0xFF
@@ -495,12 +495,7 @@ _EQUIP_TEMPLATE  = bytearray.fromhex(_EQUIP_TEMPLATE_HEX.replace(" ", ""))
 
 _USABLE_TEMPLATE= bytearray.fromhex('7A FC 7A FC 0A 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 20 00 EC 1D 00 00 00 00 00 00 00 00 00 00 80 B1 02 00 00 00 00 00 02 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 44 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 5D 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 51 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 80 00 00 00 80 00 00 00 00 00 00 00 80 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 80 51 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00')
 
-_SCROLL_TEMPLATE_HEX = ('XX XX 10 01 01 00 00 00 00 00 00 00 00 00 00 00 00 01 9C 01 9C 01 2E AC 02 1A 80 00 80 05 90 9C 00 00 FD 9C 73 DB 00 00 00 00 01 01 00 00 00 00 00 00 00 00 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00')
-# Note: XX XX at offset 0x00 will be replaced with item ID
-_SCROLL_TEMPLATE = bytearray.fromhex(
-    _SCROLL_TEMPLATE_HEX.replace("XX XX", "00 00")
-)
-
+_SCROLL_TEMPLATE= bytearray.fromhex('04 E6 10 01 01 00 B4 00 B4 00 00 00 03 00 00 01 07 02 07 02 41 C2 1F 4B 84 00 80 0D 6A 71 00 00 E8 51 09 09 00 00 00 00 96 44 08 00 00 00 00 00 04 04 00 02 9F F7 00 00 BE F9 00 00 00 00 00 00 5A 4D 04 00 00 00 00 00 00 00 00 00 00 70 00 00 95 D4 00 00 41 00 00 00 59 03 00 00 00 00 00 00 00 00 00 00 F0 93 00 00 AC 5C 00 00 42 00 00 00 5B 1C 00 90 00 00 00 00 00 00 00 00 B6 B1 00 00 3D A7 00 00 50 01 00 00 58 14 00 00 00 00 00 00 00 00 00 00 91 B9 10 1E 53 65 00 00 00 00 00 00 00 0C 02 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 90 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 B8 00 00 00 00 00 00 00 00 10 00 00 00 00 00 00 00 00 00 00 00')
 
 def _display_id_to_le_bytes(id_hex_str):
     raw     = int(id_hex_str, 16)
