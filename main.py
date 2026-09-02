@@ -31,6 +31,10 @@ STORAGE_SIZE  = 0xE8
 STORAGE_SLOTS = 0x189
 
 
+SCROLLS_START = 0x176CCE
+SCROLLS_SIZE  = 0xE8
+SCROLLS_SLOTS = 0x190
+
 data                   = None
 MODE                   = None
 IMPORT_MODE            = None
@@ -40,6 +44,7 @@ decrypted_path         = None
 items                  = []
 usables                = []
 storage                = []
+scrolls                = []
 
 base_dir = Path(__file__).parent
 
@@ -270,6 +275,7 @@ def save_file():
     write_items_to_data()
     write_usables_to_data()
     write_storage_to_data()
+    write_scrolls_to_data()
     data, checksum = patch_checksum(data)
     print("Final checksum: {:08X}".format(checksum))
     if MODE == "PC":
@@ -354,6 +360,38 @@ def parse_usable(offset):
     item["effects"] = effects
     return item
 
+def parse_scroll(offset):
+    base = offset
+    item = {}
+    item["item_id"]         = read_u16(data, base + 0x00)
+    # 0x02-0x05: fixed bytes (10 01 01 00)
+    item["level"]           = read_u16(data, base + 0x06)
+    item["level_again"]     = read_u16(data, base + 0x08)
+    # 0x0A-0x27: fixed data (0x1E bytes)
+    item["fixed_data"]      = bytes(data[base + 0x0A: base + 0x28])
+    item["ui_1"]            = read_u8(data,  base + 0x28)
+    item["ui_2"]            = read_u8(data,  base + 0x29)
+    item["ui_3"]            = read_u8(data,  base + 0x2A)
+    # 0x2B-0x2F: padding (5 bytes)
+    item["padding_1"]       = bytes(data[base + 0x2B: base + 0x30])
+    item["rarity"]          = read_u8(data,  base + 0x30)
+    item["rarity_again"]    = read_u8(data,  base + 0x31)
+    # 0x32-0x33: padding (2 bytes)
+    item["padding_2"]       = bytes(data[base + 0x32: base + 0x34])
+    
+    effects = []
+    se_base = base + 0x34
+    for i in range(7):
+        eo = se_base + i * 0x18
+        effects.append({
+            "effect_id":            read_u16(data, eo + 0x00),
+            "effect_value":         read_u32(data, eo + 0x08),
+            "category_effect_icon": read_u8(data,  eo + 0x0D),
+            "effect_extra":         read_u8(data,  eo + 0x0E),
+        })
+    item["effects"] = effects
+    return item
+
 def player_items():
     global items
     items = []
@@ -377,6 +415,14 @@ def player_storage():
         item = parse_usable(STORAGE_START + slot * STORAGE_SIZE)
         item["slot"] = slot
         storage.append(item)
+
+def player_scrolls():
+    global scrolls
+    scrolls = []
+    for slot in range(SCROLLS_SLOTS):
+        item = parse_scroll(SCROLLS_START + slot * SCROLLS_SIZE)
+        item["slot"] = slot
+        scrolls.append(item)
 
 
 def _write_slot(item, base, has_equipped):
@@ -417,11 +463,43 @@ def write_storage_to_data():
     for item in storage:
         _write_slot(item, STORAGE_START + item["slot"] * STORAGE_SIZE, has_equipped=False)
 
+def write_scrolls_to_data():
+    for item in scrolls:
+        _write_scroll(item, SCROLLS_START + item["slot"] * SCROLLS_SIZE)
+
+def _write_scroll(item, base):
+    data[base:base+2]           = write_le(item["item_id"], 2)
+    # Keep fixed bytes at 0x02-0x05
+    data[base+6:base+8]         = write_le(item["level"], 2)
+    data[base+8:base+10]        = write_le(item["level_again"], 2)
+    # Keep fixed data at 0x0A-0x27
+    data[base+0x28]             = item["ui_1"] & 0xFF
+    data[base+0x29]             = item["ui_2"] & 0xFF
+    data[base+0x2A]             = item["ui_3"] & 0xFF
+    # Padding stays the same at 0x2B-0x2F
+    data[base+0x30]             = item["rarity"] & 0xFF
+    data[base+0x31]             = item["rarity_again"] & 0xFF
+    # Padding stays the same at 0x32-0x33
+    
+    se_base = base + 0x34
+    for i, eff in enumerate(item["effects"]):
+        eo = se_base + i * 0x18
+        data[eo:eo+4]           = write_le(eff["effect_id"], 4)
+        data[eo+8:eo+12]         = write_le(eff["effect_value"], 4)
+        data[eo+0x0D]           = eff.get("category_effect_icon", 0) & 0xFF
+        data[eo+0x0E]           = eff.get("effect_extra", 0) & 0xFF
+
 
 _EQUIP_TEMPLATE_HEX = ('3E AD 3E AD 01 00 A0 00 A0 00 03 00 00 00 00 40 00 00 00 00 00 00 00 00 82 00 00 00 D0 35 00 00 01 00 DB B4 00 00 00 00 B0 7D 0F 00 00 00 00 00 04 00 00 00 4F 68 00 00 04 10 00 00 0F 00 00 00 64 5F 00 00 00 00 00 00 00 00 00 00 E9 9A 00 00 4B 79 00 00 0F 00 00 00 5B 92 80 FF 00 00 00 00 00 00 00 00 3F 87 00 00 26 99 00 00 2A 00 00 00 54 83 00 07 00 00 00 00 00 00 00 00 F7 86 00 00 07 51 00 00 10 00 00 00 57 12 00 00 00 00 58 1B 00 00 00 00 02 2B 00 00 EB E8 00 00 00 00 00 00 00 0C 02 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 07 00 00 00 00 00 00 00 00 00 00 8C 3F FF FF FF FF 00 00 00 00 00 00 80 3F 00 00 80 3F 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 11 00 00 00 11 00 00 00')
 _EQUIP_TEMPLATE  = bytearray.fromhex(_EQUIP_TEMPLATE_HEX.replace(" ", ""))
 
 _USABLE_TEMPLATE= bytearray.fromhex('7A FC 7A FC 0A 00 00 00 00 00 00 00 00 00 00 40 00 00 00 00 00 00 00 00 00 00 20 00 EC 1D 00 00 00 00 00 00 00 00 00 00 80 B1 02 00 00 00 00 00 02 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 44 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 5D 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 51 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 80 00 00 00 80 00 00 00 00 00 00 00 80 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 80 51 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00')
+
+_SCROLL_TEMPLATE_HEX = ('XX XX 10 01 01 00 00 00 00 00 00 00 00 00 00 00 00 01 9C 01 9C 01 2E AC 02 1A 80 00 80 05 90 9C 00 00 FD 9C 73 DB 00 00 00 00 01 01 00 00 00 00 00 00 00 00 01 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00 00 00 00 00 FF FF FF FF 00 00 00 00 00 00 00 00')
+# Note: XX XX at offset 0x00 will be replaced with item ID
+_SCROLL_TEMPLATE = bytearray.fromhex(
+    _SCROLL_TEMPLATE_HEX.replace("XX XX", "00 00")
+)
 
 
 def _display_id_to_le_bytes(id_hex_str):
@@ -582,6 +660,39 @@ def spawn_usable(item_name):
     increment_inventory_counter(data)
     return slot_idx
 
+def spawn_scroll(item_name):
+    global data
+    if data is None:
+        raise RuntimeError("No save file loaded.")
+    name_to_id = {v["name"]: k for k, v in items_json.items()}
+    id_hex = name_to_id.get(item_name)
+    if id_hex is None:
+        raise ValueError("Item not found: {}".format(item_name))
+
+    slot_idx = _find_empty_slot_raw(SCROLLS_START, SCROLLS_SIZE, SCROLLS_SLOTS)
+    if slot_idx is None:
+        raise RuntimeError("No empty scroll slot available.")
+
+    slot_bytes      = bytearray(_SCROLL_TEMPLATE)
+    le_id           = _display_id_to_le_bytes(id_hex)
+    slot_bytes[0:2] = le_id
+
+    # Set unique UI index (3 bytes: ui_1, ui_2, ui_3)
+    ui_idx = _generate_unique_ui_index()
+    slot_bytes[0x28] = ui_idx & 0xFF  # ui_1 (low byte)
+    slot_bytes[0x29] = (ui_idx >> 8) & 0xFF  # ui_2 (mid byte)
+    slot_bytes[0x2A] = (ui_idx >> 16) & 0xFF  # ui_3 (high byte)
+
+    base = SCROLLS_START + slot_idx * SCROLLS_SIZE
+    data[base: base + SCROLLS_SIZE] = slot_bytes
+
+    new_item         = parse_scroll(base)
+    new_item["slot"] = slot_idx
+    scrolls[slot_idx] = new_item
+
+    increment_inventory_counter(data)
+    return slot_idx
+
 
 _effect_name_by_id = {e["id"]: e["Effect"] for e in effects_json}
 
@@ -593,35 +704,6 @@ def _resolve_effect_name(raw_effect_id):
     return _effect_name_by_id.get(display_id, display_id)
 
 
-
-# ==================== HELPERS ====================
-
-def _make_flag_combo(parent, row, col, label_text, options_dict):
-    """Create a label + OptionMenu pair for a flag field. Returns (var, menu)."""
-    tk.Label(parent, text=label_text, anchor="w").grid(row=row, column=col, sticky="w", padx=4, pady=2)
-    choices = ["{} – {}".format("0x{:02X}".format(k), v) for k, v in options_dict.items()]
-    var = tk.StringVar(value=choices[0])
-    menu = ttk.Combobox(parent, textvariable=var, values=choices, width=28, state="readonly")
-    menu.grid(row=row, column=col + 1, sticky="w", padx=4, pady=2)
-    return var, menu
-
-
-def _flag_combo_get_int(var, options_dict):
-    """Parse the hex value back out of a flag combo string."""
-    text = var.get()
-    hex_part = text.split("–")[0].strip()
-    return int(hex_part, 16)
-
-
-def _flag_combo_set(var, options_dict, int_val):
-    choices = ["{} – {}".format("0x{:02X}".format(k), v) for k, v in options_dict.items()]
-    target  = "0x{:02X}".format(int_val)
-    for c in choices:
-        if c.startswith(target):
-            var.set(c)
-            return
-    # Unknown value — show raw hex
-    var.set("0x{:02X} – Unknown".format(int_val))
 
 
 # ==================== SEARCHABLE COMBOBOX ====================
@@ -804,12 +886,24 @@ class ItemEditor(ttk.Frame):
         ("ui_1",                 "UI Object 1  (0x28)"),
         ("ui_2",                 "UI Object 2  (0x29)"),
     ]
+    _SCROLL_PROPS = [
+        ("item_id",          "Item ID (hex LE)"),
+        ("level",            "Level"),
+        ("level_again",      "Level (Copy)"),
+        ("ui_1",             "UI Index 1  (0x28)"),
+        ("ui_2",             "UI Index 2  (0x29)"),
+        ("ui_3",             "UI Index 3  (0x2A)"),
+    ]
 
-    def __init__(self, master, has_equipped, on_apply, **kwargs):
+    def __init__(self, master, has_equipped=None, on_apply=None, is_scroll=False, **kwargs):
         super().__init__(master, **kwargs)
         self._on_apply    = on_apply
         self._has_equipped = has_equipped
-        self._props       = self._EQUIP_PROPS if has_equipped else self._USABLE_PROPS
+        self._is_scroll   = is_scroll
+        if is_scroll:
+            self._props = self._SCROLL_PROPS
+        else:
+            self._props = self._EQUIP_PROPS if has_equipped else self._USABLE_PROPS
         self._build()
 
     # ------------------------------------------------------------------
@@ -940,18 +1034,22 @@ class ItemEditor(ttk.Frame):
 
     # ------------------------------------------------------------------
     def _do_apply(self):
-        self._on_apply(
-            self._entries,
-            self._eff_combos,
-            self._eff_mags,
-            self._eff_cei,
-            self._eff_ee,
-            self._rarity_var,
-            self._flags1_var,
-            getattr(self, "_flags2_var", None),
-            getattr(self, "_eq1_var",    None),
-            getattr(self, "_eq2_var",    None),
-        )
+        if self._is_scroll:
+            self._on_apply(self._entries, self._eff_combos, self._eff_mags,
+                          self._eff_cei, self._eff_ee, is_scroll=True)
+        else:
+            self._on_apply(
+                self._entries,
+                self._eff_combos,
+                self._eff_mags,
+                self._eff_cei,
+                self._eff_ee,
+                self._rarity_var,
+                self._flags1_var,
+                getattr(self, "_flags2_var", None),
+                getattr(self, "_eq1_var",    None),
+                getattr(self, "_eq2_var",    None),
+            )
 
     # ------------------------------------------------------------------
     @staticmethod
@@ -977,6 +1075,9 @@ class ItemEditor(ttk.Frame):
 
     # ------------------------------------------------------------------
     def load(self, item):
+        if self._is_scroll:
+            return self._load_scroll(item)
+        
         # Numeric fields
         for key, entry in self._entries.items():
             entry.delete(0, tk.END)
@@ -1028,6 +1129,42 @@ class ItemEditor(ttk.Frame):
             ee_val  = eff.get("effect_extra", 0)
             self._set_combo(self._eff_ee[i], None, EE_LABELS, ee_val)
 
+    def _load_scroll(self, item):
+        """Load scroll data into editor."""
+        for key, entry in self._entries.items():
+            entry.delete(0, tk.END)
+            entry.insert(0, item.get(key, 0))
+
+        # Effect dropdowns filtered to item type
+        eff_list = _get_effect_list_for_item(item)
+        cei_choices = ["{} – {}".format("0x{:02X}".format(k), v)
+                       for k, v in CEI_LABELS.items()]
+        ee_choices = ["{} – {}".format("0x{:02X}".format(k), v)
+                      for k, v in EE_LABELS.items()]
+
+        for combo in self._eff_combos:
+            combo.configure(values=eff_list)
+
+        for i, eff in enumerate(item.get("effects", [])):
+            raw_id = eff["effect_id"]
+            if raw_id == 0:
+                self._eff_combos[i].set("Empty")
+            else:
+                display_id = "{:04X}".format(raw_id)
+                matched = next((c for c in eff_list if c.startswith(display_id)), display_id)
+                self._eff_combos[i].set(matched)
+
+            self._eff_mags[i].delete(0, tk.END)
+            self._eff_mags[i].insert(0, eff["effect_value"])
+
+            # Category Effect Icon
+            cei_val = eff.get("category_effect_icon", 0)
+            self._set_combo(self._eff_cei[i], None, CEI_LABELS, cei_val)
+
+            # Effect Extra
+            ee_val = eff.get("effect_extra", 0)
+            self._set_combo(self._eff_ee[i], None, EE_LABELS, ee_val)
+
     def clear(self):
         for e in self._entries.values():
             e.delete(0, tk.END)
@@ -1039,10 +1176,12 @@ class ItemEditor(ttk.Frame):
 
 # ==================== SPAWN DIALOG ====================
 class SpawnDialog(tk.Toplevel):
-    def __init__(self, master, title_label, panel, allowed_types=None):
+    def __init__(self, master, title_label, panel, allowed_types=None, is_scroll=False, limit_items=None):
         super().__init__(master)
         self._panel         = panel
         self._allowed_types = allowed_types
+        self._is_scroll     = is_scroll
+        self._limit_items   = limit_items
         self.title("Spawn {}".format(title_label))
         self.geometry("520x480")
         self.resizable(False, True)
@@ -1058,6 +1197,10 @@ class SpawnDialog(tk.Toplevel):
                 v["name"] for v in items_json.values()
                 if v.get("name", "")
             )
+        
+        # Limit items if specified (for scrolls testing)
+        if limit_items is not None:
+            self._names = self._names[:limit_items]
 
         self._build()
 
@@ -1105,7 +1248,9 @@ class SpawnDialog(tk.Toplevel):
             return
         item_name = self._listbox.get(sel[0])
         try:
-            if self._panel._has_equipped:
+            if self._is_scroll:
+                slot = spawn_scroll(item_name)
+            elif self._panel._has_equipped:
                 slot = spawn_equipment(item_name)
             else:
                 slot = spawn_usable(item_name)
@@ -1151,6 +1296,8 @@ class ImportInventoryDialog(tk.Toplevel):
          USABLE_START,  USABLE_START,  USABLE_SIZE,  USABLE_SLOTS),
         ("Storage Box",
          STORAGE_START, STORAGE_START, STORAGE_SIZE, STORAGE_SLOTS),
+        ("Scrolls",
+         SCROLLS_START, SCROLLS_START, SCROLLS_SIZE, SCROLLS_SLOTS),
     ]
 
     def __init__(self, master, app_ref):
@@ -1238,25 +1385,36 @@ class ImportInventoryDialog(tk.Toplevel):
             self._src_data = None
 
     # ------------------------------------------------------------------
-    def _remap_inv_indices(self, start, slot_size, slot_count):
+    def _remap_inv_indices(self, start, slot_size, slot_count, is_scroll=False):
         """
         After copying raw bytes from the source, walk every non-empty slot
         in [start … start + slot_size*slot_count) of the *current* data
         buffer and replace each inv_index (u16 LE @ +0x1C) with a freshly
         generated unique value so there are no collisions with items that
         were already in the destination save.
+        
+        For scrolls, remaps only UI indices (no inv_index field).
         """
         for i in range(slot_count):
             base = start + i * slot_size
             if data[base: base + 4] == b'\x00\x00\x00\x00':
                 continue
-            new_idx = _generate_unique_inv_index()
-            data[base + 0x1C: base + 0x1E] = new_idx.to_bytes(2, "little")
             
-            # Also remap UI indices
-            ui_idx = _generate_unique_ui_index()
-            data[base + 0x28] = ui_idx & 0xFF
-            data[base + 0x29] = (ui_idx >> 8) & 0xFF
+            if is_scroll:
+                # Scrolls only have UI indices (3 bytes)
+                ui_idx = _generate_unique_ui_index()
+                data[base + 0x28] = ui_idx & 0xFF
+                data[base + 0x29] = (ui_idx >> 8) & 0xFF
+                data[base + 0x2A] = (ui_idx >> 16) & 0xFF
+            else:
+                # Regular items have inv_index and UI indices
+                new_idx = _generate_unique_inv_index()
+                data[base + 0x1C: base + 0x1E] = new_idx.to_bytes(2, "little")
+                
+                # Also remap UI indices
+                ui_idx = _generate_unique_ui_index()
+                data[base + 0x28] = ui_idx & 0xFF
+                data[base + 0x29] = (ui_idx >> 8) & 0xFF
 
     # ------------------------------------------------------------------
     def _do_import(self):
@@ -1294,6 +1452,7 @@ class ImportInventoryDialog(tk.Toplevel):
         for idx in selected:
             label, src_start, dst_start, slot_size, slot_count = self._SECTIONS[idx]
             byte_len = slot_size * slot_count
+            is_scroll = "Scrolls" in label
 
             # Bounds-check both buffers
             if src_start + byte_len > len(self._src_data):
@@ -1312,7 +1471,7 @@ class ImportInventoryDialog(tk.Toplevel):
                 self._src_data[src_start: src_start + byte_len]
 
             # Remap inv_index and UI index values to avoid collisions
-            self._remap_inv_indices(dst_start, slot_size, slot_count)
+            self._remap_inv_indices(dst_start, slot_size, slot_count, is_scroll=is_scroll)
             imported.append(label)
 
         # ── Re-parse affected sections and rebuild UI panels ─────────
@@ -1328,6 +1487,9 @@ class ImportInventoryDialog(tk.Toplevel):
             elif "Storage" in label:
                 player_storage()
                 rebuild_keys.append("storage")
+            elif "Scrolls" in label:
+                player_scrolls()
+                rebuild_keys.append("scrolls")
 
         app = self._app
         if "equipment" in rebuild_keys:
@@ -1342,6 +1504,10 @@ class ImportInventoryDialog(tk.Toplevel):
             app._rebuild_panel("storage",  app._tab_storage,
                                storage, write_storage_to_data, False,
                                "Storage Item", use_subtabs=False)
+        if "scrolls" in rebuild_keys:
+            app._rebuild_panel("scrolls", app._tab_scrolls,
+                               scrolls, write_scrolls_to_data, False,
+                               "Scroll", use_subtabs=False, is_scroll=True)
 
         messagebox.showinfo(
             "Import Complete",
@@ -1355,13 +1521,14 @@ class ImportInventoryDialog(tk.Toplevel):
 # ==================== INVENTORY PANEL ====================
 class InventoryPanel(ttk.Frame):
     def __init__(self, master, dataset, write_fn,
-                 has_equipped=True, label="Item", use_subtabs=False, **kwargs):
+                 has_equipped=True, label="Item", use_subtabs=False, is_scroll=False, **kwargs):
         super().__init__(master, **kwargs)
         self._dataset      = dataset
         self._write_fn     = write_fn
         self._has_equipped = has_equipped
         self._label        = label
         self._use_subtabs  = use_subtabs
+        self._is_scroll    = is_scroll
         self._sel_index    = None
         self._active_tree  = None
 
@@ -1372,7 +1539,7 @@ class InventoryPanel(ttk.Frame):
         paned.add(left,  weight=2)
         paned.add(right, weight=1)
 
-        self._editor = ItemEditor(right, has_equipped, self._apply)
+        self._editor = ItemEditor(right, has_equipped, self._apply, is_scroll=is_scroll)
         self._editor.pack(fill="both", expand=True)
 
         if use_subtabs:
@@ -1415,24 +1582,37 @@ class InventoryPanel(ttk.Frame):
         fe   = ttk.Entry(fbar, textvariable=fvar, width=26)
         fe.pack(side="left", padx=4)
 
-        cols = ("slot", "item_id", "name", "type", "quantity", "level", "rarity", "flags1", "flags2")
+        if self._is_scroll:
+            cols = ("slot", "item_id", "name", "level", "rarity")
+        else:
+            cols = ("slot", "item_id", "name", "type", "quantity", "level", "rarity", "flags1", "flags2")
+        
         tree = ttk.Treeview(parent, columns=cols, show="headings", height=24)
         vsb  = ttk.Scrollbar(parent, orient="vertical", command=tree.yview)
         tree.configure(yscrollcommand=vsb.set)
         tree.pack(side="left", fill="both", expand=True)
         vsb.pack(side="right", fill="y")
 
-        headers = {
-            "slot":     ("Slot",     45),
-            "item_id":  ("Item ID",  70),
-            "name":     ("Name",    200),
-            "type":     ("Type",    110),
-            "quantity": ("Qty",      50),
-            "level":    ("Level",    50),
-            "rarity":   ("Rarity",   70),
-            "flags1":   ("Flags1",   70),
-            "flags2":   ("Flags2",   70),
-        }
+        if self._is_scroll:
+            headers = {
+                "slot":     ("Slot",     45),
+                "item_id":  ("Item ID",  70),
+                "name":     ("Name",    300),
+                "level":    ("Level",    50),
+                "rarity":   ("Rarity",   70),
+            }
+        else:
+            headers = {
+                "slot":     ("Slot",     45),
+                "item_id":  ("Item ID",  70),
+                "name":     ("Name",    200),
+                "type":     ("Type",    110),
+                "quantity": ("Qty",      50),
+                "level":    ("Level",    50),
+                "rarity":   ("Rarity",   70),
+                "flags1":   ("Flags1",   70),
+                "flags2":   ("Flags2",   70),
+            }
         for col, (hdr, w) in headers.items():
             tree.heading(col, text=hdr)
             tree.column(col, width=w)
@@ -1445,22 +1625,35 @@ class InventoryPanel(ttk.Frame):
                     continue
                 hex_id = swap_endian_hex(item["item_id"])
                 name, type_ = lookup_item(hex_id)
-                if type_filter and type_filter != "All" and type_ != type_filter:
-                    continue
-                if ft and ft not in name.lower() and ft not in type_.lower():
-                    continue
-                rarity_str = RARITY_OPTIONS.get(item.get("rarity", 0),
-                                                "0x{:02X}".format(item.get("rarity", 0)))
-                f1 = item.get("equipment_flags_1", 0)
-                f2 = item.get("equipment_flags_2", 0) if self._has_equipped else "-"
-                flags1_str = EQUIPMENT_FLAGS1_OPTIONS.get(f1, "0x{:02X}".format(f1))
-                flags2_str = (EQUIPMENT_FLAGS2_OPTIONS.get(f2, "0x{:02X}".format(f2))
-                              if self._has_equipped else "-")
-                tree.insert("", "end", iid=item["slot"], values=(
-                    item["slot"], hex_id, name, type_,
-                    item["quantity"], item["item_level"],
-                    rarity_str, flags1_str, flags2_str,
-                ))
+                
+                if self._is_scroll:
+                    # Scroll filtering
+                    if ft and ft not in name.lower():
+                        continue
+                    rarity_str = RARITY_OPTIONS.get(item.get("rarity", 0),
+                                                    "0x{:02X}".format(item.get("rarity", 0)))
+                    tree.insert("", "end", iid=item["slot"], values=(
+                        item["slot"], hex_id, name,
+                        item["level"], rarity_str,
+                    ))
+                else:
+                    # Regular item filtering
+                    if type_filter and type_filter != "All" and type_ != type_filter:
+                        continue
+                    if ft and ft not in name.lower() and ft not in type_.lower():
+                        continue
+                    rarity_str = RARITY_OPTIONS.get(item.get("rarity", 0),
+                                                    "0x{:02X}".format(item.get("rarity", 0)))
+                    f1 = item.get("equipment_flags_1", 0)
+                    f2 = item.get("equipment_flags_2", 0) if self._has_equipped else "-"
+                    flags1_str = EQUIPMENT_FLAGS1_OPTIONS.get(f1, "0x{:02X}".format(f1))
+                    flags2_str = (EQUIPMENT_FLAGS2_OPTIONS.get(f2, "0x{:02X}".format(f2))
+                                  if self._has_equipped else "-")
+                    tree.insert("", "end", iid=item["slot"], values=(
+                        item["slot"], hex_id, name, type_,
+                        item["quantity"], item["item_level"],
+                        rarity_str, flags1_str, flags2_str,
+                    ))
 
         fe.bind("<KeyRelease>", lambda e: populate())
         ttk.Button(fbar, text="Clear",
@@ -1482,15 +1675,18 @@ class InventoryPanel(ttk.Frame):
         bbar.pack(fill="x", padx=5, pady=4)
         
         # Add spawn button based on panel type
-        if self._has_equipped:
+        if self._is_scroll:
+            ttk.Button(bbar, text="Spawn Scroll",
+                       command=self._spawn_item).pack(side="left", padx=4)
+        elif self._has_equipped:
             ttk.Button(bbar, text="Spawn Equipment",
                        command=self._spawn_item).pack(side="left", padx=4)
         else:
             ttk.Button(bbar, text="Spawn Item",
                        command=self._spawn_item).pack(side="left", padx=4)
         
-        # Add Max Quantity for non-equipment
-        if not self._has_equipped:
+        # Add Max Quantity for non-equipment and non-scroll
+        if not self._has_equipped and not self._is_scroll:
             ttk.Button(bbar, text="Max Quantity", command=self._max_all).pack(side="left", padx=4)
 
         return tree
@@ -1506,7 +1702,10 @@ class InventoryPanel(ttk.Frame):
 
     def _spawn_item(self):
         """Open spawn dialog for this inventory type."""
-        if self._has_equipped:
+        if self._is_scroll:
+            SpawnDialog(self.root.winfo_toplevel() if hasattr(self, 'root') else None,
+                       "Scroll", self, is_scroll=True)
+        elif self._has_equipped:
             allowed = frozenset(
                 lookup_item(swap_endian_hex(it["item_id"]))[1]
                 for it in self._dataset if it["item_id"] != 0
@@ -1537,7 +1736,8 @@ class InventoryPanel(ttk.Frame):
 
     def _apply(self, entries, eff_combos, eff_mags,
                eff_cei, eff_ee,
-               rarity_var, flags1_var, flags2_var, eq1_var, eq2_var):
+               rarity_var=None, flags1_var=None, flags2_var=None, eq1_var=None, eq2_var=None,
+               is_scroll=False):
         if self._sel_index is None:
             messagebox.showwarning("No Selection", "Select a {} first.".format(self._label))
             return
@@ -1551,15 +1751,19 @@ class InventoryPanel(ttk.Frame):
                 messagebox.showerror("Error", "Invalid value for '{}'".format(key))
                 return
 
-        # Flag / dropdown fields
-        item["rarity"]           = ItemEditor._parse_combo_hex(rarity_var)
-        item["equipment_flags_1"] = ItemEditor._parse_combo_hex(flags1_var)
-        if self._has_equipped and flags2_var is not None:
-            item["equipment_flags_2"] = ItemEditor._parse_combo_hex(flags2_var)
-        if self._has_equipped and eq1_var is not None:
-            item["equipped_flag_1"] = ItemEditor._parse_combo_hex(eq1_var)
-        if self._has_equipped and eq2_var is not None:
-            item["equipped_flag_2"] = ItemEditor._parse_combo_hex(eq2_var)
+        # Flag / dropdown fields (only for non-scroll items)
+        if not is_scroll:
+            item["rarity"]           = ItemEditor._parse_combo_hex(rarity_var)
+            item["equipment_flags_1"] = ItemEditor._parse_combo_hex(flags1_var)
+            if self._has_equipped and flags2_var is not None:
+                item["equipment_flags_2"] = ItemEditor._parse_combo_hex(flags2_var)
+            if self._has_equipped and eq1_var is not None:
+                item["equipped_flag_1"] = ItemEditor._parse_combo_hex(eq1_var)
+            if self._has_equipped and eq2_var is not None:
+                item["equipped_flag_2"] = ItemEditor._parse_combo_hex(eq2_var)
+        else:
+            # For scrolls, update rarity_again to match rarity
+            item["rarity_again"] = item["rarity"]
 
         # Effects
         for i in range(7):
@@ -1611,9 +1815,11 @@ class Nioh3Editor:
         self._tab_equipment = ttk.Frame(self.notebook)
         self._tab_usables   = ttk.Frame(self.notebook)
         self._tab_storage   = ttk.Frame(self.notebook)
+        self._tab_scrolls   = ttk.Frame(self.notebook)
         self.notebook.add(self._tab_equipment, text="Equipment")
         self.notebook.add(self._tab_usables,   text="Consumables / Materials")
         self.notebook.add(self._tab_storage,   text="Storage Box")
+        self.notebook.add(self._tab_scrolls,   text="Scrolls")
 
         self._panels = {}
         self.create_stats_tab()
@@ -1625,20 +1831,23 @@ class Nioh3Editor:
         player_items()
         player_usables()
         player_storage()
+        player_scrolls()
         self._rebuild_panel("equipment", self._tab_equipment,
                             items,   write_items_to_data,    True,  "Equipment",    use_subtabs=True)
         self._rebuild_panel("usables",  self._tab_usables,
                             usables, write_usables_to_data,  False, "Consumable",   use_subtabs=False)
         self._rebuild_panel("storage",  self._tab_storage,
                             storage, write_storage_to_data,  False, "Storage Item", use_subtabs=False)
+        self._rebuild_panel("scrolls",  self._tab_scrolls,
+                            scrolls, write_scrolls_to_data,  False, "Scroll",       use_subtabs=False, is_scroll=True)
         self.update_stats_display()
         self.file_loaded = True
 
-    def _rebuild_panel(self, key, tab, dataset, write_fn, has_equipped, label, use_subtabs=False):
+    def _rebuild_panel(self, key, tab, dataset, write_fn, has_equipped, label, use_subtabs=False, is_scroll=False):
         for child in tab.winfo_children():
             child.destroy()
         panel = InventoryPanel(tab, dataset, write_fn,
-                               has_equipped=has_equipped, label=label, use_subtabs=use_subtabs)
+                               has_equipped=has_equipped, label=label, use_subtabs=use_subtabs, is_scroll=is_scroll)
         panel.pack(fill="both", expand=True)
         self._panels[key] = panel
 
@@ -1658,6 +1867,7 @@ class Nioh3Editor:
             player_items()
             player_usables()
             player_storage()
+            player_scrolls()
 
             self._rebuild_panel("equipment", self._tab_equipment,
                                 items,   write_items_to_data,   True,  "Equipment",    use_subtabs=True)
@@ -1665,6 +1875,8 @@ class Nioh3Editor:
                                 usables, write_usables_to_data, False, "Consumable",   use_subtabs=False)
             self._rebuild_panel("storage",  self._tab_storage,
                                 storage, write_storage_to_data, False, "Storage Item", use_subtabs=False)
+            self._rebuild_panel("scrolls",  self._tab_scrolls,
+                                scrolls, write_scrolls_to_data, False, "Scroll",       use_subtabs=False, is_scroll=True)
             self.update_stats_display()
 
             messagebox.showinfo("Success", "File imported. Load in-game to apply the character.")
