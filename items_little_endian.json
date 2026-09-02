@@ -1,4 +1,18 @@
 {
+
+    "821E": {
+        "name": "Hundred demon realms",
+        "type": "scroll"
+    },
+    "6D51": {
+        "name": "(Shogun) Hundred demon realms",
+        "type": "scroll"
+    },
+    "04E6": {
+        "name": "(Enlightened) Hundred demon realms",
+        "type": "scroll"
+    },
+
     "1BF1": {
         "name": "Beardcutter",
         "type": "Weapon"
