@@ -127,3 +127,4 @@ If you encounter a bug or want a new feature:
 
 - Data sheet used from Darkksss1 at https://www.nexusmods.com/nioh3/mods/6
 - A rework of [[pawREP](https://github.com/pawREP)] decryption tool https://github.com/pawREP/Nioh-Savedata-Decryption-Tool
+- scroll struct info from : https://scrolls.amrita.tools/
