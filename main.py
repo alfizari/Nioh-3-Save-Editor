@@ -17,7 +17,9 @@ STRENGTH       = 0x3ADF6F + 0x2FD6A + 9
 SKILL          = 0x3ADF73+ 0x2FD6A  + 9
 INTELLECT      = 0x3ADF77 + 0x2FD6A+ 9
 MAGIC          = 0x3ADF7B + 0x2FD6A+9 
-
+PS5_EXTRA = 9                 # EDITED
+def _mode_extra():            # EDITED 
+    return PS5_EXTRA if MODE == "PS5" else 0
 ITEM_START    = 0x270066
 ITEM_SIZE     = 0xF0 
 ITEM_SLOTS    = 0x9C4
@@ -224,8 +226,17 @@ def open_file():
             data = bytearray(f.read())
         return True
 
-    messagebox.showerror("Error", "Unknown file format. Please select SAVEDATA.BIN (PC)")
-    return False
+    if os.path.getsize(file_path) == 9437272:                                                        # Edited padding bytes
+        backup = Path(file_path).with_name(Path(file_path).name + "BACKUP")
+        if not backup.exists():
+            shutil.copy(file_path, backup)
+        MODE = "PS5"
+        with open(file_path, "rb") as f:
+            data = bytearray(0x158) + bytearray(f.read())
+        decrypted_path = Path(file_path)
+        return True
+
+    messagebox.showerror("Error", "Unknown file format, Please select SAVEDATA.BIN (PC) or APP.BIN (PS5)")
 
 
 def open_file_import():
@@ -295,6 +306,15 @@ def save_file():
             with open(output_path, "wb") as f:
                 f.write(final_data)
             messagebox.showinfo("Success", "Saved to {}".format(output_path))
+    elif MODE == "PS5":                                                                              # EDITED
+            output_path = filedialog.asksaveasfilename(
+                initialfile="APP.BIN",
+                filetypes=[("Save Files", "*.BIN"), ("All Files", "*.*")]
+            )
+            if output_path:
+                with open(output_path, "wb") as f:
+                    f.write(data[0x158:])
+                messagebox.showinfo("Success", "Saved to {}".format(output_path))         
 
 # ==================== INVENTORY PARSING ====================
 def parse_equipment(offset):
@@ -1848,6 +1868,9 @@ class Nioh3Editor:
 
     def import_save(self):
         global data
+        if MODE == "PS5":                                                                                 # EDITED (still havent figured out how to import character)
+            messagebox.showerror("Not supported", "Import Character is not supported yet for PS5 saves")
+            return
         if not open_file_import():
             return
         if data is None:
@@ -1922,25 +1945,27 @@ class Nioh3Editor:
         ttk.Button(bf, text="Load Stats", command=self.update_stats_display).pack(side="left", padx=20)
         ttk.Button(bf, text="Save Stats", command=self.save_stats).pack(side="left", padx=20)
 
-    def update_stats_display(self):
+    def update_stats_display(self):                                         # EDITED
         if data is None:
             return
+        extra = _mode_extra()
         for name, (entry, offset, size) in self.stat_entries.items():
-            value = find_value_at_offset(data, offset, size)
+            value = find_value_at_offset(data, offset+ extra, size)
             entry.delete(0, tk.END)
             entry.insert(0, value if value is not None else 0)
-
-    def save_stats(self):
+    def save_stats(self):                                                   # EDITED
         if data is None:
             messagebox.showwarning("Warning", "No save file loaded")
             return
+        extra = _mode_extra()
         for name, (entry, offset, size) in self.stat_entries.items():
             try:
-                data[offset:offset + size] = write_le(int(entry.get()), size)
+                pos = offset + extra
+                data[pos:pos + size] = write_le(int(entry.get()), size)
             except ValueError:
                 messagebox.showerror("Error", "Invalid value for {}".format(name))
                 return
-        messagebox.showinfo("Success", "Stats updated in memory!")
+        messagebox.showinfo("Success", "States updated in memory!")
 
 
 if __name__ == "__main__":
